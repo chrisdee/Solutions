@@ -1,0 +1,11 @@
+URLs:
+
+http://lifeinsharepoint.codeplex.com
+
+http://lifeinsharepoint.codeplex.com/releases
+
+Versions: 
+
+LifeInSharePoint.Metro.wsp; May 25 2012
+
+LifeInSharePoint.Metro.Sandbox.wsp; May 9 2012
