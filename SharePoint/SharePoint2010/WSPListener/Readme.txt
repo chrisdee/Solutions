@@ -1,0 +1,1 @@
+The WSP listener is now a document library with an event receiver attached. If a new zip file with wsp and wsp.config file is uploaded to this library, the installation starts. The installation extracts the zip file to a temporary local folder, reads the wsp.config and installs the WSP to the proper web application(s).
