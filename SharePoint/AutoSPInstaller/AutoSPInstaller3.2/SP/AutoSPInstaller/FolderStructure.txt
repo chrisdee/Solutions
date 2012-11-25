@@ -1,0 +1,26 @@
+\SP\AutoSPInstaller\AutoSPInstallerLaunch.bat
+\SP\AutoSPInstaller\AutoSPInstallerInput.xml
+\SP\AutoSPInstaller\AutoSPInstallerMain.ps1
+\SP\AutoSPInstaller\AutoSPInstallerFunctions.ps1
+\SP\AutoSPInstaller\AutoSPInstallerFunctionsCustom.ps1
+\SP\AutoSPInstaller\AutoSPInstallerConfigureRemoteTarget.ps1
+\SP\AutoSPInstaller\config.xml
+\SP\AutoSPInstaller\README.rtf
+\SP\AutoSPInstaller\Hotfixes\
+\SP\AutoSPInstaller\Hotfixes\Windows6.0-KB971831-x64.msu
+\SP\AutoSPInstaller\Hotfixes\Windows6.1-KB976462-v2-x64.msu
+\SP\AutoSPInstaller\Hotfixes\Windows6.1-KB976462-x64.msu
+
+\SP\LanguagePacks\xx-xx\ (optional)
+\SP\LanguagePacks\xx-xx\Updates\ (extract Language Pack Service Pack / Cumulative Updates here) (optional)
+OR
+\SP\LanguagePacks\<ServerLanguagePack_XX-XX.exe>
+
+\SP\SharePoint\
+\SP\SharePoint\PrerequisiteInstallerFiles\
+\SP\OfficeWebApps\ (optional)
+\SP\PDF\ (optional)
+\SP\PDF\icpdf.gif (optional)
+\SP\PDF\PDFiFilter64installer.zip (optional)
+\SP\PDF\PDFiFilter64installer.msi (optional)
+\SP\ForeFront\ (optional)

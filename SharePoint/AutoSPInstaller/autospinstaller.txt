@@ -1,0 +1,3 @@
+URL: http://autospinstaller.codeplex.com
+
+Version: 3.2 | Oct 13, 2012
