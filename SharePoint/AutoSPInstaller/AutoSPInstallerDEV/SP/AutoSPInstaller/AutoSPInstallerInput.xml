@@ -427,7 +427,7 @@
                          DBPort="" />
             </Database>
         </SecureStoreService>
-        <BusinessDataConnectivity Provision="false"
+        <BusinessDataConnectivity Provision="true"
                                   Name="Business Data Connectivity Service"
                                   ProxyName="Business Data Connectivity Service">
             <!-- You can specify a different DB server/instance or alias per web application and service application. The behavior is slightly different than with the farm DB server though, see below. -->
@@ -443,7 +443,7 @@
                          DBPort="" />
             </Database>
         </BusinessDataConnectivity>
-        <WordAutomationService Provision="false"
+        <WordAutomationService Provision="true"
                                Name="Word Automation Services"
                                ProxyName="Word Automation Services">
             <!-- You can specify a different DB server/instance or alias per web application and service application. The behavior is slightly different than with the farm DB server though, see below. -->
@@ -463,7 +463,7 @@
         <AppManagementService Provision="true"
                               Name="App Management Service"
                               ProxyName="App Management Service"
-                              AppDomain="apps.domain.com">
+                              AppDomain="sharepointapps.sp2013devportal.com">
             <!-- You can specify a different DB server/instance or alias per web application and service application. The behavior is slightly different than with the farm DB server though, see below. -->
             <Database>
                 <!-- <Name> designates the suffix portion of the database name. For example if your DBPrefix (above) was "SPFarm", and the name below was "ServiceApp", your full DB name would be "SharePoint_ServiceApp" -->
@@ -500,27 +500,27 @@
          UnattendedIDUser: DOMAIN\UserName of the unattended user account. This does not have to be SharePoint managed account, and the same account can be re-used for all services.
          UnattendedIDPassword: Password of the unattended user account.	-->
     <EnterpriseServiceApps>
-        <ExcelServices Provision="false"
+        <ExcelServices Provision="true"
                        Name="Excel Services Application"
-                       UnattendedIDUser="DOMAIN\SP_ExcelUser"
-                       UnattendedIDPassword="">
+                       UnattendedIDUser="DEVDOM\spexcelservice"
+                       UnattendedIDPassword="DevPassword">
         </ExcelServices>
-        <VisioService Provision="false"
+        <VisioService Provision="true"
                       Name="Visio Graphics Service"
                       ProxyName="Visio Graphics Service"
-                      UnattendedIDUser="DOMAIN\SP_VisioUser"
-                      UnattendedIDPassword="">
+                      UnattendedIDUser="DEVDOM\spvisioservice"
+                      UnattendedIDPassword="DevPassword">
         </VisioService>
-        <AccessService Provision="false"
+        <AccessService Provision="true"
                        Name="Access Services"
                        ProxyName="Access Services">
         </AccessService>
         <!-- If you choose to provision Performance Point Services, the user running the script must be in the sysadmin role of the SQL server whilst the script runs. This can be revoked afterwards. -->
-        <PerformancePointService Provision="false"
+        <PerformancePointService Provision="true"
                       Name="PerformancePoint Service"
                       ProxyName="PerformancePoint Service"
-                      UnattendedIDUser="DOMAIN\SP_PerfPointUser"
-                      UnattendedIDPassword="">
+                      UnattendedIDUser="DEVDOM\spperfpointservice"
+                      UnattendedIDPassword="DevPassword">
             <!-- You can specify a different DB server/instance or alias per web application and service application. The behavior is slightly different than with the farm DB server though, see below. -->
             <Database>
                 <!-- <Name> designates the suffix portion of the database name. For example if your DBPrefix (above) was "SPFarm", and the name below was "ServiceApp", your full DB name would be "SharePoint_ServiceApp" -->
@@ -537,19 +537,19 @@
     </EnterpriseServiceApps>
     <!-- The OfficeWebApps section controls the installation of Office Web Apps. Setting Install="true" requires the office web apps installation files to be present.
          Note: OfficeWebApps Install can only be "true" or "false" - server names are not supported here because it's all or nothing for OWA in a farm -->
-    <OfficeWebApps Install="false"
+    <OfficeWebApps Install="true"
                    ConfigFile="config-OWA.xml">
-        <ExcelService Provision="false"
+        <ExcelService Provision="true"
                       Name="Excel Web App"
                       ProxyName="Excel Web App"
-                      UnattendedIDUser="DOMAIN\SP_ExcelUser"
-                      UnattendedIDPassword="">
+                      UnattendedIDUser="DEVDOM\spexcelservice"
+                      UnattendedIDPassword="DevPassword">
         </ExcelService>
-        <WordViewingService Provision="false"
+        <WordViewingService Provision="true"
                             Name="Word Viewing Service"
                             ProxyName="Word Viewing Service">
         </WordViewingService>
-        <PowerPointService Provision="false"
+        <PowerPointService Provision="true"
                            Name="PowerPoint Service Application"
                            ProxyName="PowerPoint Service Application">
         </PowerPointService>
@@ -558,7 +558,7 @@
          Also, we can configure SharePoint web app MIME type associations to allow direct opening of PDF files (instead of the default behavior of only allowing 'save as') -->
     <AdobePDF>
         <!-- The iFilter element supports a comma- or space-delimited list of server names on which to install the PDF iFilter. Useful if you want to selectively install ONLY on crawl servers, for example. -->
-        <iFilter Install="false" />
+        <iFilter Install="true" />
         <!-- Both the Icon and MIMEType elements support only "true" or "false"; you probably would want the icon on all farm servers, and MIMEType is a web app-wide setting anyhow, not bound to specific servers -->
         <Icon Configure="true" />
         <MIMEType Configure="true"/>
