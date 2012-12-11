@@ -34,13 +34,13 @@ function Test-XADObject() {
 Import-Module ActiveDirectory -ErrorAction SilentlyContinue
 
 # Specify the target OU for new users (You can use the distinguishedName DN attribute to obtain this)
-$TargetOU = "OU=Service Accounts,OU=TGF,DC=npe,DC=theglobalfund,DC=org" #Change this OU to suit your environment
+$TargetOU = "CN=Managed Service Accounts,DC=devdom,DC=com" #Change this OU to suit your environment
 
 # Find the current domain info
 $domdns = (Get-ADDomain).dnsroot # for UPN generation
 
 # Specify the folder and CSV file to use
-$ImportFile = "C:\Boxbuild\Scripts\PowerShell\Working\SharePoint\SharePoint2010\SP2010CreateServiceAccounts\SP2010CreateServiceAccountsFromCSVTemplate.csv" #Change this directory to suit your environment
+$ImportFile = "C:\Boxbuild\Scripts\PowerShell\SPCreateServiceAccountsFromCSVTemplate.csv" #Change this directory to suit your environment
 
 # Check if the target OU is valid
 $ValidOU = Test-XADObject $TargetOU
