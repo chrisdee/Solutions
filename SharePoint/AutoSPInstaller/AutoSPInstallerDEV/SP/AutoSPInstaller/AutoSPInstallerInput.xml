@@ -41,7 +41,7 @@
              In combination with the RunOnce entry, it gives a better unattended experience (as there can be several reboots now with SharePoint 2013).
              Only the dedicated install account is supported; you can enter its password below. Note that it will be stored in PLAIN TEXT, both here and in the registry so be sure to change it afterwards (or disable the account).
              Otherwise, you can leave the password blank in order to be prompted at run-time (though it will still be stored in plain text in the registry, at least until the server is rebooted once more after the install. -->
-        <AutoAdminLogon Enable="true" Password="DevPassword" />
+        <AutoAdminLogon Enable="true" Password="DevPassword123" />
         <Disable>
             <!-- Disables network loopback checks. This prevents the OS blocking access to your server under names other than its actual host name,
                  which SharePoint needs to do for WebDAV requests. -->
@@ -64,7 +64,7 @@
              configuring the User Profile Synchronization service. If for some reason you need to leave the Farm account in the Administrators group after setup, set LeaveInLocalAdmins to true -->
         <Account AddToLocalAdminsDuringSetup="true" LeaveInLocalAdmins="false">
             <Username>DEVDOM\spfarm</Username>
-            <Password>DevPassword</Password>
+            <Password>DevPassword123</Password>
             <Email>spfarm@devdom.com</Email>
         </Account>
         <!-- Which server(s) to provision CentralAdmin on. Specify "true" or a list of servers -->
@@ -79,7 +79,7 @@
             <DBServer>SPDEVSQL</DBServer>
             <!-- The script can create a SQL alias for you. Enter the DBInstance, and if you leave <DBPort> blank, script will assume default port value of 1433 -->
             <DBAlias Create="true"
-                     DBInstance="MS2012-DEV\DEVSQL"
+                     DBInstance="MS2012-DEV"
                      DBPort="" />
             <!-- The DBPrefix is prepended to all database names. e.g. If you set this to TEST, your config DB will be TEST_ConfigDB.
                  If you set the prefix to localhost, script will prepend each database with the name of the server on which the script is run. 
@@ -109,19 +109,19 @@
                  of web applications, in which case the additional memory consumption this requires outweighs the security benefits. -->
             <ManagedAccount CommonName="spservice">
                 <Username>DEVDOM\spservice</Username>
-                <Password>DevPassword</Password>
+                <Password>DevPassword123</Password>
             </ManagedAccount>
             <ManagedAccount CommonName="portalapppool">
                 <Username>DEVDOM\spportalapppool</Username>
-                <Password>DevPassword</Password>
+                <Password>DevPassword123</Password>
             </ManagedAccount>
             <ManagedAccount CommonName="mysiteapppool">
                 <Username>DEVDOM\spmysiteapppool</Username>
-                <Password>DevPassword</Password>
+                <Password>DevPassword123</Password>
             </ManagedAccount>
             <ManagedAccount CommonName="searchservice">
                 <Username>DEVDOM\spentsearchservice</Username>
-                <Password>DevPassword</Password>
+                <Password>DevPassword123</Password>
             </ManagedAccount>
         </ManagedAccounts>
         <!-- The object cache accounts are user accounts that are given FullControl and FullRead privileges on WebApplications so items can be cached by ASP.Net to improve performance.
@@ -303,7 +303,7 @@
                                StartProfileSync="true"
                                CreateDefaultSyncConnection="true"
                                SyncConnectionAccount="DEVDOM\spupssynch"
-                               SyncConnectionAccountPassword="DevPassword" >
+                               SyncConnectionAccountPassword="DevPassword123" >
             <!-- You can specify a different DB server/instance or alias per web application and service application. The behavior is slightly different than with the farm DB server though, see below. -->
             <Database>
                 <!-- <*DB> below designates the suffix portion of the database name. For example if your DBPrefix (above) was "SPFarm", and the name below was "ServiceApp", your full DB name would be "SharePoint_ServiceApp" -->
@@ -329,7 +329,7 @@
                                  IndexLocation="C:\Data\SharePoint\EnterpriseSearch\Index"
                                  PerformanceLevel="PartlyReduced"
                                  Account="DEVDOM\spentsearchservice"
-                                 Password="DevPassword"
+                                 Password="DevPassword123"
                                  ShareName="SearchIndex">
             <EnterpriseSearchServiceApplications>
                 <EnterpriseSearchServiceApplication Name="Search Service Application"
@@ -340,8 +340,8 @@
                                                     Partitions="1"
                                                     SearchServiceApplicationType="Regular"
                                                     ContentAccessAccount="DEVDOM\spentsearchcontent"
-                                                    ContentAccessAccountPassword="DevPassword">
-                    <ApplicationPool Name="SharePoint Search Application Pool" Account="DEVDOM\spentsearchservice" Password="DevPassword" />
+                                                    ContentAccessAccountPassword="DevPassword123">
+                    <ApplicationPool Name="SharePoint Search Application Pool" Account="DEVDOM\spentsearchservice" Password="DevPassword123" />
                     <CrawlServers>
                         <Server Name="MS2012-DEV" />
                     </CrawlServers>
@@ -503,13 +503,13 @@
         <ExcelServices Provision="true"
                        Name="Excel Services Application"
                        UnattendedIDUser="DEVDOM\spexcelservice"
-                       UnattendedIDPassword="DevPassword">
+                       UnattendedIDPassword="DevPassword123">
         </ExcelServices>
         <VisioService Provision="true"
                       Name="Visio Graphics Service"
                       ProxyName="Visio Graphics Service"
                       UnattendedIDUser="DEVDOM\spvisioservice"
-                      UnattendedIDPassword="DevPassword">
+                      UnattendedIDPassword="DevPassword123">
         </VisioService>
         <AccessService Provision="true"
                        Name="Access Services"
@@ -520,7 +520,7 @@
                       Name="PerformancePoint Service"
                       ProxyName="PerformancePoint Service"
                       UnattendedIDUser="DEVDOM\spperfpointservice"
-                      UnattendedIDPassword="DevPassword">
+                      UnattendedIDPassword="DevPassword123">
             <!-- You can specify a different DB server/instance or alias per web application and service application. The behavior is slightly different than with the farm DB server though, see below. -->
             <Database>
                 <!-- <Name> designates the suffix portion of the database name. For example if your DBPrefix (above) was "SPFarm", and the name below was "ServiceApp", your full DB name would be "SharePoint_ServiceApp" -->
@@ -543,7 +543,7 @@
                       Name="Excel Web App"
                       ProxyName="Excel Web App"
                       UnattendedIDUser="DEVDOM\spexcelservice"
-                      UnattendedIDPassword="DevPassword">
+                      UnattendedIDPassword="DevPassword123">
         </ExcelService>
         <WordViewingService Provision="true"
                             Name="Word Viewing Service"
