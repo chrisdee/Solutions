@@ -1,0 +1,9 @@
+URLs:
+
+http://sharepintblog.com/2012/03/05/autogrowth-of-sharepoint-content-databases-an-automated-solution
+
+http://sphealthdbsize.codeplex.com
+
+
+Version: V1.0.0.0 | Released: Mar 6, 2012
+
