@@ -1,3 +1,7 @@
-URL: http://autospinstaller.codeplex.com
+URLs: 
 
-Version: 3.2 | Oct 13, 2012
+http://autospinstaller.codeplex.com
+
+http://autospinstaller.codeplex.com/SourceControl/list/changesets
+
+Version: 3.2 | Oct 13, 2012 | Changeset: 95247
