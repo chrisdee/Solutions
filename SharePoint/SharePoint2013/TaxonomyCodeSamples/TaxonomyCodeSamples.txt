@@ -1,0 +1,25 @@
+URLs:
+
+http://sharepoint.microsoft.com/blog/Pages/BlogPost.aspx?pID=1054
+
+SharePoint 2013: Automate tagging fields with terms (CSOM):
+
+http://code.msdn.microsoft.com/SharePoint-2013-Automate-579cfc54
+
+SharePoint 2013: Automate tagging fields with terms (server object model):
+
+http://code.msdn.microsoft.com/SharePoint-2013-Automate-c0f4a10e
+
+•Demo #1: Term Set Import: Creates taxonomy objects that are read from an XML input file.
+
+SharePoint 2013: Import a term set from an external source (Server OM)
+
+•Demo #2: Term Set Sync: Builds upon Demo #1 by incorporating an algorithm that performs incremental updates.
+
+SharePoint 2013: Synchronize term sets with the term store (Client OM) 
+SharePoint 2013: Synchronize term sets with the term store (Server OM)
+
+•Demo #3: Automated Tagging: Assigns managed metadata fields by using inputs from a CSV file, which shows how to process large data sets.
+
+SharePoint 2013: Automate tagging fields with terms (Client OM) 
+SharePoint 2013: Automate tagging fields with terms (Server OM)

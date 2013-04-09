@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,1:sharethis.1;/Areas/Epx/Themes/Office/Content:0,/Areas/Epx/Themes/Shared/Content:1&amp;amp;hashKey=916148DD5E8766CB3BEAFF678325E5AF" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/epxfooter.2.css" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SharePoint 2013: Automate tagging fields with terms (CSOM)</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" /><link href="description/92011025-0954-4a81-85f7-e325f21eea8eBrand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>SharePoint 2013: Automate tagging fields with terms (CSOM)</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            SharePoint Server 2013
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            metadata, enterprise content management (ECM), taxonomy, content management, knowledge management
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Web
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary Language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Last Updated</label>
+                    <div id="LastUpdated">2/6/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">Apache License, Version 2.0</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/sharepoint/SharePoint-2013-Automate-579cfc54">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy Code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1 id="header">Description of the sample</h1>
+<div id="mainSection">
+<div id="mainBody">
+<div class="section" id="sectionSection0">
+<p>This sample is part of a series that demonstrates how to use the managed metadata service to create taxonomy hierarchies and apply tags to documents. This code extends the functionality found in the
+<span><a href="http://code.msdn.microsoft.com/SharePoint-2013-Synchronize-4c191e68" >SharePoint 2013: Synchronize term sets with the term store using the server object model</a></span> sample by introducing an export method that exports a CSV
+ file that you can edit and an import method that imports data from that file.</p>
+<h3 class="subHeading">Prerequisites</h3>
+<div class="subsection">
+<p>This sample requires the following:</p>
+<ul>
+<li>
+<p>Visual Studio 2012 or</p>
+</li><li>
+<p>SharePoint development tools in Visual Studio 2012</p>
+</li><li>
+<p>A SharePoint 2013 development environment</p>
+</li><li>
+<p>A publishing site</p>
+</li><li>
+<p>At least one single-valued managed metadata column that is bound to a term set that contains terms.</p>
+</li></ul>
+</div>
+<h3 class="subHeading">Key components of the sample</h3>
+<div class="subsection">
+<p>This sample contains the following files:</p>
+<ul>
+<li>
+<p>Program.cs, which contains all of the C# code for the sample</p>
+</li><li>
+<p>ExternalTaxonomyData.xml, which contains test data that represents taxonomy data from an external source</p>
+</li></ul>
+</div>
+<h3 class="subHeading">Configure the sample</h3>
+<div class="subsection">
+<p>Follow these steps to configure the sample:</p>
+<ul>
+<li>
+<p>Open the Program.cs file and, if applicable, change the URL of the SharePoint <span>
+<span class="keyword">SPSite</span></span> object from http://localhost/ to your site URL.</p>
+</li><li>
+<p>If you want this sample to create a sample input file, uncomment the code block that generates an example XML file. This is useful if the XML schema has changed.</p>
+</li><li>
+<p>Configure a SharePoint 2013 list that contains the documents to be tagged. Create at least one single-valued managed metadata column that is bound to a term set. That term set must contain at least one term.</p>
+</li><li>
+<p>To generate the <span><span class="keyword">AutomatedTagging.csv</span></span> file, change the
+<span class="code">#if</span> directive in the <span class="code">Main</span> method to enable the
+<span class="code">ExportTemplate</span> mode.</p>
+</li><li>
+<p>Open <span><span class="keyword">AutomatedTagging.csv</span></span> in Excel and enter the name of the taxonomy term next to the URL for each document that you want to tag.</p>
+</li></ul>
+</div>
+<h3 class="subHeading">Run and test the sample</h3>
+<div class="subsection">
+<p>This sample was designed to be run locally on the computer running SharePoint 2013.</p>
+<ul>
+<li>
+<p>Press <span class="ui">F5</span> to compile and run the sample.</p>
+</li></ul>
+<p>When configured to export, the sample generates the <span><span class="keyword">AutomatedTagging.csv</span></span> file. When configured to import, the sample applies the tags from the
+<span><span class="keyword">AutomatedTagging.csv</span></span> file to the corresponding documents.</p>
+</div>
+<h3 class="subHeading">Change log</h3>
+<div class="subsection">
+<div class="caption"></div>
+<div class="tableSection">
+<table cellspacing="2" cellpadding="5" width="50%" frame="lhs">
+<tbody>
+<tr>
+<th>
+<p>Version</p>
+</th>
+<th>
+<p>Date</p>
+</th>
+</tr>
+<tr>
+<td>
+<p>First release</p>
+</td>
+<td>
+<p>December 6, 2012</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h1 class="heading">Related content</h1>
+<div class="section" id="seeAlsoSection">
+<div class="seeAlsoStyle"><span>
+<div class="seeAlsoStyle"><span>
+<div class="seeAlsoStyle"><span><a href="http://code.msdn.microsoft.com/SharePoint-2013-Automate-c0f4a10e" >SharePoint 2013: Automate tagging fields with terms by using the server object model</a></span></div>
+</span></div>
+<div class="seeAlsoStyle"><span><a href="http://code.msdn.microsoft.com/SharePoint-2013-Synchronize-d40638d1" >SharePoint 2013: Synchronize term sets with the term store using the client object model</a></span></div>
+</span></div>
+<div class="seeAlsoStyle"><span><a href="http://code.msdn.microsoft.com/SharePoint-2013-Synchronize-4c191e68" >SharePoint 2013: Synchronize term sets with the term store using the server object model</a></span></div>
+<div class="seeAlsoStyle">
+<div class="seeAlsoStyle"><span><a href="http://code.msdn.microsoft.com/sharepoint/SharePoint-2013-Automate-579cfc54/714af33e-1bd1-479d-9c28-3fd37dbfe3c4.htm"></a></span></div>
+<a href="http://msdn.microsoft.com/library/08e4e4e1-d960-43fa-85df-f3c279ed6927.aspx" >Start: Set up the development environment for SharePoint 2013</a></div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+    </div>
+</body>
+</html>

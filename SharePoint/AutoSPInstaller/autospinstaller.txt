@@ -4,4 +4,8 @@ http://autospinstaller.codeplex.com
 
 http://autospinstaller.codeplex.com/SourceControl/list/changesets
 
+Versions: 
+
 Version: 3.2 | Oct 13, 2012 | Changeset: 95247
+
+Version: 3.86 | Apr 3, 2013 | Changeset: 99664 | AutoSPInstaller for SharePoint 2010 + 2013

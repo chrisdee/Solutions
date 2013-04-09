@@ -1,0 +1,46 @@
+Overview:
+
+Visual Studio 2012 solution that connects to a SharePoint list or document library and extracts list fields and items to a spread sheet. You can then add terms from 'term sets' against one or more Managed Metadata fields that have term sets associated with the Managed Metadata column.
+
+Prerequisites:
+
+The SharePoint list or document library you are going to run the solution against must have at least one column that has been created as a 'Managed Metadata' column and is bound to a term set.
+
+Usage Notes:
+
+-- SharePoint 2013 Automate tagging fields with terms (CSOM) --
+
+1. Open your 'SPAutomatedTaggingClient' solution in the \C# folder
+
+2. Open the 'Program.cs' file and edit the following:
+
+Line 76: Program.clientContext = new ClientContext("http://localhost/");
+
+- Change the 'http://localhost' path URL to match your environment
+
+Line 78: List list = Program.clientContext.Web.Lists.GetByTitle("Documents");
+
+- Change the 'Documents' name to match your list / document library name
+
+Line 102: #if true
+
+- Change this to 'true' to generate the 'AutomatedTagging.csv' file
+- Using a 'false' value imports the 'AutomatedTagging.csv' file
+
+3. Press F5 to build your project and look for the 'AutomatedTagging.csv' file in either your 'Debug' or 'Release' bin folder:
+
+\C#\SPAutomatedTaggingClient\bin\Debug
+\C#\SPAutomatedTaggingClient\bin\Release
+
+4. You can then use the 'SPAutomatedTaggingClient.exe' application from the 'Debug' or 'Release' bin folder on your SharePoint servers
+
+Testing Notes:
+
+Use "" double quotes around any terms that have special characters in them like ',' commas
+Sync doesn't appear to be both ways in that if you remove a term from the CSV file; the term still appears in the list
+Sync does however appear to update terms if you update them in the CSV file
+Sync isn't case sensitive for terms
+When run against list libraries the CSV file doesn't list item names by their 'friendly name'
+
+
+
