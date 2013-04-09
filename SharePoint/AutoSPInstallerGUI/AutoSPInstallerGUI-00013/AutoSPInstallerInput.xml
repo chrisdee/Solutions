@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Environment="Dev" Version="3.86">
+  <Install SPVersion="2013">
+    <ConfigFile>config.xml</ConfigFile>
+    <DataDir>C:\Data\SharePoint\DataDir</DataDir>
+    <PIDKey>PIDKey123</PIDKey>
+    <SKU>Enterprise</SKU>
+    <OfflineInstall>true</OfflineInstall>
+    <PauseAfterInstall>false</PauseAfterInstall>
+    <RemoteInstall Enable="false">
+      <ParallelInstall>false</ParallelInstall>
+    </RemoteInstall>
+    <AutoAdminLogon Enable="true" Password="DevPassword123" />
+    <Disable>
+      <LoopbackCheck>true</LoopbackCheck>
+      <UnusedServices>true</UnusedServices>
+      <IEEnhancedSecurity>true</IEEnhancedSecurity>
+      <CertificateRevocationListCheck>true</CertificateRevocationListCheck>
+    </Disable>
+  </Install>
+  <Farm>
+    <Passphrase>DevPassphrase123</Passphrase>
+    <Account AddToLocalAdminsDuringSetup="true" LeaveInLocalAdmins="true">
+      <Username>DEVDOM\spfarm</Username>
+      <Password>DevPassword123</Password>
+      <Email>spfarm@devdom.com</Email>
+    </Account>
+    <CentralAdmin Provision="true">
+      <Database>Content_Admin</Database>
+      <Port>2013</Port>
+      <UseSSL>true</UseSSL>
+    </CentralAdmin>
+    <Database>
+      <DBServer>SPDEVSQL</DBServer>
+      <DBAlias Create="true" DBInstance="MS2012-DEV" DBPort="1433" />
+      <DBPrefix>DEV</DBPrefix>
+      <ConfigDB>Config</ConfigDB>
+    </Database>
+    <Services>
+      <SandboxedCodeService Start="true" />
+      <ClaimsToWindowsTokenService Start="true" />
+      <SMTP Install="true" />
+      <OutgoingEmail Configure="true">
+        <SMTPServer>MS2012-DEV</SMTPServer>
+        <EmailAddress>sharepoint@devdom.com</EmailAddress>
+        <ReplyToEmail>sharepoint@devdom.com</ReplyToEmail>
+      </OutgoingEmail>
+    </Services>
+    <ManagedAccounts>
+      <ManagedAccount CommonName="spservice">
+        <Username>DEVDOM\spservice</Username>
+        <Password>DevPassword123</Password>
+      </ManagedAccount>
+      <ManagedAccount CommonName="portalapppool">
+        <Username>DEVDOM\spportalapppool</Username>
+        <Password>DevPassword123</Password>
+      </ManagedAccount>
+      <ManagedAccount CommonName="mysiteapppool">
+        <Username>DEVDOM\spprofilesapppool</Username>
+        <Password>DevPassword123</Password>
+      </ManagedAccount>
+      <ManagedAccount CommonName="searchservice">
+        <Username>DEVDOM\spentsearchservice</Username>
+        <Password>DevPassword123</Password>
+      </ManagedAccount>
+    </ManagedAccounts>
+    <ObjectCacheAccounts>
+      <SuperUser>DEVDOM\spsuperuser</SuperUser>
+      <SuperReader>DEVDOM\spsuperreader</SuperReader>
+    </ObjectCacheAccounts>
+    <Logging>
+      <IISLogs Compress="true">
+        <Path>C:\Data\IIS\Logs</Path>
+      </IISLogs>
+      <ULSLogs Compress="true">
+        <LogLocation>C:\Data\SharePoint\Logs\ULS</LogLocation>
+        <LogDiskSpaceUsageGB>20</LogDiskSpaceUsageGB>
+        <DaysToKeepLogs>3</DaysToKeepLogs>
+        <LogCutInterval>15</LogCutInterval>
+      </ULSLogs>
+      <UsageLogs Compress="true">
+        <UsageLogDir>C:\Data\SharePoint\Logs\Usage</UsageLogDir>
+        <UsageLogMaxSpaceGB>10</UsageLogMaxSpaceGB>
+        <UsageLogCutTime>15</UsageLogCutTime>
+      </UsageLogs>
+    </Logging>
+  </Farm>
+  <WebApplications AddURLsToHOSTS="true">
+    <WebApplication type="Portal" name="Portal" applicationPool="Portal" applicationPoolAccount="DEVDOM\spportalapppool" url="http://localhost" port="80" UseHostHeader="false" AddURLToLocalIntranetZone="true" databaseName="Content_Portal" useClaims="true" useBasicAuthentication="false" useOnlineWebPartCatalog="false">
+      <Database>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+      <ManagedPaths>
+        <ManagedPath relativeUrl="help" explicit="true" />
+      </ManagedPaths>
+      <SiteCollections>
+        <SiteCollection siteUrl="http://localhost" HostNamedSiteCollection="false" Owner="DOMAIN\SP_PortalAppPool" Name="Portal Home" Description="Portal Home Site" SearchUrl="http://localhost/search" CustomTemplate="false" Template="SPSPORTAL#0" LCID="1033" Locale="en-us" Time24="false" />
+      </SiteCollections>
+    </WebApplication>
+    <WebApplication type="MySiteHost" name="MySite Host" applicationPool="MySites" applicationPoolAccount="DEVDOM\spprofilesapppool" url="http://localhost" port="8080" UseHostHeader="true" AddURLToLocalIntranetZone="true" databaseName="Content_MySites" useClaims="true" useBasicAuthentication="false" useOnlineWebPartCatalog="false">
+      <Database>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+      <ManagedPaths>
+        <ManagedPath relativeUrl="personal" explicit="false" />
+      </ManagedPaths>
+      <SiteCollections>
+        <SiteCollection siteUrl="http://localhost:8080" HostNamedSiteCollection="false" Owner="DOMAIN\SP_ProfilesAppPool" Name="My Site Host" Description="My Site Host" SearchUrl="http://localhost/search" CustomTemplate="false" Template="SPSMSITEHOST#0" LCID="1033" Locale="en-us" Time24="false" />
+      </SiteCollections>
+    </WebApplication>
+  </WebApplications>
+  <ServiceApps>
+    <ManagedMetadataServiceApp Provision="true" Name="Managed Metadata Service" ProxyName="Managed Metadata Service">
+      <Database>
+        <Name>MetaData</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </ManagedMetadataServiceApp>
+    <UserProfileServiceApp Provision="true" Name="User Profile Service Application" ProxyName="User Profile Service Application" EnableNetBIOSDomainNames="false" StartProfileSync="true" CreateDefaultSyncConnection="false" SyncConnectionAccount="DOMAIN\SP_ProfileSync" SyncConnectionAccountPassword="">
+      <Database>
+        <ProfileDB>Profile</ProfileDB>
+        <SyncDB>Sync</SyncDB>
+        <SocialDB>Social</SocialDB>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </UserProfileServiceApp>
+    <EnterpriseSearchService Provision="true" ContactEmail="" ConnectionTimeout="60" AcknowledgementTimeout="60" ProxyType="Default" IgnoreSSLWarnings="false" InternetIdentity="Mozilla/4.0 (compatible; MSIE 4.01; Windows NT; MS Search 6.0 Robot)" CustomIndexLocation="" PerformanceLevel="PartlyReduced" Account="DOMAIN\SP_SearchService" Password="" ShareName="SearchIndex">
+      <EnterpriseSearchServiceApplications>
+        <EnterpriseSearchServiceApplication Name="Search Service Application" DatabaseServer="" DatabaseName="Search" FailoverDatabaseServer="" Partitioned="false" Partitions="1" SearchServiceApplicationType="Regular" ContentAccessAccount="DOMAIN\SP_SearchContent" ContentAccessAccountPassword="">
+          <ApplicationPool Name="SharePoint Search Application Pool" Account="DOMAIN\SP_SearchService" Password="" />
+          <CrawlComponent>
+            <Server Name="localhost" />
+          </CrawlComponent>
+          <QueryComponent>
+            <Server Name="localhost" />
+          </QueryComponent>
+          <SearchQueryAndSiteSettingsServers>
+            <Server Name="localhost" />
+          </SearchQueryAndSiteSettingsServers>
+          <AdminComponent>
+            <Server Name="localhost" />
+            <ApplicationPool Name="SharePoint Search Application Pool" Account="DOMAIN\SP_SearchService" />
+          </AdminComponent>
+          <IndexComponent>
+            <Server Name="localhost" />
+          </IndexComponent>
+          <ContentProcessingComponent>
+            <Server Name="localhost" />
+          </ContentProcessingComponent>
+          <AnalyticsProcessingComponent>
+            <Server Name="localhost" />
+          </AnalyticsProcessingComponent>
+          <Proxy Name="Search Service Application" Partitioned="false">
+            <ProxyGroup Name="Default" />
+          </Proxy>
+          <SearchCenterUrl />
+        </EnterpriseSearchServiceApplication>
+      </EnterpriseSearchServiceApplications>
+    </EnterpriseSearchService>
+    <StateService Provision="true" Name="State Service" ProxyName="State Service">
+      <Database>
+        <Name>StateService</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </StateService>
+    <WebAnalyticsService Provision="true" Name="Web Analytics Service Application">
+      <Database>
+        <ReportingDB>WebAnalyticsReporting</ReportingDB>
+        <StagingDB>WebAnalyticsStaging</StagingDB>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </WebAnalyticsService>
+    <SPUsageService Provision="true" Name="Usage and Health Data Collection">
+      <Database>
+        <Name>UsageAndHealth</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </SPUsageService>
+    <SecureStoreService Provision="true" Name="Secure Store Service" ProxyName="Secure Store Service">
+      <Database>
+        <Name>SecureStore</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </SecureStoreService>
+    <BusinessDataConnectivity Provision="false" Name="Business Data Connectivity Service" ProxyName="Business Data Connectivity Service">
+      <Database>
+        <Name>BusinessDataCatalog</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </BusinessDataConnectivity>
+    <WordAutomationService Provision="false" Name="Word Automation Services" ProxyName="Word Automation Services">
+      <Database>
+        <Name>WordAutomation</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </WordAutomationService>
+    <AppManagementService Provision="true" Name="App Management Service" ProxyName="App Management Service" AppDomain="apps.domain.com">
+      <Database>
+        <Name>AppManagement</Name>
+        <DBServer />
+        <DBAlias Create="true" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </AppManagementService>
+    <SubscriptionSettingsService Provision="true" Name="Subscription Settings Service" AppSiteSubscriptionName="app">
+      <Database>
+        <Name>SubscriptionSettings</Name>
+        <DBServer />
+        <DBAlias Create="true" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </SubscriptionSettingsService>
+    <WorkManagementService Provision="true" Name="Work Management Service Application" ProxyName="Work Management Service Application" />
+    <MachineTranslationService Provision="true" Name="Machine Translation Service" ProxyName="Machine Translation Service">
+      <Database>
+        <Name>TranslationService</Name>
+        <DBServer />
+        <DBAlias Create="true" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </MachineTranslationService>
+    <PowerPointConversionService Provision="true" Name="PowerPoint Conversion Service Application" ProxyName="PowerPoint Conversion Service Application" />
+  </ServiceApps>
+  <EnterpriseServiceApps>
+    <ExcelServices Provision="false" Name="Excel Services Application" UnattendedIDUser="DOMAIN\SP_ExcelUser" UnattendedIDPassword="" />
+    <VisioService Provision="false" Name="Visio Graphics Service" ProxyName="Visio Graphics Service" UnattendedIDUser="DOMAIN\SP_VisioUser" UnattendedIDPassword="" />
+    <AccessService Provision="false" Name="Access 2010 Service" ProxyName="Access 2010 Service" />
+    <AccessServices Provision="false" Name="Access Services" ProxyName="Access Services">
+      <Database>
+        <Name>AccessServices</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </AccessServices>
+    <PerformancePointService Provision="false" Name="PerformancePoint Service" ProxyName="PerformancePoint Service" UnattendedIDUser="DOMAIN\SP_PerfPointUser" UnattendedIDPassword="">
+      <Database>
+        <Name>PerformancePoint</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </PerformancePointService>
+  </EnterpriseServiceApps>
+  <OfficeWebApps Install="false" ConfigFile="config-OWA-2010.xml" PIDKeyOWA="">
+    <ExcelService Provision="false" Name="Excel Web App" ProxyName="Excel Web App" UnattendedIDUser="DOMAIN\SP_ExcelUser" UnattendedIDPassword="" />
+    <WordViewingService Provision="false" Name="Word Viewing Service" ProxyName="Word Viewing Service" />
+    <PowerPointService Provision="false" Name="PowerPoint Service Application" ProxyName="PowerPoint Service Application" />
+  </OfficeWebApps>
+  <AdobePDF>
+    <iFilter Install="false" />
+    <Icon Configure="true" />
+    <MIMEType Configure="true" />
+  </AdobePDF>
+  <ForeFront Install="false" ConfigFile="answerfile-ForeFront.xml" />
+</Configuration>
