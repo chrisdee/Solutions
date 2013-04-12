@@ -86,7 +86,7 @@
     </Logging>
   </Farm>
   <WebApplications AddURLsToHOSTS="true">
-    <WebApplication type="Portal" name="Portal" applicationPool="Portal" applicationPoolAccount="DEVDOM\spportalapppool" url="http://localhost" port="80" UseHostHeader="false" AddURLToLocalIntranetZone="true" databaseName="Content_Portal" useClaims="true" useBasicAuthentication="false" useOnlineWebPartCatalog="false">
+    <WebApplication type="Portal" name="Portal" applicationPool="SPPortalAppPool" applicationPoolAccount="DEVDOM\spportalapppool" url="http://sp2013devportal.devdom.com" port="80" UseHostHeader="true" AddURLToLocalIntranetZone="true" databaseName="Content_Portal" useClaims="true" useBasicAuthentication="false" useOnlineWebPartCatalog="true">
       <Database>
         <DBServer />
         <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
@@ -95,10 +95,10 @@
         <ManagedPath relativeUrl="help" explicit="true" />
       </ManagedPaths>
       <SiteCollections>
-        <SiteCollection siteUrl="http://localhost" HostNamedSiteCollection="false" Owner="DOMAIN\SP_PortalAppPool" Name="Portal Home" Description="Portal Home Site" SearchUrl="http://localhost/search" CustomTemplate="false" Template="SPSPORTAL#0" LCID="1033" Locale="en-us" Time24="false" />
+        <SiteCollection siteUrl="http://sp2013devportal.devdom.com" HostNamedSiteCollection="false" Owner="DEVDOM\spportalapppool" Name="Portal Home" Description="Portal Home Site" SearchUrl="http://sp2013devportal.devdom.com/search" CustomTemplate="false" Template="SPSPORTAL#0" LCID="1033" Locale="en-us" Time24="true" />
       </SiteCollections>
     </WebApplication>
-    <WebApplication type="MySiteHost" name="MySite Host" applicationPool="MySites" applicationPoolAccount="DEVDOM\spprofilesapppool" url="http://localhost" port="8080" UseHostHeader="true" AddURLToLocalIntranetZone="true" databaseName="Content_MySites" useClaims="true" useBasicAuthentication="false" useOnlineWebPartCatalog="false">
+    <WebApplication type="MySiteHost" name="MySite Host" applicationPool="SPMySiteAppPool" applicationPoolAccount="DEVDOM\spprofilesapppool" url="http://mysite.sp2013devportal.devdom.com" port="80" UseHostHeader="true" AddURLToLocalIntranetZone="true" databaseName="Content_MySites" useClaims="true" useBasicAuthentication="false" useOnlineWebPartCatalog="true">
       <Database>
         <DBServer />
         <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
@@ -107,7 +107,7 @@
         <ManagedPath relativeUrl="personal" explicit="false" />
       </ManagedPaths>
       <SiteCollections>
-        <SiteCollection siteUrl="http://localhost:8080" HostNamedSiteCollection="false" Owner="DOMAIN\SP_ProfilesAppPool" Name="My Site Host" Description="My Site Host" SearchUrl="http://localhost/search" CustomTemplate="false" Template="SPSMSITEHOST#0" LCID="1033" Locale="en-us" Time24="false" />
+        <SiteCollection siteUrl="http://mysite.sp2013devportal.devdom.com" HostNamedSiteCollection="false" Owner="DEVDOM\spmysiteapppool" Name="My Site Host" Description="My Site Host" SearchUrl="http://mysite.sp2013devportal.devdom.com/search" CustomTemplate="false" Template="SPSMSITEHOST#0" LCID="1033" Locale="en-us" Time24="true" />
       </SiteCollections>
     </WebApplication>
   </WebApplications>
@@ -119,7 +119,7 @@
         <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
       </Database>
     </ManagedMetadataServiceApp>
-    <UserProfileServiceApp Provision="true" Name="User Profile Service Application" ProxyName="User Profile Service Application" EnableNetBIOSDomainNames="false" StartProfileSync="true" CreateDefaultSyncConnection="false" SyncConnectionAccount="DOMAIN\SP_ProfileSync" SyncConnectionAccountPassword="">
+    <UserProfileServiceApp Provision="true" Name="User Profile Service Application" ProxyName="User Profile Service Application" EnableNetBIOSDomainNames="false" StartProfileSync="true" CreateDefaultSyncConnection="true" SyncConnectionAccount="DEVDOM\spupssynch" SyncConnectionAccountPassword="DevPassword123">
       <Database>
         <ProfileDB>Profile</ProfileDB>
         <SyncDB>Sync</SyncDB>
@@ -128,10 +128,10 @@
         <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
       </Database>
     </UserProfileServiceApp>
-    <EnterpriseSearchService Provision="true" ContactEmail="" ConnectionTimeout="60" AcknowledgementTimeout="60" ProxyType="Default" IgnoreSSLWarnings="false" InternetIdentity="Mozilla/4.0 (compatible; MSIE 4.01; Windows NT; MS Search 6.0 Robot)" CustomIndexLocation="" PerformanceLevel="PartlyReduced" Account="DOMAIN\SP_SearchService" Password="" ShareName="SearchIndex">
+    <EnterpriseSearchService Provision="true" ContactEmail="spfarm@devdom.com" ConnectionTimeout="60" AcknowledgementTimeout="60" ProxyType="Default" IgnoreSSLWarnings="false" InternetIdentity="Mozilla/4.0 (compatible; MSIE 4.01; Windows NT; MS Search 6.0 Robot)" CustomIndexLocation="C:\Data\SharePoint\SearchIndex" PerformanceLevel="PartlyReduced" Account="DEVDOM\spentsearchservice" Password="DevPassword123" ShareName="SearchIndex">
       <EnterpriseSearchServiceApplications>
-        <EnterpriseSearchServiceApplication Name="Search Service Application" DatabaseServer="" DatabaseName="Search" FailoverDatabaseServer="" Partitioned="false" Partitions="1" SearchServiceApplicationType="Regular" ContentAccessAccount="DOMAIN\SP_SearchContent" ContentAccessAccountPassword="">
-          <ApplicationPool Name="SharePoint Search Application Pool" Account="DOMAIN\SP_SearchService" Password="" />
+        <EnterpriseSearchServiceApplication Name="Search Service Application" DatabaseServer="" DatabaseName="Search" FailoverDatabaseServer="" Partitioned="false" Partitions="1" SearchServiceApplicationType="Regular" ContentAccessAccount="DEVDOM\spentsearchcontent" ContentAccessAccountPassword="DevPassword123">
+          <ApplicationPool Name="SharePoint Search Application Pool" Account="DEVDOM\spentsearchservice" Password="DevPassword123" />
           <CrawlComponent>
             <Server Name="localhost" />
           </CrawlComponent>
@@ -143,7 +143,7 @@
           </SearchQueryAndSiteSettingsServers>
           <AdminComponent>
             <Server Name="localhost" />
-            <ApplicationPool Name="SharePoint Search Application Pool" Account="DOMAIN\SP_SearchService" />
+            <ApplicationPool Name="SharePoint Search Application Pool" Account="DEVDOM\spentsearchservice" />
           </AdminComponent>
           <IndexComponent>
             <Server Name="localhost" />
@@ -157,7 +157,7 @@
           <Proxy Name="Search Service Application" Partitioned="false">
             <ProxyGroup Name="Default" />
           </Proxy>
-          <SearchCenterUrl />
+          <SearchCenterUrl>http://sp2013devportal.devdom.com/search</SearchCenterUrl>
         </EnterpriseSearchServiceApplication>
       </EnterpriseSearchServiceApplications>
     </EnterpriseSearchService>
@@ -190,21 +190,21 @@
         <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
       </Database>
     </SecureStoreService>
-    <BusinessDataConnectivity Provision="false" Name="Business Data Connectivity Service" ProxyName="Business Data Connectivity Service">
+    <BusinessDataConnectivity Provision="true" Name="Business Data Connectivity Service" ProxyName="Business Data Connectivity Service">
       <Database>
         <Name>BusinessDataCatalog</Name>
         <DBServer />
         <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
       </Database>
     </BusinessDataConnectivity>
-    <WordAutomationService Provision="false" Name="Word Automation Services" ProxyName="Word Automation Services">
+    <WordAutomationService Provision="true" Name="Word Automation Services" ProxyName="Word Automation Services">
       <Database>
         <Name>WordAutomation</Name>
         <DBServer />
         <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
       </Database>
     </WordAutomationService>
-    <AppManagementService Provision="true" Name="App Management Service" ProxyName="App Management Service" AppDomain="apps.domain.com">
+    <AppManagementService Provision="true" Name="App Management Service" ProxyName="App Management Service" AppDomain="sharepointapps.sp2013devportal.devdom.com">
       <Database>
         <Name>AppManagement</Name>
         <DBServer />
@@ -229,17 +229,17 @@
     <PowerPointConversionService Provision="true" Name="PowerPoint Conversion Service Application" ProxyName="PowerPoint Conversion Service Application" />
   </ServiceApps>
   <EnterpriseServiceApps>
-    <ExcelServices Provision="false" Name="Excel Services Application" UnattendedIDUser="DOMAIN\SP_ExcelUser" UnattendedIDPassword="" />
-    <VisioService Provision="false" Name="Visio Graphics Service" ProxyName="Visio Graphics Service" UnattendedIDUser="DOMAIN\SP_VisioUser" UnattendedIDPassword="" />
+    <ExcelServices Provision="true" Name="Excel Services Application" UnattendedIDUser="DEVDOM\spexcelservice" UnattendedIDPassword="DevPassword123" />
+    <VisioService Provision="true" Name="Visio Graphics Service" ProxyName="Visio Graphics Service" UnattendedIDUser="DEVDOM\spvisioservice" UnattendedIDPassword="DevPassword123" />
     <AccessService Provision="false" Name="Access 2010 Service" ProxyName="Access 2010 Service" />
-    <AccessServices Provision="false" Name="Access Services" ProxyName="Access Services">
+    <AccessServices Provision="true" Name="Access Services" ProxyName="Access Services">
       <Database>
         <Name>AccessServices</Name>
         <DBServer />
         <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
       </Database>
     </AccessServices>
-    <PerformancePointService Provision="false" Name="PerformancePoint Service" ProxyName="PerformancePoint Service" UnattendedIDUser="DOMAIN\SP_PerfPointUser" UnattendedIDPassword="">
+    <PerformancePointService Provision="true" Name="PerformancePoint Service" ProxyName="PerformancePoint Service" UnattendedIDUser="DEVDOM\spperfpointservice" UnattendedIDPassword="DevPassword123">
       <Database>
         <Name>PerformancePoint</Name>
         <DBServer />
