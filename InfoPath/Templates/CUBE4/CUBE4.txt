@@ -1,0 +1,7 @@
+URLs:
+
+http://blog.cube4.com.au
+
+http://blog.cube4.com.au/?page_id=528
+
+Versions: InfoPath 2010+
