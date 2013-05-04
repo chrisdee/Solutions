@@ -1,0 +1,65 @@
+## Deployment Steps For Building A SharePoint Farm With AutoSPInstaller ##
+
+-- SharePoint Versions Covered: SharePoint Server 2010 / 2013
+
+-- Install Domain Controller on VM --
+
+Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
+Install-ADDSForest -DomainName devdom.com
+
+gpmc.msc
+
+Right click on Default Domain Policy and click edit.  This will bring up a new screen.  You want to navigate to Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Account Policies -> Password Policy
+
+Change 'Password must meet complexity requirements' to disabled
+
+gpupdate /force
+
+-- Install Service Accounts --
+
+Copy CSV file 'SPCreateServiceAccountsFromCSVTemplate' to directory
+
+cd 
+
+./SPCreateServiceAccountsFromCSV.ps1
+
+Add your 'spsetup' service account as a local admin on your farm server/s
+
+-- Install SQL Server 2012 --
+
+Add your 'spsetup' service account as a sysadmin on your SQL instance
+
+-- Prepare your AutoSPInstaller Files --
+
+ISO Toolkit is excellent utility for this
+
+-- Copy SP Binaries To AutoSPInstaller --
+
+\SP\2010\SharePoint
+\SP\2013\SharePoint
+
+
+-- Copy SP OWA Binaries to AutoSPInstaller (Only applicable for SP2010) --
+
+\SP\2010\OfficeWebApps
+
+-- Copy PDF Install files to AutoSPInstaller --
+
+\SP\2010\PDF
+\SP\2013\PDF
+
+-- Download PrereqInstallerFiles Script to AutoSPInstaller --
+
+C:\BoxBuild\GitHub\Scripts\PowerShell\Working\SharePoint\SharePoint2013\SP2013DownloadPreReqs.ps1
+
+\SP\2010\SharePoint\PrerequisiteInstallerFiles
+\SP\2013\SharePoint\PrerequisiteInstallerFiles
+
+-- Copy Windows Server 2012 sxs media installation files to AutoSPInstaller PrereqInstallerFiles --
+
+\SP\2013\SharePoint\PrerequisiteInstallerFiles\sxs
+
+-- Copy any additional Language Packs to AutoSPInstaller directory --
+
+\SP\2010\LanguagePacks
+\SP\2013\LanguagePacks

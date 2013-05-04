@@ -107,7 +107,7 @@
         <ManagedPath relativeUrl="personal" explicit="false" />
       </ManagedPaths>
       <SiteCollections>
-        <SiteCollection siteUrl="http://mysite.sp2013devportal.devdom.com" HostNamedSiteCollection="false" Owner="DEVDOM\spmysiteapppool" Name="My Site Host" Description="My Site Host" SearchUrl="http://mysite.sp2013devportal.devdom.com/search" CustomTemplate="false" Template="SPSMSITEHOST#0" LCID="1033" Locale="en-us" Time24="true" />
+        <SiteCollection siteUrl="http://mysite.sp2013devportal.devdom.com" HostNamedSiteCollection="false" Owner="DEVDOM\spprofilesapppool" Name="My Site Host" Description="My Site Host" SearchUrl="http://mysite.sp2013devportal.devdom.com/search" CustomTemplate="false" Template="SPSMSITEHOST#0" LCID="1033" Locale="en-us" Time24="true" />
       </SiteCollections>
     </WebApplication>
   </WebApplications>
@@ -231,7 +231,7 @@
   <EnterpriseServiceApps>
     <ExcelServices Provision="true" Name="Excel Services Application" UnattendedIDUser="DEVDOM\spexcelservice" UnattendedIDPassword="DevPassword123" />
     <VisioService Provision="true" Name="Visio Graphics Service" ProxyName="Visio Graphics Service" UnattendedIDUser="DEVDOM\spvisioservice" UnattendedIDPassword="DevPassword123" />
-    <AccessService Provision="false" Name="Access 2010 Service" ProxyName="Access 2010 Service" />
+    <AccessService Provision="true" Name="Access 2010 Service" ProxyName="Access 2010 Service" />
     <AccessServices Provision="true" Name="Access Services" ProxyName="Access Services">
       <Database>
         <Name>AccessServices</Name>
