@@ -1,0 +1,13 @@
+﻿/* used by the Starter Publishing master page for fixed width display */
+.customWidth {
+	width: 980px;
+	margin: auto;
+}
+
+/* used to reset the ootb styles on the title row tag in the Starter Collab master page; used for the fullscreen button in SP */
+#s4-titlerow {
+	background-color: transparent;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}

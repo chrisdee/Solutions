@@ -1,0 +1,13 @@
+URLs:
+
+http://startermasterpages.codeplex.com
+
+http://blog.drisgill.com/2012/10/sharepoint-2013-starter-master-pages.html
+
+Version: V1.3 | Updated: Apr 27, 2013
+
+Starter PubCollab - A good starting place for SharePoint Server intranet portal or team sites that may or may not have publishing (MDS enabled)
+Starter Publishing - An example publishing portal. (Not compatible with MDS / team sites)
+Starter MySiteHost - Starter Master Page for the My Sites host
+Starter Foundation - Starter Master Page for Foundation sites or standard team sites
+Starter DesignManager.html - HTML based starter master page for use with the Design Manager in SharePoint Server 2013 (not compatible with MDS / Team sites)
