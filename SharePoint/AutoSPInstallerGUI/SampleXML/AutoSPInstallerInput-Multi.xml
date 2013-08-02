@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Environment="CIDC Production" Version="3.87">
+  <Install SPVersion="2013">
+    <ConfigFile>config.xml</ConfigFile>
+    <DataDir />
+    <PIDKey>XXXXX-G2J3K-XPQYT-XXXXX-F6WFV</PIDKey>
+    <SKU>Enterprise</SKU>
+    <OfflineInstall>false</OfflineInstall>
+    <PauseAfterInstall>true</PauseAfterInstall>
+    <RemoteInstall Enable="false">
+      <ParallelInstall>false</ParallelInstall>
+    </RemoteInstall>
+    <AutoAdminLogon Enable="true" Password="Password@123" />
+    <Disable>
+      <LoopbackCheck>true</LoopbackCheck>
+      <UnusedServices>true</UnusedServices>
+      <IEEnhancedSecurity>true</IEEnhancedSecurity>
+      <CertificateRevocationListCheck>false</CertificateRevocationListCheck>
+    </Disable>
+  </Install>
+  <Farm>
+    <Passphrase>Password@123</Passphrase>
+    <Account AddToLocalAdminsDuringSetup="true" LeaveInLocalAdmins="false">
+      <Username>DOMAIN\svc.cgyspprd.farm</Username>
+      <Password>Password@123</Password>
+      <Email />
+    </Account>
+    <CentralAdmin Provision="CGYSPSP31 CGYSPSP32 CGYSPSP33">
+      <Database>Services_CentralAdmin</Database>
+      <Port>2013</Port>
+      <UseSSL>false</UseSSL>
+    </CentralAdmin>
+    <Database>
+      <DBServer>PRDCGYSQL</DBServer>
+      <DBAlias Create="true" DBInstance="CGYSQLP33.DOMAIN.loc" DBPort="" />
+      <DBPrefix>SP2013_PRD_CGY</DBPrefix>
+      <ConfigDB>Config</ConfigDB>
+    </Database>
+    <Services>
+      <SandboxedCodeService Start="false" />
+      <ClaimsToWindowsTokenService Start="false" UpdateAccount="false" />
+      <SMTP Install="CGYSPSP34" />
+      <OutgoingEmail Configure="true">
+        <SMTPServer>CGYSPSP34</SMTPServer>
+        <EmailAddress>no-reply@domain.com</EmailAddress>
+        <ReplyToEmail>SharePointAdmins@domain.com</ReplyToEmail>
+      </OutgoingEmail>
+    </Services>
+    <ManagedAccounts>
+      <ManagedAccount CommonName="spservice">
+        <Username>DOMAIN\svc.cgyspprd.service</Username>
+        <Password>Password@123</Password>
+      </ManagedAccount>
+      <ManagedAccount CommonName="portalapppool">
+        <Username>DOMAIN\svc.cgyspprd.app1</Username>
+        <Password>Password@123</Password>
+      </ManagedAccount>
+      <ManagedAccount>
+        <Username>DOMAIN\svc.cgyspprd.app2</Username>
+        <Password>Password@123</Password>
+      </ManagedAccount>
+    </ManagedAccounts>
+    <ObjectCacheAccounts>
+      <SuperUser>DOMAIN\svc.cgyspprd.superu</SuperUser>
+      <SuperReader>DOMAIN\svc.cgyspprd.superr</SuperReader>
+    </ObjectCacheAccounts>
+    <Logging>
+      <IISLogs Compress="true">
+        <Path>D:\Data\AppLogs\IIS</Path>
+      </IISLogs>
+      <ULSLogs Compress="true">
+        <LogLocation>D:\Data\AppLogs\SharePoint</LogLocation>
+        <LogDiskSpaceUsageGB>5</LogDiskSpaceUsageGB>
+        <DaysToKeepLogs>7</DaysToKeepLogs>
+        <LogCutInterval>60</LogCutInterval>
+      </ULSLogs>
+      <UsageLogs Compress="true">
+        <UsageLogDir>D:\Data\AppLogs\Usage</UsageLogDir>
+        <UsageLogMaxSpaceGB>5</UsageLogMaxSpaceGB>
+        <UsageLogCutTime>5</UsageLogCutTime>
+      </UsageLogs>
+    </Logging>
+  </Farm>
+  <WebApplications AddURLsToHOSTS="true">
+    <WebApplication type="Portal" name="Portal" applicationPool="SharePoint Web Applications" applicationPoolAccount="DOMAIN\svc.cgyspprd.app1" url="http://portal.domain.com" port="80" UseHostHeader="true" AddURLToLocalIntranetZone="true" databaseName="Content_Portal" useClaims="true" useBasicAuthentication="false" useOnlineWebPartCatalog="false">
+      <Database>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+      <ManagedPaths />
+      <SiteCollections>
+        <SiteCollection siteUrl="http://portal.domain.com" HostNamedSiteCollection="false" Owner="DOMAIN\svc.cgyspprd.farm" Name="Connect Home" Description="" SearchUrl="" CustomTemplate="false" Template="STS#0" LCID="1033" Locale="en-us" Time24="false" />
+      </SiteCollections>
+    </WebApplication>
+    <WebApplication type="MySiteHost" name="MySite Host" applicationPool="SharePoint Web Applications" applicationPoolAccount="DOMAIN\svc.cgyspprd.app1" url="http://my.domain.com" port="80" UseHostHeader="true" AddURLToLocalIntranetZone="true" databaseName="Content_MySites" useClaims="true" useBasicAuthentication="false" useOnlineWebPartCatalog="false">
+      <Database>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+      <ManagedPaths>
+        <ManagedPath relativeUrl="personal" explicit="false" />
+      </ManagedPaths>
+      <SiteCollections>
+        <SiteCollection siteUrl="http://my.domain.com" HostNamedSiteCollection="false" Owner="DOMAIN\svc.cgyspprd.farm" Name="My Site Host" Description="My Site Host" SearchUrl="" CustomTemplate="false" Template="SPSMSITEHOST#0" LCID="1033" Locale="en-us" Time24="false" />
+      </SiteCollections>
+    </WebApplication>
+  </WebApplications>
+  <ServiceApps>
+    <ManagedMetadataServiceApp Provision="CGYSPSP34 CGYSPSP35" Name="Managed Metadata Service" ProxyName="Managed Metadata Service">
+      <Database>
+        <Name>Services_ManagedMetadata</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </ManagedMetadataServiceApp>
+    <UserProfileServiceApp Provision="CGYSPSP34 CGYSPSP35" Name="User Profile Service Application" ProxyName="User Profile Service Application" EnableNetBIOSDomainNames="false" StartProfileSync="true" CreateDefaultSyncConnection="false" SyncConnectionAccount="DOMAIN\SP_ProfileSync" SyncConnectionAccountPassword="">
+      <Database>
+        <ProfileDB>Services_UPS_Profile</ProfileDB>
+        <SyncDB>Services_UPS_Sync</SyncDB>
+        <SocialDB>Services_UPS_Social</SocialDB>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </UserProfileServiceApp>
+    <EnterpriseSearchService Provision="true" ContactEmail="" ConnectionTimeout="60" AcknowledgementTimeout="60" ProxyType="Default" IgnoreSSLWarnings="false" InternetIdentity="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT; MS Search 6.0 Robot)" CustomIndexLocation="D:\Data\Index\Search" PerformanceLevel="PartlyReduced" Account="DOMAIN\svc.cgyspprd.service" Password="Password@123" ShareName="SearchIndex">
+      <EnterpriseSearchServiceApplications>
+        <EnterpriseSearchServiceApplication Name="Search Service Application" DatabaseServer="" DatabaseName="Services_Search" FailoverDatabaseServer="" Partitioned="false" Partitions="1" SearchServiceApplicationType="Regular" ContentAccessAccount="DOMAIN\svc.cgyspprd.crawl" ContentAccessAccountPassword="Password@123">
+          <ApplicationPool Name="SharePoint Search Application Pool" Account="DOMAIN\svc.cgyspprd.service" Password="Password@123" />
+          <CrawlComponent>
+            <Server Name="CGYSPSP38" />
+            <Server Name="CGYSPSP39" />
+          </CrawlComponent>
+          <QueryComponent>
+            <Server Name="CGYSPSP36" />
+            <Server Name="CGYSPSP37" />
+          </QueryComponent>
+          <SearchQueryAndSiteSettingsServers>
+            <Server Name="CGYSPSP31" />
+            <Server Name="CGYSPSP32" />
+            <Server Name="CGYSPSP33" />
+          </SearchQueryAndSiteSettingsServers>
+          <AdminComponent>
+            <Server Name="CGYSPSP38" />
+            <Server Name="CGYSPSP39" />
+            <ApplicationPool Name="SharePoint Search Application Pool" Account="DOMAIN\svc.cgyspprd.service" />
+          </AdminComponent>
+          <IndexComponent>
+            <Server Name="CGYSPSP36" />
+            <Server Name="CGYSPSP37" />
+          </IndexComponent>
+          <ContentProcessingComponent>
+            <Server Name="CGYSPSP38" />
+            <Server Name="CGYSPSP39" />
+          </ContentProcessingComponent>
+          <AnalyticsProcessingComponent>
+            <Server Name="CGYSPSP38" />
+            <Server Name="CGYSPSP39" />
+          </AnalyticsProcessingComponent>
+          <Proxy Name="Search Service Application" Partitioned="false">
+            <ProxyGroup Name="Default" />
+          </Proxy>
+          <SearchCenterUrl />
+        </EnterpriseSearchServiceApplication>
+      </EnterpriseSearchServiceApplications>
+    </EnterpriseSearchService>
+    <StateService Provision="CGYSPSP34 CGYSPSP35" Name="State Service" ProxyName="State Service">
+      <Database>
+        <Name>Services_State</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </StateService>
+    <WebAnalyticsService Provision="true" Name="Web Analytics Service Application">
+      <Database>
+        <ReportingDB>WebAnalyticsReporting</ReportingDB>
+        <StagingDB>WebAnalyticsStaging</StagingDB>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </WebAnalyticsService>
+    <SPUsageService Provision="CGYSPSP34 CGYSPSP35" Name="Usage and Health Data Collection">
+      <Database>
+        <Name>Services_Logging</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </SPUsageService>
+    <SecureStoreService Provision="CGYSPSP34 CGYSPSP35" Name="Secure Store Service" ProxyName="Secure Store Service">
+      <Database>
+        <Name>Services_SecureStore</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </SecureStoreService>
+    <BusinessDataConnectivity Provision="false" Name="Business Data Connectivity Service" ProxyName="Business Data Connectivity Service">
+      <Database>
+        <Name>BusinessDataCatalog</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </BusinessDataConnectivity>
+    <WordAutomationService Provision="false" Name="Word Automation Services" ProxyName="Word Automation Services">
+      <Database>
+        <Name>WordAutomation</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </WordAutomationService>
+    <AppManagementService Provision="false" Name="App Management Service" ProxyName="App Management Service" AppDomain="apps.domain.com">
+      <Database>
+        <Name>AppManagement</Name>
+        <DBServer />
+        <DBAlias Create="true" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </AppManagementService>
+    <SubscriptionSettingsService Provision="false" Name="Subscription Settings Service" AppSiteSubscriptionName="app">
+      <Database>
+        <Name>SubscriptionSettings</Name>
+        <DBServer />
+        <DBAlias Create="true" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </SubscriptionSettingsService>
+    <WorkManagementService Provision="CGYSPSP34 CGYSPSP35" Name="Work Management Service Application" ProxyName="Work Management Service Application" />
+    <MachineTranslationService Provision="false" Name="Machine Translation Service" ProxyName="Machine Translation Service">
+      <Database>
+        <Name>Services_MachineTranslation</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </MachineTranslationService>
+    <PowerPointConversionService Provision="false" Name="PowerPoint Conversion Service Application" ProxyName="PowerPoint Conversion Service Application" />
+  </ServiceApps>
+  <EnterpriseServiceApps>
+    <ExcelServices Provision="false" Name="Excel Services Application" UnattendedIDUser="DOMAIN\SP_ExcelUser" UnattendedIDPassword="" />
+    <VisioService Provision="false" Name="Visio Graphics Service" ProxyName="Visio Graphics Service" UnattendedIDUser="DOMAIN\SP_VisioUser" UnattendedIDPassword="" />
+    <AccessService Provision="false" Name="Access 2010 Service" ProxyName="Access 2010 Service" />
+    <AccessServices Provision="false" Name="Access Services" ProxyName="Access Services">
+      <Database>
+        <Name>AccessServices</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </AccessServices>
+    <PerformancePointService Provision="false" Name="PerformancePoint Service" ProxyName="PerformancePoint Service" UnattendedIDUser="DOMAIN\SP_PerfPointUser" UnattendedIDPassword="">
+      <Database>
+        <Name>PerformancePoint</Name>
+        <DBServer />
+        <DBAlias Create="false" DBInstance="SERVER\INSTANCE" DBPort="" />
+      </Database>
+    </PerformancePointService>
+  </EnterpriseServiceApps>
+  <OfficeWebApps Install="false" ConfigFile="config-OWA-2010.xml" PIDKeyOWA="">
+    <ExcelService Provision="false" Name="Excel Web App" ProxyName="Excel Web App" UnattendedIDUser="DOMAIN\SP_ExcelUser" UnattendedIDPassword="" />
+    <WordViewingService Provision="false" Name="Word Viewing Service" ProxyName="Word Viewing Service" />
+    <PowerPointService Provision="false" Name="PowerPoint Service Application" ProxyName="PowerPoint Service Application" />
+  </OfficeWebApps>
+  <AdobePDF>
+    <iFilter Install="false" />
+    <Icon Configure="true" />
+    <MIMEType Configure="true" />
+  </AdobePDF>
+  <ForeFront Install="false" ConfigFile="answerfile-ForeFront.xml" />
+</Configuration>
