@@ -1,0 +1,34 @@
+- Provisioning Access Services...
+ - Checking Access Services instance...
+ - Starting Access Services instance...
+ - Waiting for Access Services instance...Online
+ - Creating Access Services...
+New-SPAccessServicesApplication : A connection could be established to the Application Database Server but mixed mode 
+authentication isn't enabled.
+At line:1 char:1
+
+Access 2013 services - looks like it requires Mixed Mode SQL server configuration
+
+== Search Centre provisioning ==
+
+If you provision a Site Template apart from a Collaboration Portal (SPSPORTAL#0); SPInstaller won't provision search service for you - still need to manually create the search centre to match the URL you set
+
+Note: The Collaboration Portal (SPSPORTAL#0) provisions the sites below
+
+- Document Center
+- News
+- Search (Important bit here is that the Search site gets provisioned with the following default path to the Enterprise Search Center Template - /SearchCenter/)
+- Sites
+
+Site Settings : Sites and Workspaces  
+
+Create a site using the Enterprise --> Enterprise Search Center Template
+
+Map your site collection to the search center
+
+Site Collection Administration Search Settings  
+ 
+Enter a Search Center URL - provide the URL you specified in your SPInstaller script and have just created
+ 
+
+

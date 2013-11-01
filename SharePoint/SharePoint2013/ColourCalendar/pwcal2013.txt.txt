@@ -1,0 +1,102 @@
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.1.js"></script>
+<script type="text/javascript">
+
+LoadSodByKey("SP.UI.ApplicationPages.Calendar.js", function () {
+        WaitForCalendarToLoad();
+    });
+
+var SEPARATOR = "|||"; 
+function WaitForCalendarToLoad() {        
+
+SP.UI.ApplicationPages.SummaryCalendarView.prototype.renderGrids = function SP_UI_ApplicationPages_SummaryCalendarView$renderGrids($p0) {
+        var $v_0 = new Sys.StringBuilder();
+        var $v_1 = $p0.length;
+
+        for (var $v_2 = 0; $v_2 < $v_1; $v_2++) {
+            this.$7V_2($v_2, $p0[$v_2]);
+        }
+        for (var $v_3 = 0; $v_3 < $v_1; $v_3++) {
+            $v_0.append('<div>');
+            this.$I_2.$7Q_1($v_0, $p0[$v_3], $v_3);
+            $v_0.append(this.emptY_DIV);
+            $v_0.append('</div>');
+        }
+        this.setInnerHtml($v_0.toString());
+		ColourCalendar();
+    }
+
+	SP.UI.ApplicationPages.CalendarStateHandler.prototype.onItemsSucceed = function($p0, $p1) {
+		if (this.$K_1.$8G_0()) {
+            this.$28_1();
+            return;
+        }
+        this.$41_1 = false;
+        if (this.$3G_1) {
+            this.$D_1.$4T_1();
+            this.$3G_1 = false;
+        }
+        if (SP.UI.ApplicationPages.SU.$2(this.$39_1[this.$j_1])) {
+            this.$39_1[this.$j_1] = [];
+        }
+        Array.addRange(this.$39_1[this.$j_1], $p0);
+        this.$D_1.$7S_1(this.$j_1, this.$v_1, $p1, this.$39_1[this.$j_1]);
+        this.$j_1++;
+        this.$1h_1();
+		ColourCalendar();
+	}
+} 
+
+function ColourCalendar() {
+        if(jQuery('a:contains(' + SEPARATOR + ')') != null)
+        {             
+			jQuery('a:contains(' + SEPARATOR + ')').each(function (i) {
+			$box = jQuery(this).parents('div[title]');
+			var colour = GetColourCodeFromCategory(GetCategory(this.innerHTML));
+			this.innerHTML = GetActualText(this.innerHTML);
+			jQuery($box).attr("title", GetActualText(jQuery($box).attr("title")));
+			$box.css('background-color', colour);
+			});        
+	}   
+}   
+
+function GetActualText(originalText) {     
+	var parts = originalText.split(SEPARATOR);
+	return parts[0] + parts[2];   
+}
+
+function GetCategory(originalText) {
+	var parts = originalText.split(SEPARATOR);
+	return parts[1];   
+}
+
+function GetColourCodeFromCategory(category) {
+	var colour = null;     
+	switch (category.trim()) {
+		case 'Meeting':         
+			colour = '#4FDB51';
+			break;       
+		case 'Work hours':         
+			colour = '#4FB8DB';
+			break;       
+		case 'Business':         
+			colour = "#F08616";
+			break;       
+		case 'Holiday':         
+			colour = "#F55875";         
+			break;       
+		case 'Get-together':         
+			colour = "#E0F558";         
+			break;       
+		case 'Gifts':         
+			colour = "#F558D5";         
+			break;       
+		case 'Birthday':         
+			colour = "#6E80FA";         
+			break;       
+		case 'Anniversary':         
+			colour = "#FF4040";         
+			break;     
+	}     
+	return colour;   
+}
+</script>
