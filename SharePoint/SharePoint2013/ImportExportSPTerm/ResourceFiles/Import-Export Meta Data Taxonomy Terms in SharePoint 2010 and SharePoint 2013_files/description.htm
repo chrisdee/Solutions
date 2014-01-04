@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0092)http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856/description -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013</title>        
+        <meta name="description" content="Hi,I have made one window form application that providing export Meta Data Taxonomy Terms from Terms Set Group and also be providing import terms functionality in application.When you run the project or Application of ImportExportSPTerm Project form and form look like below.Expor">
+        <link href="39ce7041be88a0729510dcef30b2623d-bafb67d64bd55a2b1fd123070a82b424-RequestReducedStyle.css" rel="Stylesheet" type="text/css">        
+        <script src="jquery-1.6.1.min.js" type="text/javascript"></script>
+        <script src="a9e23b6a5edad697aa91ddd22b24c93d-57b949d089ce3e1f63e667a8b3903e0f-RequestReducedScript.js" type="text/javascript"></script>                        <script type="text/javascript">
+            function initializePage() {
+                var activeTabData = 'activeTab';
+                var otherTabClass = 'otherTab';
+                var hiddenPreClass = 'hidden';
+                $("a[href^=#]").attr("target","_self");
+                $("div.scriptcode").each(function (i) {
+                    var scriptBlock = $(this);
+                    scriptBlock.trackCopy(trackCodeSnippetCodeDownload);
+                    var labelElems = scriptBlock.find("div.title > span");
+                    if (labelElems.length == 0) {
+                        labelElems = scriptBlock.find("div.title");
+                    }
+                    var languageSpans = scriptBlock.find("span.hidden");
+                    var pres = scriptBlock.find("pre");
+                    if (languageSpans.length > 0 && pres.length > 1) {
+                        labelElems.each(function(index, elem) {
+                            var codePre = $(pres[index]);
+                            var labelSpan = $(elem);
+                            var languageSpan = $(languageSpans[index]);
+                            labelSpan.data('code', codePre.text().replace(/(\r(\n)?)|((\r)?\n)/ig, '\r\n'));
+                            codePre.removeClass(hiddenPreClass);  
+                            codePre.addClass(languageSpan.text().replace(/^\s+|\s+$/g,""));
+                            codePre.chili();
+                            languageSpan.remove();
+                        });
+
+                        pres = scriptBlock.find("pre");
+                        labelElems.each(function(index, elem) {
+                            var codePre = $(pres[index]);
+                            var labelSpan = $(elem);
+                            if (index == 0) {
+                                scriptBlock.data(activeTabData, 0);
+                            }
+                            else {
+                                labelSpan.addClass(otherTabClass);
+                                codePre.addClass(hiddenPreClass);  
+                            }
+                            labelSpan.click(function (e) {
+                                var activeTab = scriptBlock.data(activeTabData);
+                                $(labelElems[activeTab]).addClass(otherTabClass);   
+                                $(pres[activeTab]).addClass(hiddenPreClass);   
+                                        
+                                codePre.removeClass(hiddenPreClass);    
+                                labelSpan.removeClass(otherTabClass);
+                                scriptBlock.data(activeTabData, index);
+
+                                if( window.parent.Galleries ) {
+                                    window.parent.Galleries.project.resizeDesc();
+                                }
+                            });
+                        });
+
+                        var preview = scriptBlock.find('div.preview');
+                        if (preview.length == 0) {
+                            preview = $(pres[pres.length - 1]);
+                        }
+                        preview.remove();
+
+                        if (window.clipboardData && clipboardData.setData) {
+                            var copyLink = $("<a href='#' class='copyCode'>Copy code</a>");
+                            copyLink.click(function (e) {
+                                trackCodeSnippetCodeDownload();
+                                clipboardData.setData("Text", $(labelElems[scriptBlock.data(activeTabData)]).data('code'));
+                                return false;
+                            });
+                            $(this).prepend(copyLink);
+                        }
+                    }
+                });
+
+                if ((window.parent) && (window.parent.Galleries)) {
+                    window.parent.Galleries.project.resizeDesc();
+                }
+
+                    if (top.location == self.location) {
+                         window.location.replace(window.location.href.replace('/description', ''));
+                    }
+            }
+
+            function trackCodeSnippetCodeDownload() {
+                if ((window.parent) && (window.parent.gTracker)) {
+                    window.parent.gTracker.createActionEvent('Description', 'Download', 'Copy', 'CodeSnippet', null);
+                }
+            }
+            
+            function overrideAnchorLinksForFirefoxAndChrome(iframeId) {
+                if(($.browser.mozilla && parseInt($.browser.version, 10) >= 2) || $.browser.webkit) {
+                    var iframeOffset = $("#" + iframeId, window.parent.document).offset();
+                    $("a").each(function () {
+                        var link = $(this);
+                        var href = link.attr("href");
+                        if (href && href[0] == "#") {
+                            var name = href.substring(1);
+                            $(this).click(function () {
+                                var nameElement = $("[name='" + name + "']");
+                                var idElement = $("#" + name);
+                                var element = null;
+                                if (nameElement.length > 0) {
+                                    element = nameElement;
+                                } else if (idElement.length > 0) {
+                                    element = idElement;
+                                }
+
+                                if (element) {
+                                    var offset = element.offset();
+                                    window.parent.scrollTo(offset.left, offset.top + iframeOffset.top);
+                                }
+
+                                return false;
+                            });
+                        }
+                    });
+                }
+            }
+
+            $(window).load(function(){
+                initializePage();
+                overrideAnchorLinksForFirefoxAndChrome("longdescIframe");
+
+            });
+
+        </script>
+        <!--<base target="_parent">--><base href="." target="_parent">
+    <style type="text/css">/* Chili -- xml */
+.xml__doctype { color: #CC6600; }
+.xml__ie_style { color: DarkSlateGray; font-weight: bold; }
+.xml__unParsedSection { color: gray; }
+.xml__comment { color: green; }
+.xml__tag_start { color: maroon; font-weight: bold; }
+.xml__tag_end { color: maroon; font-weight: bold; }
+.xml__entity { color: blue; }
+.xml__attr_name { color: red; }
+.xml__attr_value { color: #3A3AFF; }
+.xml__keyword { color: maroon;font-weight:bold }</style><style type="text/css">/* Chili -- cs */
+.cs__mlcom { color: green; }
+.cs__com { color: green; }
+.cs__string { color: maroon; }
+.cs__preproc { color: gray;;font-weight: bold; }
+.cs__number { color: red; }
+.cs__keyword { color: #3A3AFF; font-weight: bold; }</style></head>
+    <body marginwidth="0" marginheight="0">
+        <div id="longDesc">
+            
+<p>Hi,</p>
+<p>I have made one window form application that providing export Meta Data Taxonomy Terms from Terms Set Group and also be providing import terms functionality in application.</p>
+<p>When you run the project or Application of <strong>ImportExportSPTerm</strong> Project form and form look like below.</p>
+<p><img id="79155" src="ToolBox.png" alt="" width="689" height="353"></p>
+<p>&nbsp;</p>
+<p><strong><span style="text-decoration:underline">Export Terms</span></strong></p>
+<p>When you export terms from Managed Metadata Service on that required to given fours options on application.</p>
+<p>&nbsp;Location Path (give directory Path where xml will be store),Web Application URL, Group Name, Termsetname.</p>
+<p>Here is I am going to export terms in xml format. So my Taxonomy Group Name is :
+<strong>Intranet </strong>and Term Set Name is : <strong>Country</strong> and there are some Terms,</p>
+<p><img id="79156" src="IntroTermSet.png" alt="" width="756" height="447"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>So I want to export using my application.</p>
+<p><img id="79157" src="ExportTerms.png" alt="" width="682" height="177"></p>
+<p>&nbsp;</p>
+<p><strong>Export Terms will be done on TermsBK folder of C:\ Drive.</strong></p>
+<p><span style="text-decoration:underline"><strong>XML Export Format like this:</strong></span></p>
+<p><span style="text-decoration:underline"><strong>&nbsp;</strong></span></p>
+<div class="scriptcode">
+<div class="pluginEditHolder" plugincommand="mceScriptCode">
+<div class="title"><strong><span>XML</span></strong></div>
+<div class="pluginLinkHolder"><strong><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></strong></div>
+<strong>
+<pre class="xml"><span class="xml__tag_start">&lt;?xml</span>&nbsp;<span class="xml__attr_name">version</span>=<span class="xml__attr_value">"1.0"</span>&nbsp;<span class="xml__attr_name">encoding</span>=<span class="xml__attr_value">"utf-16"</span>&nbsp;<span class="xml__tag_start">?&gt;</span>&nbsp;
+<span class="xml__tag_start">&lt;Groups</span><span class="xml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;<span class="xml__tag_start">&lt;Group</span>&nbsp;<span class="xml__attr_name">Name</span>=<span class="xml__attr_value">"Intranet"</span><span class="xml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_start">&lt;TermSet</span>&nbsp;<span class="xml__attr_name">Name</span>=<span class="xml__attr_value">"Country"</span>&nbsp;<span class="xml__attr_name">NameFr</span>=<span class="xml__attr_value">""</span><span class="xml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_start">&lt;Terms</span><span class="xml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_start">&lt;Term</span>&nbsp;<span class="xml__attr_name">Name</span>=<span class="xml__attr_value">"USA"</span><span class="xml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_start">&lt;Labels</span><span class="xml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_start">&lt;Label</span>&nbsp;<span class="xml__attr_name">lcid</span>=<span class="xml__attr_value">"1033"</span>&nbsp;<span class="xml__attr_name">Name</span>=<span class="xml__attr_value">"USA"</span>&nbsp;<span class="xml__attr_name">Description</span>=<span class="xml__attr_value">""</span>&nbsp;<span class="xml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_end">&lt;/Labels&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_end">&lt;/Term&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_start">&lt;Term</span>&nbsp;<span class="xml__attr_name">Name</span>=<span class="xml__attr_value">"CANADA"</span><span class="xml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_start">&lt;Labels</span><span class="xml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_start">&lt;Label</span>&nbsp;<span class="xml__attr_name">lcid</span>=<span class="xml__attr_value">"1033"</span>&nbsp;<span class="xml__attr_name">Name</span>=<span class="xml__attr_value">"CANADA"</span>&nbsp;<span class="xml__attr_name">Description</span>=<span class="xml__attr_value">""</span>&nbsp;<span class="xml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_end">&lt;/Labels&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_end">&lt;/Term&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_start">&lt;Term</span>&nbsp;<span class="xml__attr_name">Name</span>=<span class="xml__attr_value">"INDIA"</span><span class="xml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_start">&lt;Labels</span><span class="xml__tag_start">&gt;&nbsp;
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_start">&lt;Label</span>&nbsp;<span class="xml__attr_name">lcid</span>=<span class="xml__attr_value">"1033"</span>&nbsp;<span class="xml__attr_name">Name</span>=<span class="xml__attr_value">"INDIA"</span>&nbsp;<span class="xml__attr_name">Description</span>=<span class="xml__attr_value">""</span>&nbsp;<span class="xml__tag_start">/&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_end">&lt;/Labels&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_end">&lt;/Term&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_end">&lt;/Terms&gt;</span>&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="xml__tag_end">&lt;/TermSet&gt;</span>&nbsp;
+&nbsp;&nbsp;<span class="xml__tag_end">&lt;/Group&gt;</span>&nbsp;
+<span class="xml__tag_end">&lt;/Groups&gt;</span></pre>
+
+</strong></div>
+</div>
+<p><span style="text-decoration:underline"><strong>Import Terms </strong></span></p>
+<div class="endscriptcode"><strong>&nbsp;<img id="79158" src="ImportTerms.png" alt=""></strong></div>
+<div class="endscriptcode"></div>
+<div class="endscriptcode"><br>
+<p>For Import You should follow same XML formatting I have describing on exporting terms so code should be worked.</p>
+<p>&nbsp;</p>
+<p><strong><span style="text-decoration:underline">Problem to getting&nbsp; Termstore??</span></strong></p>
+<div class="scriptcode">
+<div class="pluginEditHolder" plugincommand="mceScriptCode">
+<div class="title"><span>C#</span></div>
+<div class="pluginLinkHolder"><span class="pluginEditHolderLink">Edit</span>|<span class="pluginRemoveHolderLink">Remove</span></div>
+
+<pre class="csharp">TaxonomySession&nbsp;session&nbsp;=&nbsp;<span class="cs__keyword">new</span>&nbsp;TaxonomySession(site);&nbsp;
+&nbsp;
+<span class="cs__com">//&nbsp;1st&nbsp;way;</span>&nbsp;
+termStore&nbsp;=&nbsp;session.TermStores[<span class="cs__string">"Managed&nbsp;Metadata&nbsp;Service"</span>];&nbsp;
+&nbsp;
+<span class="cs__com">//&nbsp;2nd&nbsp;way;</span>&nbsp;
+<span class="cs__com">//&nbsp;termStore&nbsp;=&nbsp;session.DefaultKeywordsTermStore;&nbsp;//Try&nbsp;session.DefaultSiteCollectionTermStore</span></pre>
+
+</div>
+</div>
+<p>I have used static TermStore name “<strong>Managed Metadata Service</strong>”. You can change as on your services name. New comers getting problem to Term Store from TexonomySession. Below couple of link to be helpful.</p>
+<p><a href="http://sharepoint.stackexchange.com/questions/4097/why-are-taxonomy-term-stores-always-empty">http://sharepoint.stackexchange.com/questions/4097/why-are-taxonomy-term-stores-always-empty</a></p>
+<p><a href="http://blog.henryong.com/2012/03/20/sharepoint-dev-getting-null-taxonomysession-and-argumentoutofrangeexception-errors-on-termstore-objects/">http://blog.henryong.com/2012/03/20/sharepoint-dev-getting-null-taxonomysession-and-argumentoutofrangeexception-errors-on-termstore-objects/</a></p>
+<h1><span style="color:blue; text-decoration:underline">Is it Work in SharePoint 2013??</span></h1>
+<div class="endscriptcode">Source Code is Okay with SharePoint 2013. problem is in Target Framework of Window Application. you need to few steps to working on SharePoint 2013.</div>
+<div class="endscriptcode"></div>
+<div class="endscriptcode">1) Open Source code on Visual Studio 2012.</div>
+<div class="endscriptcode"></div>
+<div class="endscriptcode">2) right click on project &gt; Properties &gt; Target Framework to 4.5.</div>
+<div class="endscriptcode"></div>
+<div class="endscriptcode"><img id="80121" src="framework4.5.png" alt="" width="782" height="216"></div>
+<div class="endscriptcode"></div>
+<div class="endscriptcode"><br>
+now build project than Hit F5. enjoy.... :)</div>
+<p>&nbsp;</p>
+<p>Hope it helps!!!</p>
+</div>
+<p>&nbsp;</p>
+<p><strong><span style="text-decoration:underline"><br>
+</span></strong></p>
+
+        </div>
+    
+</body></html>

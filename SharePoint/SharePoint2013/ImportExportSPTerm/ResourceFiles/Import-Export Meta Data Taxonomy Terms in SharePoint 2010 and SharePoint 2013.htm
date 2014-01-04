@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856 -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head id="Head1"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link type="text/css" rel="stylesheet" href="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/Megablade.1.css" data-do-not-move="true" xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="Hi,I have made one window form application that providing export Meta Data Taxonomy Terms from Terms Set Group and also be providing import terms functionality in application.When you run the project or Application of ImportExportSPTerm Project form and form look like below.Expor">
+    <meta name="Search.BRAND" content="TechNet">
+    <meta name="Search.IROOT" content="sharepoint">
+
+    <link rel="shortcut icon" href="http://i1.gallery.technet.s-msft.com/sharepoint/GlobalResources/images/Technet/favicon.ico" type="image/x-icon"> <link href="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/Site.css" rel="Stylesheet" type="text/css"><link href="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/Office_metro_sharepoint.css" rel="Stylesheet" type="text/css"><meta name="CommunityInfo" content=" B=Technet;A=TechNet;L=en-US;">
+    <script type="text/javascript" async="" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/ms2.js"></script><script src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/jquery-1.7.1.min.js" type="text/javascript" language="javascript"></script>
+    <script src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/166830ab1fc6bf115d49e66bc1223b19-2627c2e4707836274afeda5d12aa411b-RequestReducedScript.js" type="text/javascript"></script>    
+    <title>Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013</title> 
+    <link href="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/Galleries.css" type="text/css" rel="Stylesheet"><link href="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/Layout.css" type="text/css" rel="Stylesheet"><link href="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/Brand.css" type="text/css" rel="Stylesheet"><link href="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/Brand(1).css" type="text/css" rel="Stylesheet">    <link href="http://gallery.technet.microsoft.com/sharepoint/site/feeds/searchRss" rel="Alternate" type="application/rss+xml" title="SharePoint downloads and scripts">
+    <link rel="P3Pv1" href="http://gallery.technet.microsoft.com/W3C/p3p.xml">
+    
+    
+            <link rel="canonical" href="http://gallery.technet.microsoft.com/office/Import-Export-Meta-Data-b94ad856">
+    
+    <meta name="ContentLanguage" content="L=en-US;">
+
+<!--
+Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.
+-->
+<script type="text/javascript" async="" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/loader.js"></script><script type="text/javascript" async="" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/broker.js"></script><script type="text/javascript" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/jquery.tmpl.min.js"></script><link href="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/usercard.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/widgets.js"></script></head>
+<body class="Chrome en-us TechNet " dir="ltr">
+    
+    <div id="BodyBackground" class="ltr">
+        <div id="JelloSizer">    
+            <div id="JelloExpander">
+                <div id="JelloWrapper">
+                    <div class="Clear"> </div>
+                    
+                   
+                    
+                        <div class="Masthead">
+                            <div id="BrandLogo" class="BrandLogo"><a class="BrandLogoLink" href="http://technet.microsoft.com/en-us/sharepoint/ee198298.aspx"><span id="BrandDisplayText">TechCenter</span></a></div>
+                                 
+                        <div class="Search">
+                            <div id="SearchBox" class="SearchBox"><input name="SearchTextBox" type="text" id="SearchTextBox" class="TextBoxSearch TextBoxSearchIE7" autocomplete="off" title="Search SharePoint with Bing" style="color: rgb(170, 170, 170); font-style: italic;"><input type="image" name="SearchButton" id="SearchButton" class="SearchButton" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans.gif" title="Search SharePoint with Bing"><span class="Bing">&nbsp;</span><div id="SearchFlyoutContainer" style="display: none; text-align: left; border: 1px solid buttonshadow; position: absolute; z-index: 1000; padding: 2px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-family: &#39;Segoe UI&#39;, &#39;Lucida Grande&#39;, Verdana, Arial, Helvetica, sans-serif; font-size: 13px;"><div id="SuggestionContainer"><ul style="list-style: none; padding: 4px 2px 0px 1px; cursor: pointer; margin: 1px; white-space: nowrap;"></ul></div></div></div>
+                        </div>
+
+                        <div class="GlobalBar">                       
+                            <div class="PassportScarab">
+                            <a id="idPPScarab" href="https://login.live.com/login.srf?wa=wsignin1.0&wtrealm=gallery.technet.microsoft.com&wreply=https%3a%2f%2fgallery.technet.microsoft.com%2fsharepoint%2fImport-Export-Meta-Data-b94ad856%3fstoAI%3d10&wp=MBI_FED_SSL&wlcxt=Technet%24Technet%24Technet">Sign in</a>
+                            </div> 
+                                
+                            <div id="LocaleFlyout" class="LocaleFlyout">
+                                <div id="LocaleSelector">
+                    <div id="TargetPanel">
+                        <a>United States (English)</a><span class="DropDownArrow">&nbsp;</span>
+                    </div>
+                    <div id="PopupPanel" class="ContextMenuPanel">
+                        <a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=es-AR" class="ContextMenuItem" rel="nofollow">Argentina (Español)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=pt-BR" class="ContextMenuItem" rel="nofollow">Brasil (Português)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=cs-CZ" class="ContextMenuItem" rel="nofollow">Česká&nbsp;republika (Čeština)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=de-DE" class="ContextMenuItem" rel="nofollow">Deutschland (Deutsch)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=es-ES" class="ContextMenuItem" rel="nofollow">España (Español)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=fr-FR" class="ContextMenuItem" rel="nofollow">France (Français)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=it-IT" class="ContextMenuItem" rel="nofollow">Italia (Italiano)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=pl-PL" class="ContextMenuItem" rel="nofollow">Polska (Polski)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=tr-TR" class="ContextMenuItem" rel="nofollow">Türkiye (Türkçe)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=ru-RU" class="ContextMenuItem" rel="nofollow">Россия (Русский)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=ko-KR" class="ContextMenuItem" rel="nofollow">대한민국 (한국어)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=zh-CN" class="ContextMenuItem" rel="nofollow">中华人民共和国 (中文)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=zh-TW" class="ContextMenuItem" rel="nofollow">台灣 (中文)</a><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856?localeName=ja-JP" class="ContextMenuItem" rel="nofollow">日本 (日本語)</a>
+                    </div>
+                 </div>
+                            </div>
+                            
+                            <div class="Clear"> </div>
+
+                            
+                            <div class="UserName" id="UserName"><a id="ctl02_UserNameLink"></a></div>
+                             
+
+                        </div>
+                    
+                        <div class="Clear"> </div>
+
+                        <div id="NetworkTagLineArea" class="NetworkLogo">
+                            <a id="NetworkLink" href="http://technet.microsoft.com/en-US">
+                                &nbsp;
+                            </a>
+                        </div>
+
+                        <div class="leftcap" xmlns:msxsl="urn:schemas-microsoft-com:xslt">&nbsp;</div><div class="internav" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><a href="http://technet.microsoft.com/en-us/sharepoint/ee198298.aspx">Home</a><a href="http://technet.microsoft.com/en-us/sharepoint/gg144571.aspx">Online</a><a href="http://technet.microsoft.com/en-us/sharepoint/fp142366.aspx">2013</a><a href="http://technet.microsoft.com/en-us/sharepoint/fp123618.aspx">2010</a><a href="http://technet.microsoft.com/en-us/sharepoint/fp142399.aspx">Other Versions</a><a href="http://technet.microsoft.com/en-us/sharepoint/fp123456.aspx">Related Products</a><a href="http://technet.microsoft.com/en-us/library/fp179725(v=office.15)">Library</a><a href="http://social.technet.microsoft.com/Forums/en-us/category/sharepoint">Forums</a><a href="http://gallery.technet.microsoft.com/sharepoint" class="active">Gallery</a></div>
+                        </div>
+                         
+                    
+                    
+                    <div class="Clear"> </div>
+                          
+                    <div class="topleftcorner"></div>           
+                    <div class="toprightcorner"></div>                                
+                    <div class="alley"> <!-- Left Side -->
+                        <div class="wrapper"> <!-- Right Side -->
+                            <div class="inner">  
+                            
+                                                 
+                                <div class="Clear"></div>   
+
+
+                                
+                                
+                                
+                                
+                                <div id="MainContent" class="Technet">
+                                    
+    
+    
+
+    <script language="javascript" type="text/javascript">
+        $(function () { Galleries.cookie.setTimezoneOffsetCookie(); })
+    </script>
+
+    <div id="container">
+        
+            <div id="GalleriesNavigation">
+                
+            </div>            
+        
+        
+            <div id="subHeader">
+                <div id="eyebrow" class="left">
+                    
+
+
+
+
+
+
+
+
+
+
+
+<div class="EyebrowContainer">
+    
+    
+
+    
+<div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="EyebrowElement">
+    <a href="http://technet.microsoft.com/en-US/sharepoint" itemprop="url">
+        <span itemprop="title">SharePoint Products</span>
+    </a>
+</div>
+<text>&gt;</text>
+
+    
+    
+    
+    <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="EyebrowElement">
+             <a href="http://gallery.technet.microsoft.com/sharepoint/" itemprop="url">
+                <span itemprop="title">Gallery</span>
+            </a> 
+    </div>
+
+
+
+
+    &gt;
+    <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="EyebrowElement">
+             <a href="http://gallery.technet.microsoft.com/sharepoint/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=sharepoint" itemprop="url">
+                <span itemprop="title">SharePoint</span>
+            </a> 
+    </div>
+
+    &gt;
+    <div itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="EyebrowElement">
+             <a href="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013.htm" itemprop="url" class="EyebrowLeafLink">
+                <span itemprop="title">Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013</span>
+            </a> 
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        
+        
+            <div id="siteMessage">
+                
+
+
+
+
+
+
+            </div>
+            <div class="clear"></div>
+        
+        
+
+<div class="subMenu">
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $('.internav > a').each(function (index, elem) {
+                if ($(elem).attr('href').toUpperCase().indexOf('GALLERY') != -1) {
+                    $(elem).addClass('active');
+                }
+                if ($(elem).attr('href').toUpperCase().indexOf('TECHNETGSMOKE') != -1) {
+                    $(elem).addClass('active');
+                }
+                if ($(elem).attr('href').toUpperCase().indexOf('TNG') != -1) {
+                    $(elem).addClass('active');
+                }
+            });
+        });
+    </script>
+</div>      
+        <div class="clear"></div>
+
+        <div id="bodyContainer">
+            
+    
+    <div id="projectPage">
+        <div class="sidebar">
+            <div data-chameleon-template="actionbox"></div>
+            
+
+
+<div class="section" id="contributeSection">
+<div class="contributeAction">
+    <a href="http://technet.microsoft.com/en-us/evalcenter/hh670538"><img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/download.png">Download Windows Server 2012</a>
+</div>
+    <h3>Quick access</h3>
+
+<div id="myContributionsAction">
+    <div>
+        <a id="myContributionsLink" href="http://gallery.technet.microsoft.com/sharepoint/site/mydashboard">
+            My contributions
+        </a>
+    </div>
+</div>
+
+<div id="uploadAction">
+    <a id="uploadLink" href="http://gallery.technet.microsoft.com/sharepoint/site/upload">Upload a contribution</a>
+</div>
+
+    <div id="requestAction">
+        <a id="exclamationLink" href="http://gallery.technet.microsoft.com/sharepoint/site/requests">Browse requests</a>
+    </div>
+</div>
+
+
+
+<div id="userCard" class="section">
+    <div class="profile-usercard-inline" data-profile-usercard-customlink="{&quot;href&quot;:&quot;/sharepoint/site/search?f%5B0%5D.Type=User&amp;f%5B0%5D.Value=jigs%20rajput&quot;,&quot;text&quot;:&quot;View contributions&quot;}" data-profile-userid="f38b3074ab7140169e15408dd2ae4905" data-profile-rendered="true"><div class="profile-usercard profile-inline">            <div class="profile-inline-header">                <span class="profile-userimage-large">                    <img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/avatar.jpg" alt="Avatar of jigs rajput" style="width: 135px; display: inline-block;">                </span>                <div class="profile-inline-header-details">                    <div title="jigs rajput" class="profile-inline-display-name">jigs rajput</div>                                <div class="profile-company profile-inline-secondary">SharePoint Developer/Off...</div>                                <div class="profile-affiliations profile-inline-secondary"></div>                                <div class="profile-inline-url profile-inline-secondary">                        <a title="http://www.sharepointempower.com/" href="http://www.sharepointempower.com/" target="_blank">www.sharepointempow...</a></div>                            </div>            </div>            <div class="profile-statline">                <span class="profile-points">1,274<span class="points-label"> Points</span></span>                <span class="profile-count profile-bronze-points"><span class="profile-bronze-img" title="Achievements Earned"></span><span>9</span></span>                <span class="profile-count profile-silver-points"><span class="profile-silver-img" title="Achievements Earned"></span><span>1</span></span>                <span class="profile-count profile-gold-points"><span class="profile-gold-img" title="Achievements Earned"></span><span>0</span></span>            </div>                        <div class="profile-biography">MCTS in SharePoint 2010 Application Development,
+
+2 Years experience in SharePoint Technologies.I have worked on Moss 2007,SharePoint Server 2010,SharePoint Foundation 2010,Office 365(SharePoint Online). 
+
+
+
+interested : like to spend some time programming contributor community sites.
+</div>                        <div class="profile-footer">                                <a href="http://gallery.technet.microsoft.com/sharepoint/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=jigs%20rajput" title="View contributions" target="_blank" class="profile-usercard-custom-link">View contributions</a>                                <a href="http://social.technet.microsoft.com/profile/jigs%20rajput/?ws=usercard-inline" class="profile-usercard-profileLink" target="_blank">View Profile</a>            </div>        </div></div>
+</div>
+<script language="javascript" type="text/javascript">
+    if (false)
+        Galleries.utility.waitFor(
+            function() { $('#userCard .profile-statline, #userCard .profile-usercard-profileLink').hide(); });
+</script>
+            <div id="moreFromAuthor" class="collapsableSidebar">
+                <div data-url="/sharepoint/Import-Export-Meta-Data-b94ad856/AuthorProjects" id="authorProjectContainer">
+<div class="section">
+    <div class="titleBar">
+        <h3>More from jigs rajput</h3>
+    </div>
+    
+        <div class="itemBarRight">
+            <a href="http://gallery.technet.microsoft.com/sharepoint/Create-custom-SharePoint-17778638">Create custom SharePoint 2010 list form for deployment in a Visual Studio 2010</a>
+            <div>
+                <span class="Rating"><img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+</span>(0)
+            </div>
+        </div>
+    
+        <div class="itemBarRight">
+            <a href="http://gallery.technet.microsoft.com/sharepoint/remote-authentication-in-38a383ee">remote-authenti<wbr>cation-in-share<wbr>point-onlineoff<wbr>ice-365-using-c<wbr>lient-object-mo<wbr>del</a>
+            <div>
+                <span class="Rating"><img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+</span>(0)
+            </div>
+        </div>
+    
+        <div class="itemBarRight">
+            <a href="http://gallery.technet.microsoft.com/sharepoint/Custom-Properties-in-7ca655ec">Custom Properties in Visual Webpart SharePoint 2010</a>
+            <div>
+                <span class="Rating"><img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+</span>(0)
+            </div>
+        </div>
+    
+        <div class="itemBarRight">
+            <a href="http://gallery.technet.microsoft.com/sharepoint/Feature-Stapling-in-fcbaf891">Feature Stapling in SharePoint 2010</a>
+            <div>
+                <span class="Rating"><img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="FilledRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="FilledRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="FilledRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="FilledRatingStar">
+<img src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/trans(1).gif" class="EmptyRatingStar">
+</span>(2)
+            </div>
+        </div>
+    
+        <div class="bottomBar">
+            <a href="http://gallery.technet.microsoft.com/sharepoint/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=jigs%20rajput">
+            See all</a>
+        </div>
+    
+</div>
+</div>
+            </div>
+        </div>
+
+        <div id="projectDetails">
+            <div>
+                
+
+
+<h1 class="projectTitle">Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013</h1>
+<h2 class="projectSummary">Hi,I have made one window form application that providing export Meta Data Taxonomy Terms from Terms Set Group and also be providing import terms functionality in application.When you run the project or Application of ImportExportSPTerm Project form and form look like below.Expor</h2>
+<div class="clear"></div>
+
+    <div id="Downloads">
+        <div>
+            <label for="Downloads">Download</label>
+        </div>
+        
+                    <a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856/file/79159/1/ImportExportSPTerm.zip" data-url="/sharepoint/Import-Export-Meta-Data-b94ad856/file/79159/1/ImportExportSPTerm.zip" class="button">ImportExportSPTerm.zip</a>
+        
+    </div>
+
+<div class="clear"></div>
+
+<div class="clear"></div>
+<div id="projectInfo">
+    <div id="sectionLeft" class="section">
+        <div class="itemBar">
+            <label for="ReviewValue">Ratings</label>                   
+            
+    <div id="yourRating" "="">
+        <form action="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856/createreview" id="reviewForm" method="post" name="reviewForm"><input id="Rating" name="Rating" type="hidden" value="">
+            <input id="Text" name="Text" type="hidden" value="">
+        <div class="Rating stackLeft EditStarMode" id="Star_Span" onmouseout="onStarsMouseOut()">
+        
+            <div id="Star_0" class="RatingStar FilledRatingStar" data-initialstarclass="FilledRatingStar" onmouseover="onStarMouseOver(&#39;Star_0&#39;)" onclick="onStarClick(0)" title="1">
+                &nbsp;</div>
+        
+            <div id="Star_1" class="RatingStar FilledRatingStar" data-initialstarclass="FilledRatingStar" onmouseover="onStarMouseOver(&#39;Star_1&#39;)" onclick="onStarClick(1)" title="2">
+                &nbsp;</div>
+        
+            <div id="Star_2" class="RatingStar FilledRatingStar" data-initialstarclass="FilledRatingStar" onmouseover="onStarMouseOver(&#39;Star_2&#39;)" onclick="onStarClick(2)" title="3">
+                &nbsp;</div>
+        
+            <div id="Star_3" class="RatingStar FilledRatingStar" data-initialstarclass="FilledRatingStar" onmouseover="onStarMouseOver(&#39;Star_3&#39;)" onclick="onStarClick(3)" title="4">
+                &nbsp;</div>
+        
+            <div id="Star_4" class="RatingStar FilledRatingStar" data-initialstarclass="FilledRatingStar" onmouseover="onStarMouseOver(&#39;Star_4&#39;)" onclick="onStarClick(4)" title="5">
+                &nbsp;</div>
+        
+        </div>
+        <div style="clear:both;"></div> 
+        </form>
+    </div>
+    
+    <div id="RatingCount">(7)</div>
+    
+
+<script language="javascript">
+    function onStarMouseOver(id) {
+        var id_prefix = id.substring(0, id.lastIndexOf('_') + 1);
+        var index = parseInt(id.substring(id.lastIndexOf('_') + 1, id.length));
+
+        for (i = 0; i < 5; i++) {
+            var star = $('#' + id_prefix + i);
+            var initialRatingClass = star.data('initialstarclass');
+            if (i <= index)
+                star.removeClass(initialRatingClass).removeClass('EmptyRatingStar').addClass('FilledRatingStarHover');
+            else
+                star.removeClass(initialRatingClass).removeClass('FilledRatingStarHover').addClass('EmptyRatingStar');
+        }
+        
+    }
+    function onStarsMouseOut() {
+        var stars = $("#RatingStar");
+        var id_prefix = "Star_";
+        var currentRating = 4.85714285714286;
+        
+        for (i = 0; i < 5; i++) {
+            var star = $('#' + id_prefix + i.toString());
+            var initialRatingClass = star.data('initialstarclass');
+            star.removeClass('EmptyRatingStar').removeClass('FilledRatingStarHover').addClass(initialRatingClass);
+        }
+    }
+    
+    function onStarClick(index) {
+        $('#Rating').val(index + 1);
+        document.getElementById("reviewForm").submit();
+    }
+</script>
+                                   
+        </div>
+        
+            <div class="itemBar">
+                <label for="DownloadCount">Downloaded</label>
+                <span id="DownloadCount">809 times</span>
+            </div>
+        
+            <div class="itemBar">
+                <label for="Favorites">Favorites</label>
+                
+<script language="javascript">
+    $(function () { $('a#addFavoriteLink').click(function () { $('form#favoriteform').submit(); }); });
+</script>
+<span id="Collections">
+
+        <a href="https://login.live.com/login.srf?wa=wsignin1.0&wtrealm=gallery.technet.microsoft.com&wreply=https%3a%2f%2fgallery.technet.microsoft.com%2fsharepoint%2fImport-Export-Meta-Data-b94ad856%3fstoAI%3d10&wp=MBI_FED_SSL&wlcxt=microsoft%24microsoft%24microsoft">Add to favorites</a>
+
+</span>
+
+            </div>
+        
+            <div class="itemBar">
+                <label>Category</label>
+                
+                <a href="http://gallery.technet.microsoft.com/sharepoint/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=sharepoint&f%5B0%5D.Text=SharePoint">SharePoint</a>        
+            </div>
+            
+            <div class="itemBarLong">
+                <label>Sub-category</label>
+                <div><a href="http://gallery.technet.microsoft.com/sharepoint/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=sharepoint&f%5B0%5D.Text=SharePoint&f%5B1%5D.Type=SubCategory&f%5B1%5D.Value=deploymentandupgrade&f%5B1%5D.Text=Deployment%20and%20Upgrade">Deployment and Upgrade</a>
+                </div>
+            </div>
+            
+<script type="text/javascript">
+
+    $(function () {
+        $('#Downloads a').click(function (e) {
+            var top = '15%';
+            var url = $(this).data('url');
+            $.get('\x2fsharepoint\x2fsite\x2fImport-Export-Meta-Data-b94ad856\x2feulapartial\x3flicenseType\x3dTechNet', function(data){
+                $.prompt(data, { 
+                    buttons: {
+                                'I agree': true,
+                                'Cancel': false
+                                }, 
+                    top: top,
+                    prefix: 'eulaPage', 
+                    submit: function(v) {
+                        if(v)
+                        {
+                            window.location.href = url;
+                        }
+                    }
+                });
+            });
+            e.preventDefault();
+            e.stopPropagation();
+            
+        });
+    });
+
+</script>
+        
+        
+    </div>
+
+    <div id="sectionRight" class="section">
+        <div class="itemBar">
+            <label for="LastUpdated">
+                Updated</label>
+            <span id="LastUpdated">
+                4/18/2013</span>
+        </div>
+        
+            <div class="itemBarLong">
+                <label for="License">
+                    License</label>
+                <div id="License"><a href="javascript:showEula()">TechNet terms of use</a></div>
+            </div>
+        
+        <div class="itemBar">
+            <label for="LastUpdated">
+                Share</label>
+            <span>
+                
+<script language="javascript" type="text/javascript">
+    $(function () {
+        $('.shareThisItem > a').WireTrackerForEvent('click', 'http://gallery.technet.microsoft.com/sharepoint/Content/Common/tracker.gif', 'ShareItClick', 'Import-Export-Meta-Data-b94ad856', true);
+    });
+</script>
+
+<div class="shareThisItem">
+ 
+<a href="mailto:?subject=Import-Export%20Meta%20Data%20Taxonomy%20Terms%20in%20SharePoint%202010%20and%20SharePoint%202013&Body=http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856" target="_blank"><img alt="E-mail" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/email.gif"></a>
+
+ 
+<a href="http://twitter.com/home?status=Import-Export%20Meta%20Data%20Taxonomy%20Terms%20in%20SharePoint%202010%20and%20SharePoint%202013%20:%20http%3a%2f%2fgallery.technet.microsoft.com%2fsharepoint%2fImport-Export-Meta-Data-b94ad856" target="_blank"><img alt="Twitter" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/twitter.gif"></a>
+
+ 
+<a href="http://del.icio.us/post?url=http%3a%2f%2fgallery.technet.microsoft.com%2fsharepoint%2fImport-Export-Meta-Data-b94ad856&title=Import-Export%20Meta%20Data%20Taxonomy%20Terms%20in%20SharePoint%202010%20and%20SharePoint%202013" target="_blank"><img alt="del.icio.us" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/delicious.gif"></a>
+
+ 
+<a href="http://digg.com/submit?url=http%3a%2f%2fgallery.technet.microsoft.com%2fsharepoint%2fImport-Export-Meta-Data-b94ad856&title=Import-Export%20Meta%20Data%20Taxonomy%20Terms%20in%20SharePoint%202010%20and%20SharePoint%202013" target="_blank"><img alt="Digg" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/digg.gif"></a>
+
+ 
+<a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fgallery.technet.microsoft.com%2fsharepoint%2fImport-Export-Meta-Data-b94ad856&t=Import-Export%20Meta%20Data%20Taxonomy%20Terms%20in%20SharePoint%202010%20and%20SharePoint%202013" target="_blank"><img alt="Facebook" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/facebook.gif"></a>
+
+
+</div></span>
+        </div>
+        
+        
+    </div>
+    <div class="clear"></div>
+    <div class="section">
+    
+
+
+
+
+    <div class="itemBarLong tagsContainer">
+        <label for="Tags">Tags</label>
+        <div id="Tags">
+            <a href="http://gallery.technet.microsoft.com/sharepoint/site/search?f%5B0%5D.Type=Tag&f%5B0%5D.Value=SharePoint&f%5B0%5D.Text=SharePoint">SharePoint</a>, <a href="http://gallery.technet.microsoft.com/sharepoint/site/search?f%5B0%5D.Type=Tag&f%5B0%5D.Value=SharePoint%202010&f%5B0%5D.Text=SharePoint%202010">SharePoint 2010</a>, <a href="http://gallery.technet.microsoft.com/sharepoint/site/search?f%5B0%5D.Type=Tag&f%5B0%5D.Value=managed%20metadata&f%5B0%5D.Text=managed%20metadata">managed metadata</a>, <a href="http://gallery.technet.microsoft.com/sharepoint/site/search?f%5B0%5D.Type=Tag&f%5B0%5D.Value=Texonomy&f%5B0%5D.Text=Texonomy">Texonomy</a>, <a href="http://gallery.technet.microsoft.com/sharepoint/site/search?f%5B0%5D.Type=Tag&f%5B0%5D.Value=Terms&f%5B0%5D.Text=Terms">Terms</a>
+        </div>
+    </div>
+
+
+    <a name="content"></a>
+    <div class="itemBar">
+            <span id="reportAbuse">
+                <a href="https://login.live.com/login.srf?wa=wsignin1.0&wtrealm=gallery.technet.microsoft.com&wreply=https%3a%2f%2fgallery.technet.microsoft.com%2fsharepoint%2fImport-Export-Meta-Data-b94ad856%2fview%2fReportAbuse%3fstoAI%3d10&wp=MBI_FED_SSL&wlcxt=microsoft%24microsoft%24microsoft">Report abuse to Microsoft</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/f74d3e38bf0d2be2c5d64a913b277af6-7af9a874efbc1f5aa0062aba1a48cd8f-RequestReducedScript.js" type="text/javascript"></script><script type="text/javascript">
+
+    $(function () {
+        $('#Downloads input').click(function () {
+            window.location.href = $(this).data('url');
+         });
+    });
+
+    function rateItReviewIt() {
+        displayCreateReview();
+        $('#Reviews_Tab').click();
+    }
+
+    function showEula() {
+        $.get('\x2fsharepoint\x2fsite\x2fImport-Export-Meta-Data-b94ad856\x2feulapartial\x3flicenseType\x3dTechNet', function(data){
+            $.prompt(data, {
+                prefix: 'eulaPage',
+                top: '15%',
+                buttons: { 'Close': true }   
+            });
+        });
+    };
+
+</script>
+
+
+            </div>
+        </div>
+        
+
+
+
+<div id="projectBody">
+    <div id="projectContent">
+        <div class="tabHeaders">
+            <div id="Details_Tab" class="current"><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856#content">Description</a></div>
+            
+                <div id="Discussions_Tab" class=""><a href="http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856/view/Discussions#content">Q and A </a></div>
+        </div>
+        <div class="tabContents">
+                <div id="Details_Content">
+                            <iframe id="longdescIframe" frameborder="0" width="100%" scrolling="no" marginwidth="0" marginheight="0" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/description.htm" style="height: 3054px;"></iframe>
+                    
+    <div id="supportedPlatformsChart">
+        <span class="descriptionSubSectionTitle"> Verified on the following platforms</span>
+        <table cellpadding="0" cellspacing="0">
+                <tbody><tr class="oddRow">
+                    <td>
+                        Windows Server 2012
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr class="evenRow">
+                    <td>
+                        Windows Server 2008 R2
+                    </td>
+                    <td>
+                        Yes
+                    </td>
+                </tr>
+                <tr class="oddRow">
+                    <td>
+                        Windows Server 2008
+                    </td>
+                    <td>
+                        Yes
+                    </td>
+                </tr>
+                <tr class="evenRow">
+                    <td>
+                        Windows Server 2003
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr class="oddRow">
+                    <td>
+                        Windows 8
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr class="evenRow">
+                    <td>
+                        Windows 7
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr class="oddRow">
+                    <td>
+                        Windows Vista
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr class="evenRow">
+                    <td>
+                        Windows XP
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+                <tr class="oddRow">
+                    <td>
+                        Windows 2000
+                    </td>
+                    <td>
+                        No
+                    </td>
+                </tr>
+        </tbody></table>
+    </div>
+    <div id="supportedPlatformText">
+        This script is tested on these platforms by the author.  It is likely to work on other platforms as well.  If you try it and find that it works on another platform, please add a note to the script discussion to let others know.
+    </div>
+    <div id="disclaimer">
+        <span class="descriptionSubSectionTitle">
+            Disclaimer</span>
+        The sample scripts are not supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
+    </div>
+
+
+                </div>
+            
+            
+
+        </div>
+    </div>
+</div>    
+    </div>
+    <script language="javascript" type="text/javascript">
+
+        $(document).ready(function() {
+	    if (StreamEvents) {
+                window.gTracker = StreamEvents.tracker.create(null, {
+                    beaconUrl: 'setrack.gif',
+                    pageEventType: 'GalleriesPage',
+                    pageActionEventType: 'GalleriesPageAction',
+                    pageEventArg: {
+                        Brand: 'SharepointTN',
+                        Page: 'ProjectDetails',
+                        Section: null,
+                        PageContent: 'Import-Export-Meta-Data-b94ad856',
+                        PageContentType: 'Project'
+                    }
+                });
+             }
+
+
+             registerPageView();
+            
+             Galleries.project.getAuthorProjects();
+            
+             loadTabData('Details');
+
+             var reportAbuseFormUrl = '\x2fsharepoint\x2fImport-Export-Meta-Data-b94ad856\x2freportabuse';
+             $("#reportAbuse a[href='']").click(function() {
+                    $('#projectContent').load(reportAbuseFormUrl);
+                    return false;
+                });
+            
+             
+        });
+        
+         function loadTabData(tabId) {
+                if ((tabId == 'SourceCode')) {
+                    $('div.collapsableSidebar').addClass('hiddenSidebar');
+                    $('#projectBody .tabContents').addClass('fullProjectBody');
+                    Galleries.utility.waitFor(
+                        function(){ return $("#userCard .profile-statline").length > 0;},
+                        function(){$("#userCard .profile-biography, #userCard .profile-statline, #userCard .profile-footer, #userCard .profile-inline-secondary").addClass('hiddenSidebar'); });
+                    
+                }
+                else {
+                    $('div.collapsableSidebar, #userCard .profile-biography, #userCard .profile-statline, #userCard .profile-footer, #userCard .profile-inline-secondary').removeClass('hiddenSidebar');
+                    $('#projectBody .tabContents').removeClass('fullProjectBody');
+                }
+
+                Galleries.project.resizeDesc();
+        }
+
+        function registerPageView() {
+            $.post('\x2fsharepoint\x2fImport-Export-Meta-Data-b94ad856\x2fstats\x2fRegisterPageView');
+        }
+    </script>
+
+
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="advertisment">
+        
+    </div>
+
+                                    <div class="Clear"></div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="Clearbottom"></div>          
+                    <div class="bottomleftcorner"></div>            
+                    <div class="bottomrightcorner"></div> 
+                    
+                     
+               
+                         <div id="Footer">
+                            <div class="FooterLogoContainer"><a href="http://www.microsoft.com/en/us/default.aspx"><div class="FooterLogo" title="Microsoft Corporation">&nbsp;</div></a></div><div id="FooterCopyright" class="FooterCopyright">© 2014  Microsoft. All rights reserved.</div><div class="FooterLinks"><span class="FooterAnchorList"><a href="http://technet.microsoft.com/cc543196.aspx">Newsletter</a><span class="Pipe">|</span><a href="http://technet.microsoft.com/cc512759.aspx">Contact Us</a><span class="Pipe">|</span><a href="http://go.microsoft.com/fwlink/?LinkId=248681">Privacy Statement</a><span class="Pipe">|</span><a href="http://technet.microsoft.com/cc300389.aspx">Terms of Use</a><span class="Pipe">|</span><a href="http://www.microsoft.com/About/Legal/EN/US/IntellectualProperty/Trademarks/EN-US.aspx">Trademarks</a><span class="Pipe">|</span><a href="https://lab.msdn.microsoft.com/mailform/contactus.aspx?refurl=http%3a%2f%2fgallery.technet.microsoft.com%2fsharepoint%2fImport-Export-Meta-Data-b94ad856" target="_blank">Site Feedback</a></span></div>
+                            
+    <div id="buildVersion">
+        Version:
+        1118.4745.4.0</div>
+
+                        </div>  
+                    
+
+                           
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <div data-chameleon-template="megablade">    
+        
+
+    <div id="megabladeContainer" xmlns="http://www.w3.org/1999/xhtml">
+        <div id="megabladeContainerCenter">
+            <ul id="megabladeItems">
+                <li class="Logo"><a href="http://technet.microsoft.com/" title="TechNet">TechNet</a></li>
+                        <li data-value="hh326172" class="bladeItem bladeItemWithMenu"><a class="label" href="" onclick="return false;">Products</a><span class="caret"></span></li>
+                        <li data-value="hh880860" class="bladeItem bladeItemWithMenu"><a class="label" href="" onclick="return false;">IT Resources</a><span class="caret"></span></li>
+                        <li data-value="hh371326" class="bladeItem bladeItemWithMenu"><a class="label" href="" onclick="return false;">Downloads</a><span class="caret"></span></li>
+                        <li data-value="jj837158" class="bladeItem bladeItemWithMenu"><a class="label" href="" onclick="return false;">Training</a><span class="caret"></span></li>
+                        <li data-value="hh371327" class="bladeItem bladeItemWithMenu"><a class="label" href="" onclick="return false;">Support</a><span class="caret"></span></li>
+            </ul>
+            <div class="bladeItemMenuContainer">
+                    <div data-value="hh326172" class="bladeItemMenu" style="display: none;">
+                        <div class="menuContainerLayout">
+  <h5>Products</h5>
+  <ul>
+    <li>
+      <a href="http://technet.microsoft.com/windows">Windows</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/windowsserver">Windows Server</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/systemcenter">System Center</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/ie">Internet Explorer</a>
+    </li>
+  </ul>
+</div><div class="menuContainerLayout">
+  <h5>&nbsp;</h5>
+  <ul>
+    <li>
+      <a href="http://technet.microsoft.com/office">Office</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/office365">Office 365</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/exchange">Exchange Server</a>
+    </li>
+  </ul>
+</div><div class="menuContainerLayout">
+  <h5>&nbsp;</h5>
+  <ul>
+    <li>
+      <a href="http://technet.microsoft.com/sql">SQL Server</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/sharepoint">SharePoint Products</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/lync">Lync</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/en-us/bb421517.aspx?wt.svl=more_centers_link">See all products »</a>
+    </li>
+  </ul>
+</div>
+                    </div>
+                    <div data-value="hh880860" class="bladeItemMenu" style="display: none;">
+                        <div class="menuContainerLayout">
+  <h5>Resources</h5>
+  <ul>
+    <li>
+      <a href="https://curah.microsoft.com/" title="Curah!">Curah! curation service</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/click/services/Redirect2.ashx?CR_CC=200157772">Evaluation Center</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/bb291022">Learning Resources</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/en-us/dn440144">Microsoft Tech Companion App</a>
+    </li>
+    <li>
+      <a href="https://www.technicalcommunity.com/" title="Microsoft Technical Communities">Microsoft Technical Communities</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/click/services/Redirect2.ashx?CR_CC=200157774">Microsoft Virtual Academy</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/scriptcenter">Script Center</a>
+    </li>
+    <li>
+      <a href="http://blogs.technet.com/serverandtools">Server and Tools Blogs</a>
+    </li>
+    <li>
+      <a href="http://blogs.technet.com/">TechNet Blogs</a>
+    </li>
+  </ul>
+</div><div class="menuContainerLayout">
+  <h5>&nbsp;</h5>
+  <ul>
+    <li>
+      <a href="http://technet.microsoft.com/cc543196">TechNet Flash Newsletter</a>
+    </li>
+    <li>
+      <a href="http://gallery.technet.microsoft.com/">TechNet Gallery</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/library/default.aspx">TechNet Library</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/magazine">TechNet Magazine</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/subscriptions">TechNet Subscriptions</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/video">TechNet Video</a>
+    </li>
+    <li>
+      <a href="http://social.technet.microsoft.com/wiki">TechNet Wiki</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/sysinternals">Windows Sysinternals</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/virtuallabs">Virtual Labs</a>
+    </li>
+  </ul>
+</div><div class="menuContainerLayoutSplashGuard"></div><div class="menuContainerLayout">
+  <h5>Solutions</h5>
+  <ul>
+    <li>
+      <a href="http://technet.microsoft.com/network">Networking</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/cloud/private-cloud">Cloud and Datacenter</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/security">Security</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/virtualization">Virtualization</a>
+    </li>
+  </ul>
+</div>
+                    </div>
+                    <div data-value="hh371326" class="bladeItemMenu" style="display: none;">
+                        <div class="menuContainerLayout">
+  <h5>Updates</h5>
+  <ul>
+    <li>
+      <a href="http://support.microsoft.com/default.aspx?id=fh;en-us;sp&fr=0&sd=gn&ln=en-us&ct=sd&se=nona">Service Packs</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/security/bulletin">Security Bulletins</a>
+    </li>
+    <li>
+      <a href="http://fe1.update.microsoft.com/microsoftupdate/v6/vistadefault.aspx?ln=en-US">Microsoft Update</a>
+    </li>
+  </ul>
+</div><div class="menuContainerLayoutSplashGuard"></div><div class="menuContainerLayout">
+  <h5>Trials</h5>
+  <ul>
+    <li>
+      <a href="http://www.microsoft.com/click/services/Redirect2.ashx?CR_CC=200229291">Windows Server 2012 R2</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/click/services/Redirect2.ashx?CR_CC=200229349">System Center 2012 R2</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/click/services/Redirect2.ashx?CR_CC=200156426">Microsoft SQL Server 2012 SP1</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/en-us/evalcenter/hh699156">Windows 8.1 Enterprise</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/click/services/Redirect2.ashx?CR_CC=200157775" title="See all trials">See all trials »</a>
+    </li>
+  </ul>
+</div><div class="menuContainerLayoutSplashGuard"></div><div class="menuContainerLayout">
+  <h5>Related Sites</h5>
+  <ul>
+    <li>
+      <a href="http://www.microsoft.com/downloads/search.aspx">Microsoft Download Center</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/click/services/Redirect2.ashx?CR_CC=200157776">TechNet Evaluation Center</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/download/driver.aspx?q=driver">Drivers</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/download/compatibility.aspx?q=compatibility">Compatability &amp; Converters</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/sysinternals">Windows Sysinternals</a>
+    </li>
+    <li>
+      <a href="http://gallery.technet.microsoft.com/">TechNet Gallery</a>
+    </li>
+  </ul>
+</div>
+                    </div>
+                    <div data-value="jj837158" class="bladeItemMenu" style="display: none;">
+                        <div class="menuContainerLayout">
+  <h5>Training</h5>
+  <ul>
+    <li>
+      <a href="http://learning.microsoft.com/Manager/BrowseCatalog.aspx?browse=PT">Training Catalog</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/learning/en/us/classlocator.aspx">Class Locator</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/click/services/Redirect2.ashx?CR_CC=200155695">Microsoft Virtual Academy</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/click/services/Redirect2.ashx?CR_CC=200155696">Free Windows Server 2012 courses</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/click/services/Redirect2.ashx?CR_CC=200155697" title="Free Windows 8 courses">Free Windows 8 courses</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/learning/en/us/training/sql-server.aspx">SQL Server training</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/learning/en/us/training/format-online.aspx">e-Learning overview</a>
+    </li>
+  </ul>
+</div><div class="menuContainerLayoutSplashGuard"></div><div class="menuContainerLayout">
+  <h5>Certifications</h5>
+  <ul>
+    <li>
+      <a href="http://www.microsoft.com/learning/en/us/certification/cert-overview.aspx">Certification overview</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/learning/en/us/windows-certification.aspx" title="MCSA: Windows 8 ">MCSA: Windows 8</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/learning/en/us/certification/cert-windowsserver.aspx">Windows Server Certification (MCSE)</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/learning/en/us/certification/cert-private-cloud.aspx">Private Cloud Certification (MCSE)</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/learning/en/us/certification/cert-sql-server.aspx">SQL Server Certification (MCSE)</a>
+    </li>
+  </ul>
+</div><div class="menuContainerLayoutSplashGuard"></div><div class="menuContainerLayout">
+  <h5>Other resources</h5>
+  <ul>
+    <li>
+      <a href="http://www.technetevents.com/">TechNet Events</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/learning/en/us/offers/secondshot.aspx">Second shot for certification</a>
+    </li>
+    <li>
+      <a href="http://borntolearn.mslearn.net/btl/b/default.aspx">Born To Learn blog</a>
+    </li>
+    <li>
+      <a href="https://www.technicalcommunity.com/Map.aspx" title="Microsoft Technical Communities">Find technical communities in your area</a>
+    </li>
+  </ul>
+</div>
+                    </div>
+                    <div data-value="hh371327" class="bladeItemMenu" style="display: none;">
+                        <div class="menuContainerLayout">
+  <h5>Support by product</h5>
+  <ul>
+    <li>
+      <a href="http://support.microsoft.com/ph/730">Exchange Server</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/ph/13029">Forefront Server</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/ph/815">Forefront Edge Security</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/ph/14783/sl">Forefront Server Security</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/ph/807">Internet Explorer</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/ph/8753">Office</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/ph/935/en-us">SharePoint</a>
+    </li>
+  </ul>
+</div><div class="menuContainerLayout">
+  <h5>&nbsp;</h5>
+  <ul>
+    <li>
+      <a href="http://support.microsoft.com/ph/1044">SQL Server</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/ph/16340/en-us">System Center</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/ph/1163">Windows Server</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/ph/1173">Windows XP</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/ph/11732">Windows Vista</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/ph/14019">Windows 7</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/find-solutions/windows/windows-8/">Windows 8</a>
+    </li>
+  </ul>
+</div><div class="menuContainerLayoutSplashGuard"></div><div class="menuContainerLayout">
+  <h5>Other support links</h5>
+  <ul>
+    <li>
+      <a href="https://premier.microsoft.com/">Microsoft Premier Online</a>
+    </li>
+    <li>
+      <a href="http://fixitcenter.support.microsoft.com/Portal">Microsoft Fix It Center</a>
+    </li>
+    <li>
+      <a href="http://social.technet.microsoft.com/Forums/en-us/categories/">TechNet Forums</a>
+    </li>
+    <li>
+      <a href="http://social.msdn.microsoft.com/Forums/en-US/categories/">MSDN Forums</a>
+    </li>
+    <li>
+      <a href="http://technet.microsoft.com/en-us/security/bulletin">Security Bulletins &amp; Advisories</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/common/international.aspx">International support solutions</a>
+    </li>
+    <li>
+      <a href="http://support.microsoft.com/select/default.aspx?target=assistance">Log a support ticket</a>
+    </li>
+    <li>
+      <a href="http://www.microsoft.com/technet/support/ee/ee_advanced.aspx">Look up event IDs and error codes</a>
+    </li>
+  </ul>
+</div><div class="menuContainerLayoutSplashGuard"></div><div class="menuContainerLayout">
+  <h5>Not an IT pro?</h5>
+  <ul>
+    <li>
+      <a href="http://support.microsoft.com/">Microsoft Customer Support</a>
+    </li>
+    <li>
+      <a href="http://answers.microsoft.com/en-us">Microsoft Community Forums</a>
+    </li>
+  </ul>
+</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+<script type="text/javascript" xmlns="http://www.w3.org/1999/xhtml">
+/*<![CDATA[*/
+/**/
+(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { 
+	"image": "http://i.technet.microsoft.com", 
+	"js": "http://i2.technet.microsoft.com", 
+	"css": "http://i3.technet.microsoft.com"
+});
+/**/
+/*]]>*/
+</script><script type="text/javascript" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/Utilities.js" xmlns="http://www.w3.org/1999/xhtml"></script><script type="text/javascript" xmlns="http://www.w3.org/1999/xhtml">
+/*<![CDATA[*/
+var omnitureTracking = true;
+/*]]>*/
+</script><script type="text/javascript" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/megablade.1.js" xmlns="http://www.w3.org/1999/xhtml"></script></div>
+    
+    <script type="text/javascript">
+        Galleries.utility.loadJavaScript("http://widgets.membership.s-msft.com/v1/loader.js?brand=TechNet&lang=en-US", true);
+        Galleries.utility.loadJavaScript('http://js.microsoft.com/library/svy/sto/broker.js', true);
+    </script>    
+
+    <script src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/SearchBox.jss" type="text/javascript" language="javascript"></script>
+    <script src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/9ea4551d8c3e8bca68c796b742bfc9d3-6143d45df2ee01b890d545446a5fde77-RequestReducedScript.js" type="text/javascript"></script>        
+                        <noscript>&lt;a href="http://www.omniture.com" title="Web Analytics"&gt;
+        &lt;img src="http://msstonojssocial.112.2O7.net/b/ss/msstonojssocial/1/H.20.2--NS/0" height="1" width="1" alt="" /&gt;
+        &lt;/a&gt;</noscript>
+    
+
+
+<div id="_WEDCSInsertedData" style="display: none;"><iframe id="_msnFrame" src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/c.gif" style="z-index:-1;height:1px;width:1px;display:none;visibility:hidden;" onload="javascript:MscomBeacon();"></iframe></div><script src="./Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013_files/broker-config.js"></script></body></html>

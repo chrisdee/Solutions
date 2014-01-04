@@ -1,0 +1,46 @@
+-- Import-Export Meta Data Taxonomy Terms in SharePoint 2010 and SharePoint 2013 --
+
+URL: http://gallery.technet.microsoft.com/sharepoint/Import-Export-Meta-Data-b94ad856
+
+Usage Notes:
+
+For usage with SharePoint Server 2013 Farms
+
+1) Open Source code in Visual Studio 2012.
+
+2) Right click on project > Properties > Change the Target Framework to .NET Framework 4.5
+
+3) Run the 'ImportExportSPTerm' application (as an administrator) from your 'Debug' or 'Release' folder. Will more than likely need to run the application on one of the farm servers
+
+Testing Notes:
+
+- When exporting Term Sets; you appear to need to export these one at a time - Group Name and then Term Set Name. Provide the file path to where the XML file will be exported to
+
+- When importing Term Sets; you also appear to only be able to import one Taxonomy Group at a time
+
+Sample XML format for Taxonomy Group Imports:
+
+<?xml version="1.0" encoding="utf-16" ?> 
+<Groups> 
+  <Group Name="Intranet"> 
+    <TermSet Name="Country" NameFr=""> 
+      <Terms> 
+        <Term Name="USA"> 
+          <Labels> 
+            <Label lcid="1033" Name="USA" Description="" /> 
+          </Labels> 
+        </Term> 
+        <Term Name="CANADA"> 
+          <Labels> 
+            <Label lcid="1033" Name="CANADA" Description="" /> 
+          </Labels> 
+        </Term> 
+        <Term Name="INDIA"> 
+          <Labels> 
+            <Label lcid="1033" Name="INDIA" Description="" /> 
+          </Labels> 
+        </Term> 
+      </Terms> 
+    </TermSet> 
+  </Group> 
+</Groups>

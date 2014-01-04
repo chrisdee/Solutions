@@ -1,0 +1,20 @@
+@import url('http://i1.social.s-msft.com/contentservice/8a4fd07b-c6a2-4831-9034-a28900e033e8/Office_metro_base.css');
+/* The file above is common styling for all Office_metro_* themes. The styling below is specific to this theme. The themes should be consolidated after TechNet adopts UX Services. */
+
+.Masthead .BrandLogo a {    
+    min-width: 138px;
+    background: url('http://i1.social.s-msft.com/contentservice/d75aa358-2ab5-4877-962d-a1e0011ed98e/logo_sharepoint2.png') no-repeat 0 0;
+    height:100%;
+}
+
+#BrandDisplayText {    
+    max-width: 180px;
+    left: 138px;
+}
+
+
+/* rtl styles */
+
+.rtl #BrandDisplayText {
+    display:none;
+}
