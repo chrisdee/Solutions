@@ -9,3 +9,5 @@ Versions:
 Version: 3.2 | Oct 13, 2012 | Changeset: 95247
 
 Version: 3.86 | Apr 3, 2013 | Changeset: 99664 | AutoSPInstaller for SharePoint 2010 + 2013
+
+Version: 3.96 | Jun 2, 2014 | Changeset: 109137 | Includes SP2013 SP1 Support
