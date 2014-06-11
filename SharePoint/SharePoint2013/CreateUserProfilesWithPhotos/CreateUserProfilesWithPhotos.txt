@@ -1,0 +1,8 @@
+URLs:
+
+http://matthewyarlett.blogspot.com.au/2014/01/create-2000-unique-domain-accounts-with.html
+
+http://social.technet.microsoft.com/wiki/contents/articles/22864.sharepoint-2013-create-2000-domain-accounts-with-profile-photos-for-a-development-environment.aspx
+
+http://gallery.technet.microsoft.com/PowerShell-script-to-12e8ed3e
+
