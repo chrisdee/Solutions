@@ -1,0 +1,26 @@
+== SP2013 DEV Instance (Technet) ==
+
+Overview:
+
+The 'SP2013 DEV Instance (Technet)' XML file contains the ADFS Relying Party Trust configuration for a SharePoint Server 2013 Farm. This XML contains the Relying Party Trust configuration along with the Claim Rules as recommended by Technet. In order to import the XML file as a Relying party trust on an ADFS 2.0 Server Farm; you can use the Codeproject 'AD-FS-Tools' to achieve this purpose (see link below)
+
+
+http://www.codeproject.com/Articles/261608/AD-FS-Tools
+
+
+Usage Notes:
+
+1. Edit the following properties in the XML file to match your SP2013 Environment:
+
+<Name>SP2013 DEV Instance (Technet)</Name>
+
+<Identifiers>
+    <Identifier>https://yoururl.com/_trust/</Identifier>
+    <Identifier>urn:sharepoint:adfs</Identifier>
+</Identifiers>
+
+<WsFedEndpoint>https://yoururl.com/_trust/</WsFedEndpoint>
+
+2. On your ADFS 2.0 Server Farm use the 'AD-FS-Tools' solution to add your SP2013 Relying Party Trust:
+
+.\AddRelyingParty.exe "YourRelyingPartyTrustName.xml"

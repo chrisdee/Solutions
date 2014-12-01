@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelyingPartyTrust>
+  <Name>SP2013 DEV Instance (Technet)</Name>
+  <Identifiers>
+    <Identifier>https://yoururl.com/_trust/</Identifier>
+    <Identifier>urn:sharepoint:adfs</Identifier>
+  </Identifiers>
+  <SamlEndpoints />
+  <WsFedEndpoint>https://yoururl.com/_trust/</WsFedEndpoint>
+  <AutoUpdateEnabled>false</AutoUpdateEnabled>
+  <MonitoringEnabled>false</MonitoringEnabled>
+  <MetadataUrl />
+  <SignatureAlgorithm>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</SignatureAlgorithm>
+  <RequestSigningCertificates />
+  <IssuanceTransformRules>@RuleTemplate = "LdapClaims"
+@RuleName = "SP2013 Claim Rule"
+c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname", Issuer == "AD AUTHORITY"]
+ =&gt; issue(store = "Active Directory", types = ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn"), query = ";mail,userPrincipalName;{0}", param = c.Value);
+
+</IssuanceTransformRules>
+  <IssuanceAuthorizationRules>@RuleTemplate = "AllowAllAuthzRule"
+ =&gt; issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");
+
+</IssuanceAuthorizationRules>
+  <DelegationAuthorizationRules></DelegationAuthorizationRules>
+  <EncryptClaims>true</EncryptClaims>
+  <EncryptedNameIdRequired>false</EncryptedNameIdRequired>
+  <EncryptionCertificate />
+  <EncryptionCertificateRevocationCheck>CheckChainExcludeRoot</EncryptionCertificateRevocationCheck>
+  <NotBeforeSkew>0</NotBeforeSkew>
+  <Notes />
+  <ProtocolProfile>WsFed-SAML</ProtocolProfile>
+  <SamlResponseSignature>AssertionOnly</SamlResponseSignature>
+  <SignedSamlRequestsRequired>false</SignedSamlRequestsRequired>
+  <SigningCertificateRevocationCheck>CheckChainExcludeRoot</SigningCertificateRevocationCheck>
+  <TokenLifetime>0</TokenLifetime>
+</RelyingPartyTrust>
