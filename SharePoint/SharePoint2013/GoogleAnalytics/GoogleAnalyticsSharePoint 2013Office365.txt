@@ -1,0 +1,10 @@
+== Google Analytics SharePoint 2013  Office 365 ==
+
+URLs:
+
+http://googleanalytics365.codeplex.com
+
+http://www.fiechter.eu/Blog/Post/34
+
+Version: Mon Jun 10, 2013 at 9:00 AM
+
