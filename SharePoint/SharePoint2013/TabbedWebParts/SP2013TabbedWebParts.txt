@@ -1,0 +1,33 @@
+== SP2013 / Office 365 Tabbed Web Parts JavaScript ==
+
+Resources:
+
+http://summit7systems.com/tabbed-web-parts-in-sharepoint-2013-office-365
+
+Versions: SharePoint Server 2013 / Office 365 (o365 SharePoint Online)
+
+Usage Instructions:
+
+1. Add your 'SP2013TabbedWebParts.js'script to the 'Site Assets' library in your site
+
+2. Create a new page in your environment
+
+Settings --> Add a page
+
+3. Add your web parts to the page that you want displayed in the Tabs
+
+Edit Page --> Insert --> Web Part
+
+**Ensure to set the 'Title' property under 'Appearance' for each of these web parts
+
+4. Add your Content Editor Web Part to embed the 'SP2013TabbedWebParts.js'script in the page
+
+Insert --> Web Part --> Media and Content --> Content Editor
+
+In the content editor peovide the path to the 'SP2013TabbedWebParts.js'script in the 'Content Link' area
+
+5. Edit the following area in the 'SP2013TabbedWebParts.js'script to display the web parts you want to appear in the tabs
+
+//Put the Web Part Title for all the Web Parts you wish
+//to put into the tabbed view into the array below.
+HillbillyTabs(["Web Part Title 1","Web Part Title 2"]);
