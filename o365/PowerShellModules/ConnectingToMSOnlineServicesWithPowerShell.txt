@@ -1,0 +1,7 @@
+== Connect to all Office 365 services in a single Windows PowerShell window ==
+
+URLs: 
+
+https://technet.microsoft.com/en-us/library/dn568015.aspx
+
+http://powershell.office.com/script-samples/getting-connected-to-office-365
