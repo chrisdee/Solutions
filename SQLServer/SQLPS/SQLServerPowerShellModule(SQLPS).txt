@@ -1,0 +1,9 @@
+== SQL Server PowerShell Module (SQLPS) ==
+
+Resources:
+
+http://guidestomicrosoft.com/2015/01/13/install-sql-server-powershell-module-sqlps
+
+https://www.simple-talk.com/sql/database-administration/practical-powershell-for-sql-server-developers-and-dbas-%E2%80%93-part-1/#intro
+
+http://www.microsoft.com/en-us/download/details.aspx?id=29065
