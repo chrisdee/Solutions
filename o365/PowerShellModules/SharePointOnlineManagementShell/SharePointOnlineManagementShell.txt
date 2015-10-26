@@ -1,3 +1,11 @@
 == SharePoint Online Management Shell ==
 
 URL: http://www.microsoft.com/en-us/download/details.aspx?id=35588
+
+Version: 16.0.4613.1211
+
+Release Date: 11/08/2015
+
+Default Install Path: C:\Program Files\SharePoint Online Management Shell
+
+Modules: Microsoft.Online.SharePoint.PowerShell
