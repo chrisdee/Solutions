@@ -2,7 +2,9 @@
 
 Version: Microsoft Azure Active Directory Module for Windows PowerShell Preview
 
-Release Date: 22/09/2015
+Release Date: 10/30/2015
+
+Version: 8808.1
 
 Default Install Path: C:\Windows\system32\WindowsPowerShell\v1.0\Modules
 
@@ -11,6 +13,8 @@ Modules: MSOnline; MSOnlineExtended
 Note: Microsoft Online Services Sign-In Assistant is no longer a pre-requisite
 
 Resources:
+
+https://github.com/Azure/azure-powershell
   
 http://dollarunderscore.azurewebsites.net/?p=6161
 
