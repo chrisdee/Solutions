@@ -1,0 +1,11 @@
+== Lapointe SharePoint Online PowerShell ==
+
+URLs:
+
+http://blog.falchionconsulting.com/index.php/downloads
+		
+http://www.falchionconsulting.com/PowerShellViewer/Default.aspx (Command Index)
+		
+https://github.com/glapointe/PowerShell-SPOCmdlets/releases
+
+Version: v1.2.5.0 | Oct 6, 2015
