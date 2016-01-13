@@ -1,0 +1,19 @@
+== Directory Lister ==
+
+URL: http://www.directorylister.com
+
+Version: v2.6.1
+
+-- Installation --
+
+The process to install Directory Lister is simple:
+
+Download and extract Directory Lister
+
+Copy resources/default.config.php to resources/config.php
+
+Upload index.php and the resources folder to the folder you want listed
+
+Upload additional files to the same directory as index.php
+
+That's it! You should now see a directory listing when browsing to your directory.
