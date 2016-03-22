@@ -1,3 +1,5 @@
 == SharePoint Server 2013 Client Components SDK ==
 
 URL: http://www.microsoft.com/en-ie/download/details.aspx?id=35585
+
+Version: 1 | 20/04/2015
