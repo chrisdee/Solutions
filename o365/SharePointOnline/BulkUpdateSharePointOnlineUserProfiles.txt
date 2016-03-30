@@ -1,0 +1,37 @@
+== Bulk update SharePoint User Profiles in Office 365 ==
+
+Overview:
+
+This sample code show how user profiles in SharePoint Online can be updated via the legacy SOAP web service. It also provides information how the authentication procedure works in SharePoint Online. Through the limitation to the user profile REST API this is the only way to update.
+
+In Office 365 the authentication is a bit different and an authentication cookie needs to be passed.
+
+The longer explanation how to authentication against Office 365 work can be found in the MSDN article Remote Authentication in SharePoint Online Using Claims-Based Authentication. Another great source of information is the blog post “How to do active authentication to Office 365 and SharePoint Online” by Wictor Wilén. In this article Wictor provides a helper object that make the authentication process easy. His solution is mainly targeted on SharePoint 2010 in Office 365 but this still works in the recent version of SharePoint Online.
+
+The Authentication against SharePoint Online Web Services is much simpler now and is also covered in this sample. The new introduced authentication object SharePointOnlineCredentials. 
+
+Resources:
+
+http://www.n8d.at/blog/bulk-update-sharepoint-user-profiles-in-office-365
+
+https://code.msdn.microsoft.com/Bulk-update-SharePoint-c2dec76a
+
+http://www.n8d.at/blog/wp-content/uploads/2014/01/n8d.UserProfileBulkImport-Tool.zip
+
+https://technet.microsoft.com/en-us/library/hh147510.aspx?tduid=(0ad701941b48103ef8b5014fc83f1b22)(256380)(2459594)(TnL5HPStwNw-MkxZeCCuzlx8SMTwxtqajA)()
+
+
+Tool Usage Example:
+
+1. Create a CSV file and populate the columns with the User Profile Swervice Properties you want to update (ensure to keep the column names the same as the User Profile Properties)
+
+AccountName	WorkEmail
+zzaadconnecttuser1@YourTenant.onmicrosoft.com	zzAADConnectUser1@yourmail.com
+zzaadconnecttuser2@YourTenant.onmicrosoft.com	zzAADConnectUser2@yourmail.com
+
+2. Save the CSV file as a Tab Delimited Text file - Text (Tab delimited)
+
+
+3. Run the command, providing the required parameters, like the example below:
+
+n8d.UserProfileBulkImport.exe https://YourTenant-admin.sharepoint.com  User.Name@YourTenant.onmicrosoft.com C:\ztemp\zzDEE\n8d.UserProfileBulkImport-Tool\ImportTest.txt
