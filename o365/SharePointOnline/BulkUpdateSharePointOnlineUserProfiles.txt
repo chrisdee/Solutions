@@ -23,7 +23,7 @@ https://technet.microsoft.com/en-us/library/hh147510.aspx?tduid=(0ad701941b48103
 
 Tool Usage Example:
 
-1. Create a CSV file and populate the columns with the User Profile Swervice Properties you want to update (ensure to keep the column names the same as the User Profile Properties)
+1. Create a CSV file and populate the columns with the User Profile Service Properties you want to update (ensure to keep the column names the same as the User Profile Properties)
 
 AccountName	WorkEmail
 zzaadconnecttuser1@YourTenant.onmicrosoft.com	zzAADConnectUser1@yourmail.com
