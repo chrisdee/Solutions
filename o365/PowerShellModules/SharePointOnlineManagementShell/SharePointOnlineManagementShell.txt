@@ -2,9 +2,9 @@
 
 URL: http://www.microsoft.com/en-us/download/details.aspx?id=35588
 
-Version: 16.0.4915.1200
+Version: 16.0.6112.1200
 
-Release Date: 21/01/2016
+Release Date: 1/31/2017
 
 Default Install Path: C:\Program Files\SharePoint Online Management Shell
 
