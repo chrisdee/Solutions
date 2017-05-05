@@ -1,0 +1,31 @@
+== dbatools.io | PowerShell SQL Server Management Tools ==
+
+Version: 0.8.950 | 9/8/2015
+
+URLs:
+
+https://dbatools.io
+
+https://github.com/sqlcollaborative/dbatools
+
+https://dbatools.io/functions
+
+## Importing the Module Directly Example ##
+
+cd "T:\BoxBuild\GitHub\Solutions\SQLServer\dbatools\dbatools\dbatools-master"
+
+Import-Module .\dbatools.psd1
+
+## Useful Commands Examples ##
+
+## Copy Databases from one SQL instance to another (performing the Backup and Restore option)
+
+Copy-SqlDatabase -Source "SQLInstance1\InstanceName1" -Destination "SQLInstance2\InstanceName2" -Databases "DatabaseName1", "DatabaseName2" -BackupRestore -NetworkShare "\\ShareName\Backups\SQL" -WhatIf
+
+## Copy SQL Logins and Domain Accounts from one SQL instance to another
+
+Copy-SqlLogin -Source "SQLInstance1\InstanceName1" -Destination "SQLInstance2\InstanceName2" -Logins 'sqlloginname', 'DOMAIN\AccountName' -WhatIf
+
+## Copy All SQL Jobs from one SQL instance to another
+
+Copy-SqlJob -Source "SQLInstance1\InstanceName1" -Destination "SQLInstance2\InstanceName2" -WhatIf
