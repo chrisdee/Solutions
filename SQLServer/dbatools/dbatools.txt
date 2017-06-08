@@ -18,9 +18,13 @@ Import-Module .\dbatools.psd1
 
 ## Useful Commands Examples ##
 
-## Copy Databases from one SQL instance to another (performing the Backup and Restore option)
+## Copy Databases from one SQL instance to another performing the Backup and Restore option '-BackupRestore'
 
 Copy-SqlDatabase -Source "SQLInstance1\InstanceName1" -Destination "SQLInstance2\InstanceName2" -Databases "DatabaseName1", "DatabaseName2" -BackupRestore -NetworkShare "\\ShareName\Backups\SQL" -WhatIf
+
+## Copy Databases from one SQL instance to another performing the Backup and Restore option '-BackupRestore', along with a '-Force' property to overwrite the destination database if it exists already. The '-NoBackupCleanup' property retains the SQL backup files at the '-NetworkShare' location
+
+Copy-SqlDatabase -Source "SQLInstance1\InstanceName1" -Destination "SQLInstance2\InstanceName2" -Databases "DatabaseName1" -BackupRestore -NetworkShare "\\ShareName\Backups\SQL" -NoBackupCleanup -Force -WhatIf
 
 ## Copy SQL Logins and Domain Accounts from one SQL instance to another
 
