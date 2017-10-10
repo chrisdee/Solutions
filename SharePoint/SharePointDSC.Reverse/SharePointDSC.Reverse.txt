@@ -1,0 +1,55 @@
+== SharePoint Server: ReverseDSC Orchestrator PowerShell Modules for SharePoint (SharePointDSC.Reverse) ==
+
+Overview:
+
+These modules extract the current configuration of any given SharePoint 2013 or 2016 farm as a PowerShell Desired State Configuration (DSC) .ps1 script along with its associated .psd1 Configuration Data File
+
+Resources:
+
+http://nikcharlebois.com/reverse-engineer-an-existing-sharepoint-farm-using-powershell-dsc
+
+https://github.com/powershell/SharePointDSC
+
+https://github.com/NikCharlebois/sharepointdsc.reverse
+
+https://github.com/NikCharlebois/SharePointDSC.Reverse.git
+
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=51451
+
+PowerShell Modules: ReverseDSC; SharePointDSC
+
+Script: SharePointDSC.Reverse
+
+Usage: Needs to be run on one of the VMs in a SharePoint Farm. See the advanced usage instructions below for different PowerShell environments
+
+Output: Creates the following 2 files in the location specified for the output after the script has run: ConfigurationData.psd1; SP-Farm.DSC.ps1
+
+== Usage on a machine with PowerShell 5.0+ and with Internet Connectivity ==
+
+1. Run the following PowerShell command to install the PowerShell Modules on the SharePoint Farm machine
+
+Install-Script SharePointDSC.Reverse -Force
+
+2. Default installation paths for the PowerrShell Modules and Script
+
+C:\Program Files\WindowsPowerShell\Modules
+
+C:\Program Files\WindowsPowerShell\Scripts
+
+3. Run the script named 'SharePointDSC.Reverse.ps1' on the SharePoint Farm machine
+
+4. Upon completion of the script provide the path for the files specified in 'Output' above
+
+== Usage on a machine without PowerShell 5.0+ and without Internet Connectivity ==
+
+1. Install the Package Management MSI on the SharePoint Farm machine where the Modules will be placed, and the script run from
+
+PackageManagement_x64.msi
+
+2. Copy the following PowerShell Modules to the location below on the SharePoint Farm machine: ReverseDSC; SharePointDSC
+
+C:\Program Files\WindowsPowerShell\Modules
+
+3. Run the script named 'SharePointDSC.Reverse_PS_Version_Modified.ps1' on the SharePoint Farm Machine
+
+4. Upon completion of the script provide the path for the files specified in 'Output' above
