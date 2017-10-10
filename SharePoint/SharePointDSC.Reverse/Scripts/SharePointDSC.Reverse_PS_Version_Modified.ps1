@@ -52,6 +52,7 @@ $Script:dscConfigContent = ""
 $Script:currentServerName = ""
 $SPDSCSource = "$env:ProgramFiles\WindowsPowerShell\Modules\SharePointDSC\"
 $SPDSCVersion = "1.9.0.0"
+$SPDSCReverseSource = "C:\Program Files\WindowsPowerShell\Modules\ReverseDSC\1.9.1.0\ReverseDSC.psd1"
 $Script:spCentralAdmin = ""
 $Script:ExtractionModeValue = "2"
 if($Mode.ToLower() -eq "lite")
@@ -79,7 +80,7 @@ function Orchestrator
 {
   Test-Prerequisites
       
-  Import-Module "C:\Program Files\WindowsPowerShell\Modules\ReverseDSC\1.9.1.0\ReverseDSC.psd1" #-Name "ReverseDSC" -Force
+  Import-Module $SPDSCReverseSource #-Name "ReverseDSC" -Force
 
   $Global:spFarmAccount = Get-Credential -Message "Credentials with Farm Admin Rights" -UserName $env:USERDOMAIN\$env:USERNAME
   Save-Credentials $Global:spFarmAccount.UserName
