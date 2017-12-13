@@ -1,0 +1,36 @@
+== Cloud Sherpas - Remote File Importer ==
+
+Overview: Remote File Importer (Import Files from a MID Server)
+
+Note: The Remote File Importer will run any 'Table Transform Maps' associated with the 'Import Table' when run
+
+URLs:
+
+https://share.servicenow.com/app.do#/detailV2/997d13b22b1261004a1e976be8da1549/overview
+
+https://share.servicenow.com/app.do#/companyDetail/b5b1bb3d872a51008bf84b0b0e434d7e 
+
+Version: v1.2
+
+ServiceNow Versions: Calgary+ Compatibility
+
+Table: Remote File Import [u_cs_file_import]
+
+Usage:
+
+1. Import the 'CloudSherpasRemoteFileImporter' XML file via a 'System Update Set'
+
+System Update Sets --> Retrieved Update Sets --> Import Update Set from XML
+
+2. Locate the 'Remote File Importer' through the MID Server
+
+MID Server --> Remote File Import
+
+3. Under 'Remote File Imports' select 'New' and provide the details to match your environment, ensuring you provide the path to the import file under the 'Remote File' field
+
+
+
+
+
+
+
