@@ -1,0 +1,36 @@
+== Power BI Apps ==
+
+Search Filter: https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi&page=1
+
+== Office 365 Adoption Preview ==
+
+https://appsource.microsoft.com/en-us/product/power-bi/b756d118-d7e4-40e9-8fa6-aac747901c4a?tab=Overview
+
+https://blogs.office.com/en-us/2017/05/22/announcing-the-public-preview-of-the-office-365-adoption-content-pack-in-powerbi/?eu=true
+
+#Requires: Tenant ID
+
+Login-AzureRmAccount
+
+== Microsoft Azure Enterprise ==
+
+https://appsource.microsoft.com/en-us/product/power-bi/f3d35b7a-b739-4606-9135-fedb7dd545d2?tab=Overview
+
+#Requires: Enrollment Number; Enrollment Access Key
+
+https://ea.azure.com/manage/enrollment
+https://ea.azure.com/report/downloadusage
+
+== Azure Audit Logs ==
+
+https://appsource.microsoft.com/en-us/product/power-bi/37658b17-1e1f-4a5a-8e88-00720ad16b99?tab=Overview
+
+#Requires: Subscription ID; OAuth2
+
+Login-AzureRmAccount
+
+== Azure Active Directory Activity Logs ==
+
+https://appsource.microsoft.com/en-us/product/power-bi/0d92927a-ca12-4b86-88ab-77e208a223b7?tab=Overview
+
+#Requires: Tenant Name (TenantName.onmicrosoft.com); OAuth2
