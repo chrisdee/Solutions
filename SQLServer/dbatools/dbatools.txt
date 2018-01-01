@@ -33,3 +33,11 @@ Copy-SqlLogin -Source "SQLInstance1\InstanceName1" -Destination "SQLInstance2\In
 ## Copy All SQL Jobs from one SQL instance to another
 
 Copy-SqlJob -Source "SQLInstance1\InstanceName1" -Destination "SQLInstance2\InstanceName2" -WhatIf
+
+## Restore Database to a SQL Instance from a File Location
+
+Restore-DbaDatabase -SqlServer "SQLInstance1\InstanceName1" -Path "\\ShareName\Backups\SQL\DatabaseName.BAK" -WhatIf
+
+## Restore Databases to a SQL Instance from a File Location
+
+Restore-DbaDatabase -SqlServer "SQLInstance1\InstanceName1" -Path "\\ShareName\Backups\SQL\$" -WhatIf
