@@ -22,11 +22,18 @@ Usage:
 
 System Update Sets --> Retrieved Update Sets --> Import Update Set from XML
 
-2. Locate the 'Remote File Importer' through the MID Server
+2. Preview and Commit the 'Cloud Sherpas - Remote File Importer - v1.2' Retrieved Update Set
+
+System Update Sets --> Retrieved Update Sets --> Cloud Sherpas - Remote File Importer - v1.2
+
+- Preview Update Set
+- Commit Update Set
+
+3. Locate the 'Remote File Importer' through the MID Server
 
 MID Server --> Remote File Import
 
-3. Under 'Remote File Imports' select 'New' and provide the details to match your environment, ensuring you provide the path to the import file under the 'Remote File' field
+4. Under 'Remote File Imports' select 'New' and provide the details to match your environment, ensuring you provide the path to the import file under the 'Remote File' field
 
 
 
