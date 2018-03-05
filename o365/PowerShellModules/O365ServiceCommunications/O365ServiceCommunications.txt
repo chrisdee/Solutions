@@ -1,0 +1,11 @@
+== O365 Service Communications PowerShell Module ==
+
+A Powershell module for retrieving data from the Office 365 Service Communications API. This could be used for reporting the health status of your tenant over time, or for alerting when new incidents are posted.
+
+URL: https://github.com/mattmcnabb/O365ServiceCommunications
+
+Version: 0.1.0
+
+Release Date: Jul 19, 2017
+
+Modules: O365ServiceCommunications
