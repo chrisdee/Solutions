@@ -1,0 +1,378 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Private Messages For WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 15:26+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: H C Dogan <huseyincahiddogan@gmail.com>\n"
+"Language-Team: Rilwis <rilwis@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
+"X-Poedit-Basepath: ./\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../pm4wp.php:78
+msgid "New PM at %BLOG_NAME%"
+msgstr "%BLOG_NAME%: Yeni bir mesajınız var!"
+
+#: ../pm4wp.php:79
+msgid "You have new private message from <b>%SENDER%</b> at <b>%BLOG_NAME%</b>.<br /><br /><a href=\"%INBOX_URL%\">Click here</a> to go to your inbox.<br /><br /><hr />This email is sent automatically. Please don't reply."
+msgstr "<b>%BLOG_NAME%</b>: <b>%SENDER%</b> kullanıcısı size bir mesaj gönderdi.<br /><br />Mesajınızı okuyabilmek için lütfen <a href=\"%INBOX_URL%\">tıklayın</a>.<br /><br /><hr />Bu e posta otomatik olarak oluşturulmuştur, lütfen cevaplamayınız."
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:146
+msgid "Private Messages Options"
+msgstr "Mesaj Seçenekleri"
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:117
+#: ../pm4wp.php:938
+msgid "Private Messages"
+msgstr "Özel Mesajlar"
+
+#: ../pm4wp.php:117
+msgid "Messages"
+msgstr "Mesajlar"
+
+#: ../pm4wp.php:120
+#: ../pm4wp.php:559
+msgid "Inbox"
+msgstr "Gelen Kutusu"
+
+#: ../pm4wp.php:122
+#: ../pm4wp.php:752
+msgid "Outbox"
+msgstr "Giden Kutusu"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:251
+msgid "Send Private Message"
+msgstr "Mesaj Gönderin"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:426
+msgid "Send"
+msgstr "Mesaj Gönder"
+
+#: ../pm4wp.php:151
+msgid "Please set numbers of private messages for each user role:"
+msgstr "Lütfen kullanıcı rolleri için mesaj sayısı atayın."
+
+#: ../pm4wp.php:152
+msgid "<b><i>0</i></b> means <b><i>unlimited</i></b>"
+msgstr "<b><i>0</i></b> rakamı atanan kullanıcı için mesaj gönderim sayısı <b><i>sınırsız</i></b> olacaktır."
+
+#: ../pm4wp.php:153
+msgid "<b><i>-1</i></b> means <b><i>not allowed</i></b> to send PM"
+msgstr "<b><i>-1</i></b> değeri verilen kullanıcı konumu, özel mesaj göndermek için <b><i>yetkisiz</i></b> kılınacaktır."
+
+#: ../pm4wp.php:159
+msgid "Administrator"
+msgstr "Yönetici"
+
+#: ../pm4wp.php:163
+msgid "Editor"
+msgstr "Editör"
+
+#: ../pm4wp.php:167
+msgid "Author"
+msgstr "Yazar"
+
+#: ../pm4wp.php:171
+msgid "Contributor"
+msgstr "İçerik Sağlayıcı"
+
+#: ../pm4wp.php:175
+msgid "Subscriber"
+msgstr "Üye"
+
+#: ../pm4wp.php:179
+msgid "How do you want to choose recipient?"
+msgstr "Alıcı seçimi nasıl yapılsın?"
+
+#: ../pm4wp.php:181
+msgid "Dropdown list"
+msgstr "Açılır liste"
+
+#: ../pm4wp.php:182
+msgid "Auto suggest from user input"
+msgstr "Otomatik öneri"
+
+#: ../pm4wp.php:187
+msgid "Email template:"
+msgstr "E posta şablonu:"
+
+#: ../pm4wp.php:191
+msgid "Enable sending email when user receive new PM?"
+msgstr "Bir kullanıcı özel mesaj aldığında, e posta hesabına bir uyarı gitsin mi?"
+
+#: ../pm4wp.php:193
+msgid "Yes"
+msgstr "Evet"
+
+#: ../pm4wp.php:194
+msgid "No"
+msgstr "Hayır"
+
+#: ../pm4wp.php:198
+msgid "From name (optional)"
+msgstr "Gönderici adı (isteğe bağlı)"
+
+#: ../pm4wp.php:202
+msgid "From email (optional)"
+msgstr "Gönderici e posta hesabı (isteğe bağlı)"
+
+#: ../pm4wp.php:206
+#: ../pm4wp.php:417
+#: ../pm4wp.php:594
+#: ../pm4wp.php:645
+#: ../pm4wp.php:777
+#: ../pm4wp.php:812
+msgid "Subject"
+msgstr "Konu"
+
+#: ../pm4wp.php:210
+msgid "Body"
+msgstr "Metin gövdesi"
+
+#: ../pm4wp.php:214
+msgid "Available tags"
+msgstr "Kullanılabilir parametreler"
+
+#: ../pm4wp.php:219
+msgid "Blog name"
+msgstr "Website adı"
+
+#: ../pm4wp.php:223
+msgid "Email address of blog"
+msgstr "Website administrator e posta hesabı"
+
+#: ../pm4wp.php:227
+msgid "Sender name"
+msgstr "Gönderici adı"
+
+#: ../pm4wp.php:231
+msgid "URL of inbox"
+msgstr "Gelen Kutusu için bağlantı imi"
+
+#: ../pm4wp.php:236
+msgid "Save Changes"
+msgstr "Kaydet"
+
+#: ../pm4wp.php:264
+msgid "You have exceeded the limit of mailbox. Please delete some messages before sending another."
+msgstr "Gelen Kutusu için mesaj sınırı aşılmış. Lütfen gereksiz bulduğunuz mesajları silerek yeniden deneyin."
+
+#: ../pm4wp.php:283
+msgid "Please enter username of recipient."
+msgstr "Lütfen alıcının kullanıcı adını yazınız."
+
+#: ../pm4wp.php:287
+msgid "Please enter subject of message."
+msgstr "Lütfen mesajınızın konusunu yazınız."
+
+#: ../pm4wp.php:291
+msgid "Please enter content of message."
+msgstr "Lütfen mesajın metnini yazınız."
+
+#: ../pm4wp.php:297
+msgid "Please enter correct username of recipient."
+msgstr "Lütfen alıcı adını kontrol ediniz."
+
+#: ../pm4wp.php:321
+msgid "Message sent."
+msgstr "Mesajınız gönderildi."
+
+#: ../pm4wp.php:363
+msgid "Error sending message. Please try again."
+msgstr "Mesaj gönderimi başarısız. Lütfen tekrar deneyin."
+
+#: ../pm4wp.php:373
+#: ../pm4wp.php:776
+#: ../pm4wp.php:811
+msgid "Recipient"
+msgstr "Alıcı"
+
+#: ../pm4wp.php:421
+msgid "Content"
+msgstr "Metin"
+
+#: ../pm4wp.php:457
+msgid "Inbox \\ View Message"
+msgstr "Gelen Kutusu \\ Mesaj Okunuyor"
+
+#: ../pm4wp.php:461
+#: ../pm4wp.php:482
+#: ../pm4wp.php:682
+#: ../pm4wp.php:700
+msgid "Info"
+msgstr "Bilgi"
+
+#: ../pm4wp.php:462
+#: ../pm4wp.php:483
+#: ../pm4wp.php:683
+#: ../pm4wp.php:701
+msgid "Message"
+msgstr "Mesaj"
+
+#: ../pm4wp.php:463
+#: ../pm4wp.php:484
+#: ../pm4wp.php:684
+#: ../pm4wp.php:702
+msgid "Action"
+msgstr "Eylem"
+
+#: ../pm4wp.php:468
+#, php-format
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Gönderici</b>: %s<br /><b>Tarih</b>: %s"
+
+#: ../pm4wp.php:469
+#: ../pm4wp.php:690
+#, php-format
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr "<p><b>Konu</b>: %s</p><p>%s</p>"
+
+#: ../pm4wp.php:472
+#: ../pm4wp.php:583
+#: ../pm4wp.php:628
+#: ../pm4wp.php:693
+#: ../pm4wp.php:798
+msgid "Delete"
+msgstr "Sil"
+
+#: ../pm4wp.php:475
+#: ../pm4wp.php:631
+msgid "Reply"
+msgstr "Cevapla"
+
+#: ../pm4wp.php:511
+msgid "Message marked as read."
+msgid_plural "Messages marked as read"
+msgstr[0] "Mesaj okundu olarak belirlendi."
+msgstr[1] "Mesajlar okundu olarak belirlendi."
+
+#: ../pm4wp.php:513
+#: ../pm4wp.php:549
+#: ../pm4wp.php:742
+msgid "Error. Please try again."
+msgstr "Hata. Lütfen tekrar deneyin."
+
+#: ../pm4wp.php:551
+#: ../pm4wp.php:744
+msgid "Message deleted."
+msgid_plural "Messages deleted."
+msgstr[0] "Mesaj silindi."
+msgstr[1] "Mesajlar silindi."
+
+#: ../pm4wp.php:565
+msgid "You have no items in inbox."
+msgstr "Gelen Kutunuzda herhangi bir ileti yok."
+
+#: ../pm4wp.php:574
+#, php-format
+msgid "You have %d private message (%d unread)."
+msgid_plural "You have %d private messages (%d unread)."
+msgstr[0] "%d adet mesajınız var (%d okunmamış)"
+msgstr[1] "%d adet mesajınız var (%d okunmamış)"
+
+#: ../pm4wp.php:582
+msgid "Bulk Action"
+msgstr "Toplu Eylemler"
+
+#: ../pm4wp.php:584
+#: ../pm4wp.php:622
+msgid "Mark As Read"
+msgstr "Okundu olarak belirle"
+
+#: ../pm4wp.php:586
+msgid "Apply"
+msgstr "Kabul et"
+
+#: ../pm4wp.php:593
+#: ../pm4wp.php:644
+msgid "Sender"
+msgstr "Gönderici"
+
+#: ../pm4wp.php:595
+#: ../pm4wp.php:646
+#: ../pm4wp.php:778
+#: ../pm4wp.php:813
+msgid "Date"
+msgstr "Tarih"
+
+#: ../pm4wp.php:616
+#: ../pm4wp.php:795
+msgid "View"
+msgstr "Oku"
+
+#: ../pm4wp.php:678
+msgid "Outbox \\ View Message"
+msgstr "Giden Kutusu \\ Mesaj Okunuyor"
+
+#: ../pm4wp.php:689
+#, php-format
+msgid "<b>Recipient</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Alıcı</b>: %s<br /><b>Tarih</b>: %s"
+
+#: ../pm4wp.php:758
+msgid "You have no items in outbox."
+msgstr "Giden kutunuzda herhangi bir ileti yok."
+
+#: ../pm4wp.php:761
+#, php-format
+msgid "You wrote %d private message."
+msgid_plural "You wrote %d private messages."
+msgstr[0] "%d adet mesaj bulunuyor."
+msgstr[1] "%d adet mesaj bulunuyor."
+
+#: ../pm4wp.php:769
+msgid "Delete Selected"
+msgstr "Seçili mesajı sil."
+
+#: ../pm4wp.php:841
+#, php-format
+msgid "You have %d new message!"
+msgid_plural "You have %d new messages!"
+msgstr[0] "%d adet mesajınız var!"
+msgstr[1] "%d adet mesajınız var!"
+
+#: ../pm4wp.php:841
+#: ../pm4wp.php:918
+msgid "Click here to go to inbox"
+msgstr "Gelen Kutusuna gidin."
+
+#: ../pm4wp.php:859
+msgid "Show notifications and new private messages on sidebar"
+msgstr "Ana sayfa yan menüde, yeni özel mesaj ve bildirimleri göster"
+
+#: ../pm4wp.php:861
+msgid "Private Messages Widget"
+msgstr "Özel Mesajlar İçin Yan Menü Bileşeni"
+
+#: ../pm4wp.php:895
+#, php-format
+msgid "You have %d private message. %d unread."
+msgid_plural "You have %d private messages. %d unread."
+msgstr[0] "%d adet mesajınız var. (%d okunmamış)"
+msgstr[1] "%d adet mesajınız var. (%d okunmamış)"
+
+#: ../pm4wp.php:911
+#, php-format
+msgid "<br />by <b>%s</b><br />at %s"
+msgstr "<br />by <b>%s</b><br />| %s"
+
+#: ../pm4wp.php:942
+msgid "Title:"
+msgstr "Başlık:"
+
+#: ../pm4wp.php:947
+msgid "Number of PM:"
+msgstr "Özel Mesaj Sayısı:"
+

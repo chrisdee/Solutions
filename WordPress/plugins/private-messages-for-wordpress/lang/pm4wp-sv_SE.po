@@ -1,0 +1,378 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Private Messages For WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 15:26+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Janne <janne@kod35.se>\n"
+"Language-Team: Rilwis <rilwis@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
+"X-Poedit-Basepath: ./\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../pm4wp.php:78
+msgid "New PM at %BLOG_NAME%"
+msgstr "Nytt PM på %BLOG_NAME%"
+
+#: ../pm4wp.php:79
+msgid "You have new private message from <b>%SENDER%</b> at <b>%BLOG_NAME%</b>.<br /><br /><a href=\"%INBOX_URL%\">Click here</a> to go to your inbox.<br /><br /><hr />This email is sent automatically. Please don't reply."
+msgstr "Du har ett nytt privat meddelande från <b>%SENDER%</b> på <b>%BLOG_NAME%</b>.<br /><br /><a href=\"%INBOX_URL%\">Klicka här</a> för att gå till din inkorg.<br /><br /><hr />Detta mailet skickades automatisk och går ej att svara på."
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:146
+msgid "Private Messages Options"
+msgstr "Inställningar för Privata Meddelanden"
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:117
+#: ../pm4wp.php:938
+msgid "Private Messages"
+msgstr "Privata Meddelanden"
+
+#: ../pm4wp.php:117
+msgid "Messages"
+msgstr "Meddelanden"
+
+#: ../pm4wp.php:120
+#: ../pm4wp.php:559
+msgid "Inbox"
+msgstr "Inkorg"
+
+#: ../pm4wp.php:122
+#: ../pm4wp.php:752
+msgid "Outbox"
+msgstr "Utkorg"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:251
+msgid "Send Private Message"
+msgstr "Skicka privat meddelande"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:426
+msgid "Send"
+msgstr "Skicka"
+
+#: ../pm4wp.php:151
+msgid "Please set numbers of private messages for each user role:"
+msgstr "Ställ in antalet privata meddelanden för varje användarroll:"
+
+#: ../pm4wp.php:152
+msgid "<b><i>0</i></b> means <b><i>unlimited</i></b>"
+msgstr "<b><i>0</i></b> betyder <b><i>ingen gräns</i></b>"
+
+#: ../pm4wp.php:153
+msgid "<b><i>-1</i></b> means <b><i>not allowed</i></b> to send PM"
+msgstr "<b><i>-1</i></b> betyder att <b><i>det inte är tillåtet</i></b> att skicka PM"
+
+#: ../pm4wp.php:159
+msgid "Administrator"
+msgstr "Administratör"
+
+#: ../pm4wp.php:163
+msgid "Editor"
+msgstr "Redaktör"
+
+#: ../pm4wp.php:167
+msgid "Author"
+msgstr "Författare"
+
+#: ../pm4wp.php:171
+msgid "Contributor"
+msgstr "Medarbetare"
+
+#: ../pm4wp.php:175
+msgid "Subscriber"
+msgstr "Prenumerant"
+
+#: ../pm4wp.php:179
+msgid "How do you want to choose recipient?"
+msgstr "Hur vill du att man ska välja mottagare?"
+
+#: ../pm4wp.php:181
+msgid "Dropdown list"
+msgstr "Droplista"
+
+#: ../pm4wp.php:182
+msgid "Auto suggest from user input"
+msgstr "Föreslå när användaren skriver"
+
+#: ../pm4wp.php:187
+msgid "Email template:"
+msgstr "Epostinställningar:"
+
+#: ../pm4wp.php:191
+msgid "Enable sending email when user receive new PM?"
+msgstr "Ska notifikationer via epost skickas när användare får nya PM?"
+
+#: ../pm4wp.php:193
+msgid "Yes"
+msgstr "Ja"
+
+#: ../pm4wp.php:194
+msgid "No"
+msgstr "Nej"
+
+#: ../pm4wp.php:198
+msgid "From name (optional)"
+msgstr "Från namn (valfritt)"
+
+#: ../pm4wp.php:202
+msgid "From email (optional)"
+msgstr "Från epost (valfritt)"
+
+#: ../pm4wp.php:206
+#: ../pm4wp.php:417
+#: ../pm4wp.php:594
+#: ../pm4wp.php:645
+#: ../pm4wp.php:777
+#: ../pm4wp.php:812
+msgid "Subject"
+msgstr "Ämne"
+
+#: ../pm4wp.php:210
+msgid "Body"
+msgstr "Meddelande"
+
+#: ../pm4wp.php:214
+msgid "Available tags"
+msgstr "Tillgängliga taggar"
+
+#: ../pm4wp.php:219
+msgid "Blog name"
+msgstr "Namn på hemsidan"
+
+#: ../pm4wp.php:223
+msgid "Email address of blog"
+msgstr "Hemsidans epost-adress"
+
+#: ../pm4wp.php:227
+msgid "Sender name"
+msgstr "Avsändare"
+
+#: ../pm4wp.php:231
+msgid "URL of inbox"
+msgstr "URL till inkorg"
+
+#: ../pm4wp.php:236
+msgid "Save Changes"
+msgstr "Spara ändringar"
+
+#: ../pm4wp.php:264
+msgid "You have exceeded the limit of mailbox. Please delete some messages before sending another."
+msgstr "Din kvot för skickade meddelanden är fylld. Var god radera några meddelanden innan du skickar fler."
+
+#: ../pm4wp.php:283
+msgid "Please enter username of recipient."
+msgstr "Skriv in användarnamnet på mottagaren."
+
+#: ../pm4wp.php:287
+msgid "Please enter subject of message."
+msgstr "Skriv rubrik på meddelandet."
+
+#: ../pm4wp.php:291
+msgid "Please enter content of message."
+msgstr "Skriv ditt meddelande."
+
+#: ../pm4wp.php:297
+msgid "Please enter correct username of recipient."
+msgstr "Skriv in korrekt användarnamn på mottagaren."
+
+#: ../pm4wp.php:321
+msgid "Message sent."
+msgstr "Meddelande skickat."
+
+#: ../pm4wp.php:363
+msgid "Error sending message. Please try again."
+msgstr "Fel uppstod när meddelandet skulle skickas. Var god försök igen."
+
+#: ../pm4wp.php:373
+#: ../pm4wp.php:776
+#: ../pm4wp.php:811
+msgid "Recipient"
+msgstr "Mottagare"
+
+#: ../pm4wp.php:421
+msgid "Content"
+msgstr "Meddelande"
+
+#: ../pm4wp.php:457
+msgid "Inbox \\ View Message"
+msgstr "Inkorg \\ Läs meddelande"
+
+#: ../pm4wp.php:461
+#: ../pm4wp.php:482
+#: ../pm4wp.php:682
+#: ../pm4wp.php:700
+msgid "Info"
+msgstr "Info"
+
+#: ../pm4wp.php:462
+#: ../pm4wp.php:483
+#: ../pm4wp.php:683
+#: ../pm4wp.php:701
+msgid "Message"
+msgstr "Meddelande"
+
+#: ../pm4wp.php:463
+#: ../pm4wp.php:484
+#: ../pm4wp.php:684
+#: ../pm4wp.php:702
+msgid "Action"
+msgstr "Åtgärd"
+
+#: ../pm4wp.php:468
+#, php-format
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Avsändare</b>: %s<br /><b>Datum</b>: %s"
+
+#: ../pm4wp.php:469
+#: ../pm4wp.php:690
+#, php-format
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr "<p><b>Ämne</b>: %s</p><p>%s</p>"
+
+#: ../pm4wp.php:472
+#: ../pm4wp.php:583
+#: ../pm4wp.php:628
+#: ../pm4wp.php:693
+#: ../pm4wp.php:798
+msgid "Delete"
+msgstr "Radera"
+
+#: ../pm4wp.php:475
+#: ../pm4wp.php:631
+msgid "Reply"
+msgstr "Svara"
+
+#: ../pm4wp.php:511
+msgid "Message marked as read."
+msgid_plural "Messages marked as read"
+msgstr[0] "Meddelande markerat som läst."
+msgstr[1] "Meddelandena markerade som lästa."
+
+#: ../pm4wp.php:513
+#: ../pm4wp.php:549
+#: ../pm4wp.php:742
+msgid "Error. Please try again."
+msgstr "Ett fel uppstod. Var god försök igen."
+
+#: ../pm4wp.php:551
+#: ../pm4wp.php:744
+msgid "Message deleted."
+msgid_plural "Messages deleted."
+msgstr[0] "Meddelande raderat."
+msgstr[1] "Meddelanden raderade."
+
+#: ../pm4wp.php:565
+msgid "You have no items in inbox."
+msgstr "Din inkorg är tom."
+
+#: ../pm4wp.php:574
+#, php-format
+msgid "You have %d private message (%d unread)."
+msgid_plural "You have %d private messages (%d unread)."
+msgstr[0] "Du har %d privat meddelande (%d oläst)."
+msgstr[1] "Du har %d privata meddelanden (%d olästa)."
+
+#: ../pm4wp.php:582
+msgid "Bulk Action"
+msgstr "Åtgärd"
+
+#: ../pm4wp.php:584
+#: ../pm4wp.php:622
+msgid "Mark As Read"
+msgstr "Markera som läst"
+
+#: ../pm4wp.php:586
+msgid "Apply"
+msgstr "Utför"
+
+#: ../pm4wp.php:593
+#: ../pm4wp.php:644
+msgid "Sender"
+msgstr "Avsändare"
+
+#: ../pm4wp.php:595
+#: ../pm4wp.php:646
+#: ../pm4wp.php:778
+#: ../pm4wp.php:813
+msgid "Date"
+msgstr "Datum"
+
+#: ../pm4wp.php:616
+#: ../pm4wp.php:795
+msgid "View"
+msgstr "Läs"
+
+#: ../pm4wp.php:678
+msgid "Outbox \\ View Message"
+msgstr "Utkorg \\ Läs meddelande"
+
+#: ../pm4wp.php:689
+#, php-format
+msgid "<b>Recipient</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Mottagare</b>: %s<br /><b>Datum</b>: %s"
+
+#: ../pm4wp.php:758
+msgid "You have no items in outbox."
+msgstr "Din utkorg är tom."
+
+#: ../pm4wp.php:761
+#, php-format
+msgid "You wrote %d private message."
+msgid_plural "You wrote %d private messages."
+msgstr[0] "Du har skrivit %d privat meddelande."
+msgstr[1] "Du har skrivit %d privata meddelanden."
+
+#: ../pm4wp.php:769
+msgid "Delete Selected"
+msgstr "Radera valda"
+
+#: ../pm4wp.php:841
+#, php-format
+msgid "You have %d new message!"
+msgid_plural "You have %d new messages!"
+msgstr[0] "Du har %d nytt privat meddelande!"
+msgstr[1] "Du har %d nya privata meddelanden!"
+
+#: ../pm4wp.php:841
+#: ../pm4wp.php:918
+msgid "Click here to go to inbox"
+msgstr "Gå till din inkorg"
+
+#: ../pm4wp.php:859
+msgid "Show notifications and new private messages on sidebar"
+msgstr "Visa notifikationer och nya privata meddelanden i sidomenyn"
+
+#: ../pm4wp.php:861
+msgid "Private Messages Widget"
+msgstr "Privata Meddelanden Widget"
+
+#: ../pm4wp.php:895
+#, php-format
+msgid "You have %d private message. %d unread."
+msgid_plural "You have %d private messages. %d unread."
+msgstr[0] "Du har %d privat meddelande (%d oläst)."
+msgstr[1] "Du har %d privata meddelanden (%d olästa)."
+
+#: ../pm4wp.php:911
+#, php-format
+msgid "<br />by <b>%s</b><br />at %s"
+msgstr "<br />av <b>%s</b><br />den %s"
+
+#: ../pm4wp.php:942
+msgid "Title:"
+msgstr "Rubrik:"
+
+#: ../pm4wp.php:947
+msgid "Number of PM:"
+msgstr "Antal PM:"
+

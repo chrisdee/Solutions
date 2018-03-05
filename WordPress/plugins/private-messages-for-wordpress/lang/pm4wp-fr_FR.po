@@ -1,0 +1,436 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Private Messages For WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-07 12:28+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: cyril <cyril.jd@mailz.org>\n"
+"Language-Team: Cyril <cyril.jd@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
+"X-Poedit-Basepath: ./\n"
+"Plural-Forms: nplurals=2;plural=n>2\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../pm4wp.php:78
+msgid "New PM at %BLOG_NAME%"
+msgstr "Nouveau MP sur %BLOG_NAME%"
+
+#: ../pm4wp.php:79
+msgid ""
+"You have new private message from <b>%SENDER%</b> at <b>%BLOG_NAME%</b>.\n"
+"\n"
+"<a href=\"%INBOX_URL%\">Click here</a> to go to your inbox.\n"
+"\n"
+"This email is sent automatically. Please don't reply."
+msgstr ""
+"Vous avez un nouveau message privé de <b>%SENDER%</b> sur <b>%BLOG_NAME%</b>.\n"
+"\n"
+"<a href=\"%INBOX_URL%\">Cliquez ici</a> pour aller à votre boîte de réception.\n"
+"\n"
+"Cet email a été envoyé automatiquement. Merci de ne pas y répondre."
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:146
+msgid "Private Messages Options"
+msgstr "Options des messages privés"
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:117
+#: ../pm4wp.php:994
+msgid "Private Messages"
+msgstr "Messages privés"
+
+#: ../pm4wp.php:117
+msgid "Messages"
+msgstr "Messages"
+
+#: ../pm4wp.php:120
+#: ../pm4wp.php:614
+msgid "Inbox"
+msgstr "Boîte de réception"
+
+#: ../pm4wp.php:122
+#: ../pm4wp.php:808
+msgid "Outbox"
+msgstr "Boîte d'envoi"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:284
+msgid "Send Private Message"
+msgstr "Envoyer un message privé"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:480
+msgid "Send"
+msgstr "Envoyer"
+
+#: ../pm4wp.php:156
+msgid "1. The plugin goes with a page template for front-end usage."
+msgstr "1. Le plugin utilise un modèle de page pour l’affichage aux utilisateurs."
+
+#: ../pm4wp.php:157
+msgid "Copy file <code>pm4wp-template.php</code> to your theme folder and create a page with template <code>Private Messages</code>"
+msgstr "Copiez le fichier <code>pm4wp-template.php</code> dans le dossier de votre thème et créez une page avec le modèle <code>Private Messages</code>"
+
+#: ../pm4wp.php:158
+msgid "The template is just the backbone. You should modify it to fit your theme."
+msgstr "Le modèle est simplement la structure. Vous devriez le modifier pour l’adapter à votre thème."
+
+#: ../pm4wp.php:159
+msgid "2. You can send to multiple recipients now."
+msgstr "2. Vous pouvez maintenant envoyer à plusieurs destinataires."
+
+#: ../pm4wp.php:161
+msgid "Don't show this message next time"
+msgstr "Ne pas afficher ce message la prochaine fois"
+
+#: ../pm4wp.php:164
+msgid "Please set numbers of private messages for each user role:"
+msgstr "Réglez le nombre de messages privés autorisés selon le rôle des utilisateurs:"
+
+#: ../pm4wp.php:165
+msgid "<b><i>0</i></b> means <b><i>unlimited</i></b>"
+msgstr "<b><i>0</i></b> pour <b><i>illimité</i></b>"
+
+#: ../pm4wp.php:166
+msgid "<b><i>-1</i></b> means <b><i>not allowed</i></b> to send PM"
+msgstr "<b><i>-1</i></b> pour <b><i>ne pas autoriser</i></b> l'envoi de MP"
+
+#: ../pm4wp.php:172
+msgid "Administrator"
+msgstr "Administrateur"
+
+#: ../pm4wp.php:176
+msgid "Editor"
+msgstr "Editeur"
+
+#: ../pm4wp.php:180
+msgid "Author"
+msgstr "Auteur"
+
+#: ../pm4wp.php:184
+msgid "Contributor"
+msgstr "Contributeur"
+
+#: ../pm4wp.php:188
+msgid "Subscriber"
+msgstr "Abonné"
+
+#: ../pm4wp.php:192
+msgid "How do you want to choose recipient?"
+msgstr "De quelle manière voulez vous choisir le destinataire ?"
+
+#: ../pm4wp.php:194
+msgid "Dropdown list"
+msgstr "Liste déroulante"
+
+#: ../pm4wp.php:195
+msgid "Auto suggest from user input"
+msgstr "Suggérer lors de la frappe"
+
+#: ../pm4wp.php:200
+msgid "Email template:"
+msgstr "Modèle de l'email:"
+
+#: ../pm4wp.php:204
+msgid "Enable sending email when user receive new PM?"
+msgstr "Activer l'envoi d'email lorsque l'utilisateur reçoit un nouveau MP ?"
+
+#: ../pm4wp.php:206
+msgid "Yes"
+msgstr "Oui"
+
+#: ../pm4wp.php:207
+msgid "No"
+msgstr "Non"
+
+#: ../pm4wp.php:211
+msgid "From name (optional)"
+msgstr "Nom de l'expéditeur (facultatif)"
+
+#: ../pm4wp.php:215
+msgid "From email (optional)"
+msgstr "Email de l'expéditeur (facultatif)"
+
+#: ../pm4wp.php:219
+#: ../pm4wp.php:470
+#: ../pm4wp.php:649
+#: ../pm4wp.php:700
+#: ../pm4wp.php:833
+#: ../pm4wp.php:868
+msgid "Subject"
+msgstr "Sujet"
+
+#: ../pm4wp.php:223
+msgid "Body"
+msgstr "Corps"
+
+#: ../pm4wp.php:226
+msgid "Allowed HTML tags: "
+msgstr "Tags HTML autorisés:"
+
+#: ../pm4wp.php:230
+msgid "Available tags"
+msgstr "Tags disponibles"
+
+#: ../pm4wp.php:235
+msgid "Blog name"
+msgstr "Nom du blog"
+
+#: ../pm4wp.php:239
+msgid "Email address of blog"
+msgstr "Adresse email du blog"
+
+#: ../pm4wp.php:243
+msgid "Sender name"
+msgstr "Nom de l'expéditeur"
+
+#: ../pm4wp.php:247
+msgid "URL of inbox"
+msgstr "URL de la boîte de réception"
+
+#: ../pm4wp.php:252
+msgid "Save Changes"
+msgstr "Sauvegarder les modifications"
+
+#: ../pm4wp.php:259
+msgid "Donation"
+msgstr "Don"
+
+#: ../pm4wp.php:260
+msgid "This plugin has cost me countless hours of work, if you use it, please donate a token of your appreciation!"
+msgstr "Ce plugin m’a coûté d’innombrables heures de travail. Si vous l’utilisez vous pouvez me faire un don en conséquence."
+
+#: ../pm4wp.php:297
+msgid "You have exceeded the limit of mailbox. Please delete some messages before sending another."
+msgstr "Vous avez atteint le nombre maximum de messages. Vous devez en supprimer avant d'en envoyer d'autres."
+
+#: ../pm4wp.php:321
+msgid "Please enter username of recipient."
+msgstr "Entrer le nom du destinataire."
+
+#: ../pm4wp.php:325
+msgid "Please enter subject of message."
+msgstr "Entrer le sujet du message."
+
+#: ../pm4wp.php:329
+msgid "Please enter content of message."
+msgstr "Entrer le contenu du message."
+
+#: ../pm4wp.php:414
+#, php-format
+msgid "%d message sent."
+msgid_plural "%d messages sent."
+msgstr[0] "%d message envoyé."
+msgstr[1] "%d messages envoyés."
+
+#: ../pm4wp.php:414
+#, php-format
+msgid "%d error."
+msgid_plural "%d errors."
+msgstr[0] "%d erreur."
+msgstr[1] "%d erreurs."
+
+#: ../pm4wp.php:423
+#: ../pm4wp.php:832
+#: ../pm4wp.php:867
+msgid "Recipient"
+msgstr "Destinataire"
+
+#: ../pm4wp.php:474
+msgid "Content"
+msgstr "Contenu"
+
+#: ../pm4wp.php:511
+msgid "Inbox \\ View Message"
+msgstr "Boîte de réception"
+
+#: ../pm4wp.php:512
+msgid "Back to inbox"
+msgstr "Retourner à la boîte de réception"
+
+#: ../pm4wp.php:516
+#: ../pm4wp.php:537
+#: ../pm4wp.php:738
+#: ../pm4wp.php:756
+msgid "Info"
+msgstr "Info"
+
+#: ../pm4wp.php:517
+#: ../pm4wp.php:538
+#: ../pm4wp.php:739
+#: ../pm4wp.php:757
+msgid "Message"
+msgstr "Message"
+
+#: ../pm4wp.php:518
+#: ../pm4wp.php:539
+#: ../pm4wp.php:740
+#: ../pm4wp.php:758
+msgid "Action"
+msgstr "Action"
+
+#: ../pm4wp.php:523
+#, php-format
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Expéditeur</b>: %s<br /><b>Date</b>: %s"
+
+#: ../pm4wp.php:524
+#: ../pm4wp.php:746
+#, php-format
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr "<p><b>Sujet</b>: %s</p><p>%s</p>"
+
+#: ../pm4wp.php:527
+#: ../pm4wp.php:638
+#: ../pm4wp.php:683
+#: ../pm4wp.php:749
+#: ../pm4wp.php:854
+msgid "Delete"
+msgstr "Supprimer"
+
+#: ../pm4wp.php:530
+#: ../pm4wp.php:686
+msgid "Reply"
+msgstr "Répondre"
+
+#: ../pm4wp.php:566
+msgid "Message marked as read."
+msgid_plural "Messages marked as read"
+msgstr[0] "Message marqué comme lu."
+msgstr[1] "Messages marqués comme lus."
+
+#: ../pm4wp.php:568
+#: ../pm4wp.php:604
+#: ../pm4wp.php:798
+msgid "Error. Please try again."
+msgstr "Erreur. Veuillez réessayer."
+
+#: ../pm4wp.php:606
+#: ../pm4wp.php:800
+msgid "Message deleted."
+msgid_plural "Messages deleted."
+msgstr[0] "Message supprimé."
+msgstr[1] "Messages supprimés."
+
+#: ../pm4wp.php:620
+msgid "You have no items in inbox."
+msgstr "Vous n'avez aucun message."
+
+#: ../pm4wp.php:629
+#, php-format
+msgid "You have %d private message (%d unread)."
+msgid_plural "You have %d private messages (%d unread)."
+msgstr[0] "Vous avez %d message privé (%d non lu)."
+msgstr[1] "Vous avez %d messages privés (%d non lu)."
+
+#: ../pm4wp.php:637
+msgid "Bulk Action"
+msgstr "Actions globales"
+
+#: ../pm4wp.php:639
+#: ../pm4wp.php:677
+msgid "Mark As Read"
+msgstr "Marquer comme lu"
+
+#: ../pm4wp.php:641
+msgid "Apply"
+msgstr "Appliquer"
+
+#: ../pm4wp.php:648
+#: ../pm4wp.php:699
+msgid "Sender"
+msgstr "Expéditeur"
+
+#: ../pm4wp.php:650
+#: ../pm4wp.php:701
+#: ../pm4wp.php:834
+#: ../pm4wp.php:869
+msgid "Date"
+msgstr "Date"
+
+#: ../pm4wp.php:671
+#: ../pm4wp.php:851
+msgid "View"
+msgstr "Lire"
+
+#: ../pm4wp.php:733
+msgid "Outbox \\ View Message"
+msgstr "Boîte d'envoi"
+
+#: ../pm4wp.php:734
+msgid "Back to outbox"
+msgstr "Retourner à la boîte d’envoi"
+
+#: ../pm4wp.php:745
+#, php-format
+msgid "<b>Recipient</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Destinataire</b>: %s<br /><b>Date</b>: %s"
+
+#: ../pm4wp.php:814
+msgid "You have no items in outbox."
+msgstr "Vous n'avez envoyé aucun message."
+
+#: ../pm4wp.php:817
+#, php-format
+msgid "You wrote %d private message."
+msgid_plural "You wrote %d private messages."
+msgstr[0] "Vous avez écrit %d message privé."
+msgstr[1] "Vous avez écrit %d messages privés."
+
+#: ../pm4wp.php:825
+msgid "Delete Selected"
+msgstr "Supprimer la sélection"
+
+#: ../pm4wp.php:897
+#, php-format
+msgid "You have %d new message!"
+msgid_plural "You have %d new messages!"
+msgstr[0] "Vous avez %d nouveau message !"
+msgstr[1] "Vous avez %d nouveaux messages !"
+
+#: ../pm4wp.php:897
+#: ../pm4wp.php:974
+msgid "Click here to go to inbox"
+msgstr "Aller à la boîte de réception"
+
+#: ../pm4wp.php:915
+msgid "Show notifications and new private messages on sidebar"
+msgstr "Affiche les notifications et les nouveaux messages privés dans la sidebar"
+
+#: ../pm4wp.php:917
+msgid "Private Messages Widget"
+msgstr "Widget Messages Privés"
+
+#: ../pm4wp.php:951
+#, php-format
+msgid "You have %d private message. %d unread."
+msgid_plural "You have %d private messages. %d unread."
+msgstr[0] "Vous avez %d message privé (%d non lu)."
+msgstr[1] "Vous avez %d messages privés (%d non lu)."
+
+#: ../pm4wp.php:967
+#, php-format
+msgid "<br />by <b>%s</b><br />at %s"
+msgstr "<br />par <b>%s</b><br />à %s"
+
+#: ../pm4wp.php:998
+msgid "Title:"
+msgstr "Titre:"
+
+#: ../pm4wp.php:1003
+msgid "Number of PM:"
+msgstr "Nombre de MP:"
+
+#~ msgid "Please enter correct username of recipient."
+#~ msgstr "Vous devez entrer le nom correct du destinataire."
+#~ msgid "Error sending message. Please try again."
+#~ msgstr "Erreur durant l'envoi. Veuillez réessayer."
+

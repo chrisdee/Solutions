@@ -1,0 +1,401 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Web Geeks\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../pm4wp.php:79
+msgid "New PM at %BLOG_NAME%"
+msgstr "Noi PM la % BLOG_NAME %"
+
+#: ../pm4wp.php:80
+msgid ""
+"You have new private message from <b>%SENDER%</b> at <b>%BLOG_NAME%</b>.\n"
+"\n"
+"<a href=\"%INBOX_URL%\">Click here</a> to go to your inbox.\n"
+"\n"
+"This email is sent automatically. Please don't reply."
+msgstr ""
+"Aveţi un mesaj nou privat de la <b>%expeditorului% </b> la <b> %BLOG_NAME% </b>\n"
+".\n"
+"<a href=\"%INBOX_URL%\"> Faceţi clic aici </a> pentru a merge la casuta ta de email\n"
+".\n"
+"Acest e-mail este trimis automat. Vă rugăm să nu răspundeţi."
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:142
+msgid "Private Messages Options"
+msgstr "Opţiuni de mesaje private"
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:117
+#: ../widget.php:95
+msgid "Private Messages"
+msgstr "Mesaje private"
+
+#: ../pm4wp.php:117
+msgid "Messages"
+msgstr "Mesaje"
+
+#: ../pm4wp.php:120
+#: ../pm4wp.php:622
+msgid "Inbox"
+msgstr "Inbox"
+
+#: ../pm4wp.php:122
+#: ../pm4wp.php:813
+msgid "Outbox"
+msgstr "Outbox"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:297
+msgid "Send Private Message"
+msgstr "Trimite mesaj privat"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:497
+msgid "Send"
+msgstr "Trimite"
+
+#: ../pm4wp.php:153
+msgid "1. The plugin goes with a page template for front-end usage."
+msgstr "1. Plugin-ul merge cu un şablon de pagină pentru utilizare front-end."
+
+#: ../pm4wp.php:154
+msgid "Copy file <code>pm4wp-template.php</code> to your theme folder and create a page with template <code>Private Messages</code>"
+msgstr "Copiaţi fişierul <code>pm4wp-template.php</code> în folderul temă şi de a crea o pagină cu şablon <code>Mesaje Private</code>"
+
+#: ../pm4wp.php:155
+msgid "The template is just the backbone. You should modify it to fit your theme."
+msgstr "Şablonul este doar coloana vertebrală. Tu ar trebui să modificaţi-l pentru a se potrivi cu tema."
+
+#: ../pm4wp.php:156
+msgid "2. You can send to multiple recipients now."
+msgstr "2. Puteţi trimite destinatarilor mai multe acum."
+
+#: ../pm4wp.php:158
+msgid "Don't show this message next time"
+msgstr "Nu se mai afişează acest mesaj data viitoare"
+
+#: ../pm4wp.php:161
+msgid "Please set numbers of private messages for each user role:"
+msgstr "Vă rugăm să setaţi numărul de mesaje private pentru fiecare rol utilizator:"
+
+#: ../pm4wp.php:162
+msgid "<b><i>0</i></b> means <b><i>unlimited</i></b>"
+msgstr "<b><i>0</i></b> înseamnă <b><i>nelimitat</i></b>"
+
+#: ../pm4wp.php:163
+msgid "<b><i>-1</i></b> means <b><i>not allowed</i></b> to send PM"
+msgstr "<b><i>-1</i></b> înseamnă <b><i>nu a permis</i></b> de a trimite PM"
+
+#: ../pm4wp.php:169
+msgid "Administrator"
+msgstr "Administrator"
+
+#: ../pm4wp.php:175
+msgid "Editor"
+msgstr "Editor"
+
+#: ../pm4wp.php:179
+msgid "Author"
+msgstr "Autor"
+
+#: ../pm4wp.php:183
+msgid "Contributor"
+msgstr "Contribuitor"
+
+#: ../pm4wp.php:189
+msgid "Subscriber"
+msgstr "Abonat"
+
+#: ../pm4wp.php:194
+msgid "How do you want to choose recipient?"
+msgstr "Cum doriţi să alegeţi destinatar?"
+
+#: ../pm4wp.php:197
+msgid "Dropdown list"
+msgstr "Listă verticală"
+
+#: ../pm4wp.php:199
+msgid "Auto suggest from user input"
+msgstr "Auto sugerează de intrare de la utilizator"
+
+#: ../pm4wp.php:204
+msgid "Email template:"
+msgstr "E-mail şablon:"
+
+#: ../pm4wp.php:208
+msgid "Enable sending email when user receive new PM?"
+msgstr "Permite trimiterea e-mail când utilizatorul primeşte PM noi?"
+
+#: ../pm4wp.php:211
+msgid "Yes"
+msgstr "da"
+
+#: ../pm4wp.php:213
+msgid "No"
+msgstr "nu"
+
+#: ../pm4wp.php:217
+msgid "From name (optional)"
+msgstr "Numele (opţional)"
+
+#: ../pm4wp.php:222
+msgid "From email (optional)"
+msgstr "De e-mail (opţional)"
+
+#: ../pm4wp.php:228
+#: ../pm4wp.php:487
+#: ../pm4wp.php:656
+#: ../pm4wp.php:709
+#: ../pm4wp.php:837
+#: ../pm4wp.php:873
+msgid "Subject"
+msgstr "Subiect"
+
+#: ../pm4wp.php:234
+msgid "Body"
+msgstr "Organism"
+
+#: ../pm4wp.php:237
+msgid "Allowed HTML tags: "
+msgstr "Tag-uri HTML permis: "
+
+#: ../pm4wp.php:241
+msgid "Available tags"
+msgstr "Tag-uri disponibile"
+
+#: ../pm4wp.php:246
+msgid "Blog name"
+msgstr "Numele blog-ul"
+
+#: ../pm4wp.php:250
+msgid "Email address of blog"
+msgstr "Adresa de e-mail de blog-ul"
+
+#: ../pm4wp.php:254
+msgid "Sender name"
+msgstr "Numele expeditorului"
+
+#: ../pm4wp.php:258
+msgid "URL of inbox"
+msgstr "URL-ul inbox"
+
+#: ../pm4wp.php:263
+msgid "Save Changes"
+msgstr "Salvaţi modificările"
+
+#: ../pm4wp.php:270
+msgid "Donation"
+msgstr "Donaţie"
+
+#: ../pm4wp.php:272
+msgid "This plugin has cost me countless hours of work, if you use it, please donate a token of your appreciation!"
+msgstr "Acest plug-a costat nenumărate ore de lucru, dacă îl folosiţi, vă rugăm să doneze un semn de apreciere dvs.!"
+
+#: ../pm4wp.php:310
+msgid "You have exceeded the limit of mailbox. Please delete some messages before sending another."
+msgstr "Tu au depăşit limita de cutie poştală. Vă rugăm să ştergeţi unele mesaje înainte de a trimite un alt."
+
+#: ../pm4wp.php:334
+msgid "Please enter username of recipient."
+msgstr "Vă rugăm să introduceţi numele de utilizator al beneficiarului."
+
+#: ../pm4wp.php:338
+msgid "Please enter subject of message."
+msgstr "Vă rugăm să introduceţi subiectul mesajului."
+
+#: ../pm4wp.php:342
+msgid "Please enter content of message."
+msgstr "Vă rugăm să introduceţi conținutul mesajului."
+
+#: ../pm4wp.php:426
+#, php-format
+msgid "%d messages sent."
+msgstr "%d mesaje trimise."
+
+#: ../pm4wp.php:426
+#, php-format
+msgid "%d errors."
+msgstr "%d erori."
+
+#: ../pm4wp.php:435
+#: ../pm4wp.php:836
+#: ../pm4wp.php:872
+msgid "Recipient"
+msgstr "Destinatar"
+
+#: ../pm4wp.php:491
+msgid "Content"
+msgstr "Conţinut"
+
+#: ../pm4wp.php:526
+msgid "Inbox \\ View Message"
+msgstr "Inbox \\ vizualizare mesaj"
+
+#: ../pm4wp.php:528
+msgid "Back to inbox"
+msgstr "Înapoi la inbox"
+
+#: ../pm4wp.php:532
+#: ../pm4wp.php:553
+#: ../pm4wp.php:747
+#: ../pm4wp.php:765
+msgid "Info"
+msgstr "Info"
+
+#: ../pm4wp.php:533
+#: ../pm4wp.php:554
+#: ../pm4wp.php:748
+#: ../pm4wp.php:766
+msgid "Message"
+msgstr "Mesaj"
+
+#: ../pm4wp.php:534
+#: ../pm4wp.php:555
+#: ../pm4wp.php:749
+#: ../pm4wp.php:767
+msgid "Action"
+msgstr "Acţiune"
+
+#: ../pm4wp.php:539
+#, php-format
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Expeditor</b>: %s < br / > <b>data</b>: %s"
+
+#: ../pm4wp.php:540
+#: ../pm4wp.php:755
+#, php-format
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr "<p><b>Subiect</b>: %s</p><p>%s</p>"
+
+#: ../pm4wp.php:543
+#: ../pm4wp.php:646
+#: ../pm4wp.php:691
+#: ../pm4wp.php:758
+#: ../pm4wp.php:858
+msgid "Delete"
+msgstr "Ştergere"
+
+#: ../pm4wp.php:546
+#: ../pm4wp.php:694
+msgid "Reply"
+msgstr "Răspuns"
+
+#: ../pm4wp.php:578
+msgid "Messages marked as read"
+msgstr "Mesajele marcate ca fiind citite"
+
+#: ../pm4wp.php:580
+#: ../pm4wp.php:612
+#: ../pm4wp.php:803
+msgid "Error. Please try again."
+msgstr "Eroare. Vă rugăm să încercaţi din nou."
+
+#: ../pm4wp.php:614
+#: ../pm4wp.php:805
+msgid "Messages deleted."
+msgstr "Mesajele şterse."
+
+#: ../pm4wp.php:628
+msgid "You have no items in inbox."
+msgstr "Aveţi nici elemente în inbox."
+
+#: ../pm4wp.php:637
+#, php-format
+msgid "You have %d private messages (%d unread)."
+msgstr "Aveţi %d mesaje private (%d necitite)."
+
+#: ../pm4wp.php:645
+msgid "Bulk Action"
+msgstr "Acţiune în vrac"
+
+#: ../pm4wp.php:647
+#: ../pm4wp.php:684
+msgid "Mark As Read"
+msgstr "Marcaţi ca citit"
+
+#: ../pm4wp.php:648
+msgid "Apply"
+msgstr "Aplică"
+
+#: ../pm4wp.php:655
+#: ../pm4wp.php:708
+msgid "Sender"
+msgstr "Expeditor"
+
+#: ../pm4wp.php:657
+#: ../pm4wp.php:710
+#: ../pm4wp.php:838
+#: ../pm4wp.php:874
+msgid "Date"
+msgstr "Data"
+
+#: ../pm4wp.php:678
+#: ../pm4wp.php:855
+msgid "View"
+msgstr "Vizualizare"
+
+#: ../pm4wp.php:741
+msgid "Outbox \\ View Message"
+msgstr "Outbox \\ vizualizare mesaj"
+
+#: ../pm4wp.php:743
+msgid "Back to outbox"
+msgstr "Înapoi la outbox"
+
+#: ../pm4wp.php:754
+#, php-format
+msgid "<b>Recipient</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Destinatar</b>: %s < br / > <b>data</b>: %s"
+
+#: ../pm4wp.php:819
+msgid "You have no items in outbox."
+msgstr "Aveţi nici un element în outbox."
+
+#: ../pm4wp.php:822
+#, php-format
+msgid "You wrote %d private messages."
+msgstr "Aţi scris %d mesaje private."
+
+#: ../pm4wp.php:829
+msgid "Delete Selected"
+msgstr "Ştergere selectate"
+
+#: ../pm4wp.php:904
+#, php-format
+msgid "You have %d new messages!"
+msgstr "Aveţi %d mesaje noi!"
+
+#: ../pm4wp.php:904
+#: ../widget.php:75
+msgid "Click here to go to inbox"
+msgstr "Faceţi clic aici pentru a merge la inbox"
+
+#: ../widget.php:16
+msgid "Show notifications and new private messages on sidebar"
+msgstr "Notificările Arată şi mesaje private noi pe bara laterală"
+
+#: ../widget.php:18
+msgid "Private Messages Widget"
+msgstr "Widget mesaje private"
+
+#: ../widget.php:68
+#, php-format
+msgid "<br />by <b>%s</b><br />at %s"
+msgstr "< br / > de <b>%s</b> < br / > la %s"
+
+#: ../widget.php:99
+msgid "Title:"
+msgstr "Titlu:"
+
+#: ../widget.php:104
+msgid "Number of PM:"
+msgstr "Numărul de PM:"
+

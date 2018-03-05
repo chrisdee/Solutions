@@ -1,0 +1,462 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Private Messages For WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 15:25+0300\n"
+"PO-Revision-Date: 2010-03-04 19:30+0300\n"
+"Last-Translator: FatCow <zhr@tut.by>\n"
+"Language-Team: FatCow <zhr@tut.by>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Belarusian\n"
+"X-Poedit-Country: BELARUS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#@ pm4wp
+#: pm4wp.php:78
+#, php-format
+msgid "New PM at %BLOG_NAME%"
+msgstr "Новае паведамленне на сайце"
+
+#@ pm4wp
+#: pm4wp.php:79
+#, php-format
+msgid "You have new private message from <b>%SENDER%</b> at <b>%BLOG_NAME%</b>.<br /><br /><a href=\"%INBOX_URL%\">Click here</a> to go to your inbox.<br /><br /><hr />This email is sent automatically. Please don't reply."
+msgstr "У вас новае паведамленне <b>%SENDER%</b> на сайце <b>%BLOG_NAME%</b>.<br /><br /><a href=\"%INBOX_URL%\">Націсніце тут</a> каб перайсці ва Ўваходныя.<br /><br /><hr />Дадзены ліст адпраўлена аўтаматычна. На яго не трэба адказваць."
+
+#@ pm4wp
+#: pm4wp.php:113
+#: pm4wp.php:146
+msgid "Private Messages Options"
+msgstr "Налады асабістых паведамленняў"
+
+#@ pm4wp
+#: pm4wp.php:113
+#: pm4wp.php:117
+#: pm4wp.php:938
+msgid "Private Messages"
+msgstr "Асабістыя паведамленні"
+
+#@ pm4wp
+#: pm4wp.php:117
+msgid "Messages"
+msgstr "Паведамленні"
+
+#@ pm4wp
+#: pm4wp.php:120
+#: pm4wp.php:559
+msgid "Inbox"
+msgstr "Уваходныя"
+
+#@ pm4wp
+#: pm4wp.php:122
+#: pm4wp.php:752
+msgid "Outbox"
+msgstr "Выходныя"
+
+#@ pm4wp
+#: pm4wp.php:125
+#: pm4wp.php:251
+msgid "Send Private Message"
+msgstr "Адправіць асабістае паведамленне"
+
+#@ pm4wp
+#: pm4wp.php:125
+#: pm4wp.php:426
+msgid "Send"
+msgstr "Адправіць"
+
+#@ pm4wp
+#: pm4wp.php:151
+msgid "Please set numbers of private messages for each user role:"
+msgstr "Калі ласка, усталюеце колькасць асабістых паведамленняў для кожнай ролі"
+
+#@ pm4wp
+#: pm4wp.php:152
+msgid "<b><i>0</i></b> means <b><i>unlimited</i></b>"
+msgstr "<b><i>0</i></b> азначае <b><i>неабмежавана</i></b>"
+
+#@ pm4wp
+#: pm4wp.php:153
+#, fuzzy
+msgid "<b><i>-1</i></b> means <b><i>not allowed</i></b> to send PM"
+msgstr "<b><i>0</i></b> азначае <b><i>неабмежавана</i></b>"
+
+#@ pm4wp
+#: pm4wp.php:159
+msgid "Administrator"
+msgstr "Адміністратар"
+
+#@ pm4wp
+#: pm4wp.php:163
+msgid "Editor"
+msgstr "Рэдактар"
+
+#@ pm4wp
+#: pm4wp.php:167
+msgid "Author"
+msgstr "Аўтар"
+
+#@ pm4wp
+#: pm4wp.php:171
+msgid "Contributor"
+msgstr "Удзельнік"
+
+#@ pm4wp
+#: pm4wp.php:175
+msgid "Subscriber"
+msgstr "Падпісант"
+
+#@ pm4wp
+#: pm4wp.php:179
+msgid "How do you want to choose recipient?"
+msgstr "Якім чынам абраць атрымальніка"
+
+#@ pm4wp
+#: pm4wp.php:181
+msgid "Dropdown list"
+msgstr "Выпадальны спіс"
+
+#@ pm4wp
+#: pm4wp.php:182
+msgid "Auto suggest from user input"
+msgstr "Аўтаматычна падстаўляць па меры набору"
+
+#@ pm4wp
+#: pm4wp.php:187
+msgid "Email template:"
+msgstr "Шаблон паведамлення:"
+
+#@ pm4wp
+#: pm4wp.php:191
+msgid "Enable sending email when user receive new PM?"
+msgstr "Адсылаць апавяшчэнне, калі карыстач атрымлівае новае ЛС?"
+
+#@ pm4wp
+#: pm4wp.php:193
+msgid "Yes"
+msgstr "Так"
+
+#@ pm4wp
+#: pm4wp.php:194
+msgid "No"
+msgstr "Не"
+
+#@ pm4wp
+#: pm4wp.php:198
+msgid "From name (optional)"
+msgstr "Ад імя (не абавязкова)"
+
+#@ pm4wp
+#: pm4wp.php:202
+msgid "From email (optional)"
+msgstr "Ад адрасу (не абавязкова)"
+
+#@ pm4wp
+#: pm4wp.php:206
+#: pm4wp.php:417
+#: pm4wp.php:594
+#: pm4wp.php:645
+#: pm4wp.php:777
+#: pm4wp.php:812
+msgid "Subject"
+msgstr "Тэма"
+
+#@ pm4wp
+#: pm4wp.php:210
+msgid "Body"
+msgstr "Цела паведамлення"
+
+#@ pm4wp
+#: pm4wp.php:214
+msgid "Available tags"
+msgstr "Даступныя пазнакі"
+
+#@ pm4wp
+#: pm4wp.php:219
+msgid "Blog name"
+msgstr "Назва блога"
+
+#@ pm4wp
+#: pm4wp.php:223
+msgid "Email address of blog"
+msgstr "Е-мейл адрас блога "
+
+#@ pm4wp
+#: pm4wp.php:227
+#, fuzzy
+msgid "Sender name"
+msgstr "Адпраўнік"
+
+#@ pm4wp
+#: pm4wp.php:231
+msgid "URL of inbox"
+msgstr "URL уваходных паведамленняў"
+
+#@ pm4wp
+#: pm4wp.php:236
+msgid "Save Changes"
+msgstr "Захаваць змены"
+
+#@ pm4wp
+#: pm4wp.php:264
+msgid "You have exceeded the limit of mailbox. Please delete some messages before sending another."
+msgstr "Вы перавысілі ліміт паштовай скрыні. Калі ласка, выдаліце непатрэбныя паведамленні"
+
+#@ pm4wp
+#: pm4wp.php:283
+msgid "Please enter username of recipient."
+msgstr "Калі ласка, увядзіце імя атрымальніка"
+
+#@ pm4wp
+#: pm4wp.php:287
+msgid "Please enter subject of message."
+msgstr "Калі ласка, увядзіце тэму паведамлення"
+
+#@ pm4wp
+#: pm4wp.php:291
+msgid "Please enter content of message."
+msgstr "Калі ласка, увядзіце тэкст паведамлення"
+
+#@ pm4wp
+#: pm4wp.php:297
+msgid "Please enter correct username of recipient."
+msgstr "Калі ласка, увядзіце правільнае імя атрымальніка"
+
+#@ pm4wp
+#: pm4wp.php:321
+msgid "Message sent."
+msgstr "Паведамленне адпраўлена"
+
+#@ pm4wp
+#: pm4wp.php:363
+msgid "Error sending message. Please try again."
+msgstr "Памылка пры адпраўцы паведамлення. Калі ласка, паспрабуйце яшчэ раз."
+
+#@ pm4wp
+#: pm4wp.php:373
+#: pm4wp.php:776
+#: pm4wp.php:811
+msgid "Recipient"
+msgstr "Атрымальнік"
+
+#@ pm4wp
+#: pm4wp.php:421
+msgid "Content"
+msgstr "Утрыманне"
+
+#@ pm4wp
+#: pm4wp.php:457
+msgid "Inbox \\ View Message"
+msgstr "Уваходныя \\ Прагляд паведамлення"
+
+#@ pm4wp
+#: pm4wp.php:461
+#: pm4wp.php:482
+#: pm4wp.php:682
+#: pm4wp.php:700
+msgid "Info"
+msgstr "Інфа"
+
+#@ pm4wp
+#: pm4wp.php:462
+#: pm4wp.php:483
+#: pm4wp.php:683
+#: pm4wp.php:701
+msgid "Message"
+msgstr "Паведамленне"
+
+#@ pm4wp
+#: pm4wp.php:463
+#: pm4wp.php:484
+#: pm4wp.php:684
+#: pm4wp.php:702
+msgid "Action"
+msgstr "Дзеянне"
+
+#@ pm4wp
+#: pm4wp.php:468
+#, php-format
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Адпраўнік</b>: %s<br /><b>Дата</b>: %s"
+
+#@ pm4wp
+#: pm4wp.php:469
+#: pm4wp.php:690
+#, php-format
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr "<p><b>Тэма</b>: %s</p><p>%s</p>"
+
+#@ pm4wp
+#: pm4wp.php:472
+#: pm4wp.php:583
+#: pm4wp.php:628
+#: pm4wp.php:693
+#: pm4wp.php:798
+msgid "Delete"
+msgstr "Выдаліць"
+
+#@ pm4wp
+#: pm4wp.php:475
+#: pm4wp.php:631
+msgid "Reply"
+msgstr "Адказаць"
+
+#@ pm4wp
+#: pm4wp.php:511
+msgid "Message marked as read."
+msgid_plural "Messages marked as read"
+msgstr[0] "Паведамленне пазначана як прачытанае."
+msgstr[1] "Паведамленні, пазначаныя як прачытаныя"
+
+#@ pm4wp
+#: pm4wp.php:513
+#: pm4wp.php:549
+#: pm4wp.php:742
+msgid "Error. Please try again."
+msgstr "Памылка. Калі ласка, паспрабуйце яшчэ раз."
+
+#@ pm4wp
+#: pm4wp.php:551
+#: pm4wp.php:744
+msgid "Message deleted."
+msgid_plural "Messages deleted."
+msgstr[0] "Паведамленне выдалена."
+msgstr[1] "Паведамленні выдалены."
+
+#@ pm4wp
+#: pm4wp.php:565
+msgid "You have no items in inbox."
+msgstr "У вас няма паведамленняў у тэчцы Ўваходныя."
+
+#@ pm4wp
+#: pm4wp.php:574
+#, php-format
+msgid "You have %d private message (%d unread)."
+msgid_plural "You have %d private messages (%d unread)."
+msgstr[0] "Вы маеце %d асабістае паведамленне (%d непрачытана)."
+msgstr[1] "Вы маеце %d асабістых паведамленняў (%d непрачытана)."
+msgstr[2] ""
+
+#@ pm4wp
+#: pm4wp.php:582
+msgid "Bulk Action"
+msgstr "Некалькі адразу"
+
+#@ pm4wp
+#: pm4wp.php:584
+#: pm4wp.php:622
+msgid "Mark As Read"
+msgstr "Адзначыць як прачытанае"
+
+#@ pm4wp
+#: pm4wp.php:586
+msgid "Apply"
+msgstr "Ужыць"
+
+#@ pm4wp
+#: pm4wp.php:593
+#: pm4wp.php:644
+msgid "Sender"
+msgstr "Адпраўнік"
+
+#@ pm4wp
+#: pm4wp.php:595
+#: pm4wp.php:646
+#: pm4wp.php:778
+#: pm4wp.php:813
+msgid "Date"
+msgstr "Дата"
+
+#@ pm4wp
+#: pm4wp.php:616
+#: pm4wp.php:795
+msgid "View"
+msgstr "Прагляд"
+
+#@ pm4wp
+#: pm4wp.php:678
+msgid "Outbox \\ View Message"
+msgstr "Выходныя \\ Прагляд паведамленняў"
+
+#@ pm4wp
+#: pm4wp.php:689
+#, php-format
+msgid "<b>Recipient</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Атрымальнік</b>: %s<br /><b>Дата</b>: %s"
+
+#@ pm4wp
+#: pm4wp.php:758
+msgid "You have no items in outbox."
+msgstr "Тэчка выходных пустая"
+
+#@ pm4wp
+#: pm4wp.php:761
+#, php-format
+msgid "You wrote %d private message."
+msgid_plural "You wrote %d private messages."
+msgstr[0] "Вы напісалі %d асабістае паведамленне."
+msgstr[1] "Вы напісалі %d асабістых паведамленняў."
+msgstr[2] ""
+
+#@ pm4wp
+#: pm4wp.php:769
+msgid "Delete Selected"
+msgstr "Выдаліць абраныя"
+
+#@ pm4wp
+#: pm4wp.php:841
+#, php-format
+msgid "You have %d new message!"
+msgid_plural "You have %d new messages!"
+msgstr[0] "У Вас ёсць %d новае паведамленне"
+msgstr[1] "У Вас ёсць %d новых паведамленняў"
+msgstr[2] ""
+
+#@ pm4wp
+#: pm4wp.php:841
+#: pm4wp.php:918
+msgid "Click here to go to inbox"
+msgstr "Націсніце для пераходу ва Ўваходныя"
+
+#@ pm4wp
+#: pm4wp.php:859
+msgid "Show notifications and new private messages on sidebar"
+msgstr "Паказваць апавяшчэнні і новыя паведамленні на сайдбаре"
+
+#@ pm4wp
+#: pm4wp.php:861
+#, fuzzy
+msgid "Private Messages Widget"
+msgstr "Асабістыя паведамленні"
+
+#@ pm4wp
+#: pm4wp.php:895
+#, fuzzy, php-format, php-format
+msgid "You have %d private message. %d unread."
+msgid_plural "You have %d private messages. %d unread."
+msgstr[0] "Вы маеце %d асабістае паведамленне (%d непрачытана)."
+msgstr[1] "Вы маеце %d асабістых паведамленняў (%d непрачытана)."
+msgstr[2] ""
+
+#@ pm4wp
+#: pm4wp.php:911
+#, php-format
+msgid "<br />by <b>%s</b><br />at %s"
+msgstr "<br />ад <b>%s</b><br />на сайце %s"
+
+#: pm4wp.php:942
+msgid "Title:"
+msgstr ""
+
+#@ pm4wp
+#: pm4wp.php:947
+msgid "Number of PM:"
+msgstr "Колькасць ЛС:"
+

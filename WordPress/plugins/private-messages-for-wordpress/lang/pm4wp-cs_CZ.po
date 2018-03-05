@@ -1,0 +1,378 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Private Messages For WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 15:22+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ivo Hajný <ivo.hajny@gmail.com>\n"
+"Language-Team: Rilwis <rilwis@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
+"X-Poedit-Basepath: ./\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../pm4wp.php:78
+msgid "New PM at %BLOG_NAME%"
+msgstr "Nová soukromá zpráva na %BLOG_NAME%"
+
+#: ../pm4wp.php:79
+msgid "You have new private message from <b>%SENDER%</b> at <b>%BLOG_NAME%</b>.<br /><br /><a href=\"%INBOX_URL%\">Click here</a> to go to your inbox.<br /><br /><hr />This email is sent automatically. Please don't reply."
+msgstr "Máte novou soukromou zprávu od <b>%SENDER%</b> na <b>%BLOG_NAME%</b>.<br /><br /><a href=\"%INBOX_URL%\">Klikněte zde</a>pro přechod do schánky.<br /><br /><hr />Tento email byl zaslán automaticky. Prosím neodpovídejte."
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:146
+msgid "Private Messages Options"
+msgstr "Možnosti soukromých zpráv"
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:117
+#: ../pm4wp.php:938
+msgid "Private Messages"
+msgstr "Soukromé zprávy"
+
+#: ../pm4wp.php:117
+msgid "Messages"
+msgstr "Zprávy"
+
+#: ../pm4wp.php:120
+#: ../pm4wp.php:559
+msgid "Inbox"
+msgstr "Příchozí"
+
+#: ../pm4wp.php:122
+#: ../pm4wp.php:752
+msgid "Outbox"
+msgstr "Odchozí"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:251
+msgid "Send Private Message"
+msgstr "Odeslat soukromou zprávu"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:426
+msgid "Send"
+msgstr "Odeslat zprávu"
+
+#: ../pm4wp.php:151
+msgid "Please set numbers of private messages for each user role:"
+msgstr "Prosím nastavte počet soukromých zpráv pro každou úroveň uživatelů"
+
+#: ../pm4wp.php:152
+msgid "<b><i>0</i></b> means <b><i>unlimited</i></b>"
+msgstr "<b><i>0</i></b> znamená <b><i>neomezeně</i></b>"
+
+#: ../pm4wp.php:153
+msgid "<b><i>-1</i></b> means <b><i>not allowed</i></b> to send PM"
+msgstr "<b><i>-1</i></b> znamená <b><i>není povoleno</i></b> zasílat soukromé zprávy"
+
+#: ../pm4wp.php:159
+msgid "Administrator"
+msgstr "Administrátor"
+
+#: ../pm4wp.php:163
+msgid "Editor"
+msgstr "Šéfredaktor"
+
+#: ../pm4wp.php:167
+msgid "Author"
+msgstr "Redaktor"
+
+#: ../pm4wp.php:171
+msgid "Contributor"
+msgstr "Spolupracovník"
+
+#: ../pm4wp.php:175
+msgid "Subscriber"
+msgstr "Návštěvník"
+
+#: ../pm4wp.php:179
+msgid "How do you want to choose recipient?"
+msgstr "Jak chcete vybírat příjemce?"
+
+#: ../pm4wp.php:181
+msgid "Dropdown list"
+msgstr "Rozbalovací menu"
+
+#: ../pm4wp.php:182
+msgid "Auto suggest from user input"
+msgstr "Doplňování podle uživatelova zadání"
+
+#: ../pm4wp.php:187
+msgid "Email template:"
+msgstr "Šablona emailu:"
+
+#: ../pm4wp.php:191
+msgid "Enable sending email when user receive new PM?"
+msgstr "Povolit zasílání emailu když uživatel dostane novou soukromou zprávu?"
+
+#: ../pm4wp.php:193
+msgid "Yes"
+msgstr "Ano"
+
+#: ../pm4wp.php:194
+msgid "No"
+msgstr "Ne"
+
+#: ../pm4wp.php:198
+msgid "From name (optional)"
+msgstr "Jméno od (volitelně):"
+
+#: ../pm4wp.php:202
+msgid "From email (optional)"
+msgstr "Email od (volitelně):"
+
+#: ../pm4wp.php:206
+#: ../pm4wp.php:417
+#: ../pm4wp.php:594
+#: ../pm4wp.php:645
+#: ../pm4wp.php:777
+#: ../pm4wp.php:812
+msgid "Subject"
+msgstr "Předmět"
+
+#: ../pm4wp.php:210
+msgid "Body"
+msgstr "Tělo zprávy"
+
+#: ../pm4wp.php:214
+msgid "Available tags"
+msgstr "Dostupné značky"
+
+#: ../pm4wp.php:219
+msgid "Blog name"
+msgstr "Jméno webu"
+
+#: ../pm4wp.php:223
+msgid "Email address of blog"
+msgstr "Emailová adresa webu"
+
+#: ../pm4wp.php:227
+msgid "Sender name"
+msgstr "Odesílatel"
+
+#: ../pm4wp.php:231
+msgid "URL of inbox"
+msgstr "URL schránky"
+
+#: ../pm4wp.php:236
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+#: ../pm4wp.php:264
+msgid "You have exceeded the limit of mailbox. Please delete some messages before sending another."
+msgstr "Dosáhli jste limitu schránky, prosím smažte nějaké zprávy před dalším odesíláním."
+
+#: ../pm4wp.php:283
+msgid "Please enter username of recipient."
+msgstr "Prosím zadejte uživatelské jméno příjemce."
+
+#: ../pm4wp.php:287
+msgid "Please enter subject of message."
+msgstr "Prosím zadejte předmět zprávy."
+
+#: ../pm4wp.php:291
+msgid "Please enter content of message."
+msgstr "Prosím zadejte obsah zprávy."
+
+#: ../pm4wp.php:297
+msgid "Please enter correct username of recipient."
+msgstr "Prosím zadejte správné uživatelské jméno příjemce."
+
+#: ../pm4wp.php:321
+msgid "Message sent."
+msgstr "Zpráva odeslána."
+
+#: ../pm4wp.php:363
+msgid "Error sending message. Please try again."
+msgstr "Chyba pří odesílání zprávy. Prosím, zkuste to později."
+
+#: ../pm4wp.php:373
+#: ../pm4wp.php:776
+#: ../pm4wp.php:811
+msgid "Recipient"
+msgstr "Příjemce"
+
+#: ../pm4wp.php:421
+msgid "Content"
+msgstr "Obsah"
+
+#: ../pm4wp.php:457
+msgid "Inbox \\ View Message"
+msgstr "Příchozí \\ Zobrazit zprávu"
+
+#: ../pm4wp.php:461
+#: ../pm4wp.php:482
+#: ../pm4wp.php:682
+#: ../pm4wp.php:700
+msgid "Info"
+msgstr "Info"
+
+#: ../pm4wp.php:462
+#: ../pm4wp.php:483
+#: ../pm4wp.php:683
+#: ../pm4wp.php:701
+msgid "Message"
+msgstr "Zpráva"
+
+#: ../pm4wp.php:463
+#: ../pm4wp.php:484
+#: ../pm4wp.php:684
+#: ../pm4wp.php:702
+msgid "Action"
+msgstr "Akce"
+
+#: ../pm4wp.php:468
+#, php-format
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Odesílatel</b>: %s<br /><b>Datum</b>: %s"
+
+#: ../pm4wp.php:469
+#: ../pm4wp.php:690
+#, php-format
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr "<p><b>Předmět</b>: %s</p><p>%s</p>"
+
+#: ../pm4wp.php:472
+#: ../pm4wp.php:583
+#: ../pm4wp.php:628
+#: ../pm4wp.php:693
+#: ../pm4wp.php:798
+msgid "Delete"
+msgstr "Smazat"
+
+#: ../pm4wp.php:475
+#: ../pm4wp.php:631
+msgid "Reply"
+msgstr "Odpovědět"
+
+#: ../pm4wp.php:511
+msgid "Message marked as read."
+msgid_plural "Messages marked as read"
+msgstr[0] "Zpráva označena jako přečtená."
+msgstr[1] "Zprávy označené jako přečtené"
+
+#: ../pm4wp.php:513
+#: ../pm4wp.php:549
+#: ../pm4wp.php:742
+msgid "Error. Please try again."
+msgstr "Chyba. Prosím zkuste to znova."
+
+#: ../pm4wp.php:551
+#: ../pm4wp.php:744
+msgid "Message deleted."
+msgid_plural "Messages deleted."
+msgstr[0] "Zpráva smazána"
+msgstr[1] "Zprávy smazány"
+
+#: ../pm4wp.php:565
+msgid "You have no items in inbox."
+msgstr "Nemáte žádné nové zprávy."
+
+#: ../pm4wp.php:574
+#, php-format
+msgid "You have %d private message (%d unread)."
+msgid_plural "You have %d private messages (%d unread)."
+msgstr[0] "Máte %d  zprávu (%d nepřečtená)"
+msgstr[1] "Máte %d  zprávy (%d nepřečtené)"
+
+#: ../pm4wp.php:582
+msgid "Bulk Action"
+msgstr "Hromadná akce"
+
+#: ../pm4wp.php:584
+#: ../pm4wp.php:622
+msgid "Mark As Read"
+msgstr "Označit jako přečtené"
+
+#: ../pm4wp.php:586
+msgid "Apply"
+msgstr "Použít"
+
+#: ../pm4wp.php:593
+#: ../pm4wp.php:644
+msgid "Sender"
+msgstr "Odesílatel"
+
+#: ../pm4wp.php:595
+#: ../pm4wp.php:646
+#: ../pm4wp.php:778
+#: ../pm4wp.php:813
+msgid "Date"
+msgstr "Datum"
+
+#: ../pm4wp.php:616
+#: ../pm4wp.php:795
+msgid "View"
+msgstr "Zobrazit"
+
+#: ../pm4wp.php:678
+msgid "Outbox \\ View Message"
+msgstr "Odchozí \\ Zobrazit zprávu"
+
+#: ../pm4wp.php:689
+#, php-format
+msgid "<b>Recipient</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Příjemce</b>: %s<br /><b>Datum</b>: %s"
+
+#: ../pm4wp.php:758
+msgid "You have no items in outbox."
+msgstr "Nemáte žádné odchozí zprávy."
+
+#: ../pm4wp.php:761
+#, php-format
+msgid "You wrote %d private message."
+msgid_plural "You wrote %d private messages."
+msgstr[0] "Napsal jste %d soukromou zprávu."
+msgstr[1] "Napsal jste %d soukromé zprávy."
+
+#: ../pm4wp.php:769
+msgid "Delete Selected"
+msgstr "Zvoleno smazání"
+
+#: ../pm4wp.php:841
+#, php-format
+msgid "You have %d new message!"
+msgid_plural "You have %d new messages!"
+msgstr[0] "Máte %d novou zprávu!"
+msgstr[1] "Máte %d nové zprávy!"
+
+#: ../pm4wp.php:841
+#: ../pm4wp.php:918
+msgid "Click here to go to inbox"
+msgstr "Klikněte zde pro přechod do schránky"
+
+#: ../pm4wp.php:859
+msgid "Show notifications and new private messages on sidebar"
+msgstr "Zobraz upozornění a nové soukromé zprávy na postranní liště"
+
+#: ../pm4wp.php:861
+msgid "Private Messages Widget"
+msgstr "Widget Soukromých zpráv"
+
+#: ../pm4wp.php:895
+#, php-format
+msgid "You have %d private message. %d unread."
+msgid_plural "You have %d private messages. %d unread."
+msgstr[0] "Máte %d  zprávu (%d nepřečtená)"
+msgstr[1] "Máte %d  zprávy (%d nepřečtené)"
+
+#: ../pm4wp.php:911
+#, php-format
+msgid "<br />by <b>%s</b><br />at %s"
+msgstr "<br />od <b>%s</b><br />na %s"
+
+#: ../pm4wp.php:942
+msgid "Title:"
+msgstr "Titulek:"
+
+#: ../pm4wp.php:947
+msgid "Number of PM:"
+msgstr "Počet soukr.zpráv:"
+

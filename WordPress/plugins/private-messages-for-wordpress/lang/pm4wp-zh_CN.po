@@ -1,0 +1,430 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Private Messages For WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-27 23:19+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Rilwis <rilwis@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
+"X-Poedit-Basepath: ./\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../pm4wp.php:78
+msgid "New PM at %BLOG_NAME%"
+msgstr "您在 %BLOG_NAME% 收到了新的站内信！"
+
+#: ../pm4wp.php:79
+msgid ""
+"You have new private message from <b>%SENDER%</b> at <b>%BLOG_NAME%</b>.\n"
+"\n"
+"<a href=\"%INBOX_URL%\">Click here</a> to go to your inbox.\n"
+"\n"
+"This email is sent automatically. Please don't reply."
+msgstr ""
+"您在 <b>%BLOG_NAME%</b> 收到了 <b>%SENDER%</b> 的站内信。\n"
+"\n"
+"<a href=\"%INBOX_URL%\">点击这里</a> 进入你的收件箱。\n"
+"\n"
+"这条E-mail是系统自动发送的，请勿直接回复。"
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:146
+msgid "Private Messages Options"
+msgstr "站内信设置"
+
+#: ../pm4wp.php:113
+#: ../pm4wp.php:117
+#: ../pm4wp.php:992
+msgid "Private Messages"
+msgstr "站内信"
+
+#: ../pm4wp.php:117
+msgid "Messages"
+msgstr "信息"
+
+#: ../pm4wp.php:120
+#: ../pm4wp.php:612
+msgid "Inbox"
+msgstr "收件箱"
+
+#: ../pm4wp.php:122
+#: ../pm4wp.php:806
+msgid "Outbox"
+msgstr "已发信息"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:282
+msgid "Send Private Message"
+msgstr "发送站内信"
+
+#: ../pm4wp.php:125
+#: ../pm4wp.php:478
+msgid "Send"
+msgstr "发送"
+
+#: ../pm4wp.php:156
+msgid "1. The plugin goes with a page template for front-end usage."
+msgstr "1、本插件带有一个用作前台使用的页面模板。"
+
+#: ../pm4wp.php:157
+msgid "Copy file <code>pm4wp-template.php</code> to your theme folder and create a page with template <code>Private Messages</code>"
+msgstr "复制文件 <code>pm4wp-template.php</code> 到您的主题文件夹，使用叫做 <code>Private Messages</code> 的模板创建页面。"
+
+#: ../pm4wp.php:158
+msgid "The template is just the backbone. You should modify it to fit your theme."
+msgstr "这个模板只有基本结构。您应该修改它以让它和您的主题相协调。"
+
+#: ../pm4wp.php:159
+msgid "2. You can send to multiple recipients now."
+msgstr "2、现在您能够把站内信同时发送给多个收件人。"
+
+#: ../pm4wp.php:161
+msgid "Don't show this message next time"
+msgstr "下次不要显示这条信息。"
+
+#: ../pm4wp.php:164
+msgid "Please set numbers of private messages for each user role:"
+msgstr "请设定每种用户的站内信数量限制："
+
+#: ../pm4wp.php:165
+msgid "<b><i>0</i></b> means <b><i>unlimited</i></b>"
+msgstr "<b><i>0</i></b> 表示 <b><i>无限制</i></b>"
+
+#: ../pm4wp.php:166
+msgid "<b><i>-1</i></b> means <b><i>not allowed</i></b> to send PM"
+msgstr "<b><i>-1</i></b> 表示 <b><i>不允许</i></b> 发送站内信"
+
+#: ../pm4wp.php:172
+msgid "Administrator"
+msgstr "Administrator（管理员）"
+
+#: ../pm4wp.php:176
+msgid "Editor"
+msgstr "Editor（编辑）"
+
+#: ../pm4wp.php:180
+msgid "Author"
+msgstr "Author（作者）"
+
+#: ../pm4wp.php:184
+msgid "Contributor"
+msgstr "Contributor（投稿者）"
+
+#: ../pm4wp.php:188
+msgid "Subscriber"
+msgstr "Subscriber（订阅者）"
+
+#: ../pm4wp.php:192
+msgid "How do you want to choose recipient?"
+msgstr "发件时，您想怎么选择收件人？"
+
+#: ../pm4wp.php:194
+msgid "Dropdown list"
+msgstr "下拉列表"
+
+#: ../pm4wp.php:195
+msgid "Auto suggest from user input"
+msgstr "根据用户输入自动给出建议"
+
+#: ../pm4wp.php:200
+msgid "Email template:"
+msgstr "Email 模板："
+
+#: ../pm4wp.php:204
+msgid "Enable sending email when user receive new PM?"
+msgstr "当用户收到站内信时通过Email通知？"
+
+#: ../pm4wp.php:206
+msgid "Yes"
+msgstr "是"
+
+#: ../pm4wp.php:207
+msgid "No"
+msgstr "否"
+
+#: ../pm4wp.php:211
+msgid "From name (optional)"
+msgstr "来自 [姓名] （可选）"
+
+#: ../pm4wp.php:215
+msgid "From email (optional)"
+msgstr "来自 [Email] （可选）"
+
+#: ../pm4wp.php:219
+#: ../pm4wp.php:468
+#: ../pm4wp.php:647
+#: ../pm4wp.php:698
+#: ../pm4wp.php:831
+#: ../pm4wp.php:866
+msgid "Subject"
+msgstr "主题"
+
+#: ../pm4wp.php:223
+msgid "Body"
+msgstr "内容"
+
+#: ../pm4wp.php:226
+msgid "Allowed HTML tags: "
+msgstr "允许使用的HTML标签："
+
+#: ../pm4wp.php:230
+msgid "Available tags"
+msgstr "可用标签"
+
+#: ../pm4wp.php:235
+msgid "Blog name"
+msgstr "博客名称"
+
+#: ../pm4wp.php:239
+msgid "Email address of blog"
+msgstr "安装博客的Email地址"
+
+#: ../pm4wp.php:243
+msgid "Sender name"
+msgstr "发送人名称"
+
+#: ../pm4wp.php:247
+msgid "URL of inbox"
+msgstr "收件箱URL"
+
+#: ../pm4wp.php:252
+msgid "Save Changes"
+msgstr "保存修改"
+
+#: ../pm4wp.php:259
+msgid "Donation"
+msgstr "捐助"
+
+#: ../pm4wp.php:260
+msgid "If you like this plugin, please buy me a beer!"
+msgstr "如果你喜欢这个插件，请我喝啤酒吧……"
+
+#: ../pm4wp.php:295
+msgid "You have exceeded the limit of mailbox. Please delete some messages before sending another."
+msgstr "您的站内信数量已超过限制。发送新的站内信前请删除掉一些原来的信息。"
+
+#: ../pm4wp.php:319
+msgid "Please enter username of recipient."
+msgstr "请输入收件人用户名。"
+
+#: ../pm4wp.php:323
+msgid "Please enter subject of message."
+msgstr "请输入信息的标题。"
+
+#: ../pm4wp.php:327
+msgid "Please enter content of message."
+msgstr "请输入信息内容。"
+
+#: ../pm4wp.php:412
+#, php-format
+msgid "%d message sent."
+msgid_plural "%d messages sent."
+msgstr[0] "%d 条信息已成功发送。"
+msgstr[1] "%d 条信息已成功发送。"
+
+#: ../pm4wp.php:412
+#, php-format
+msgid "%d error."
+msgid_plural "%d errors."
+msgstr[0] "%d 个出错."
+msgstr[1] "%d 个出错."
+
+#: ../pm4wp.php:421
+#: ../pm4wp.php:830
+#: ../pm4wp.php:865
+msgid "Recipient"
+msgstr "收件人"
+
+#: ../pm4wp.php:472
+msgid "Content"
+msgstr "内容"
+
+#: ../pm4wp.php:509
+msgid "Inbox \\ View Message"
+msgstr "收件箱 \\ 浏览信息"
+
+#: ../pm4wp.php:510
+msgid "Back to inbox"
+msgstr "返回收件箱"
+
+#: ../pm4wp.php:514
+#: ../pm4wp.php:535
+#: ../pm4wp.php:736
+#: ../pm4wp.php:754
+msgid "Info"
+msgstr "资讯"
+
+#: ../pm4wp.php:515
+#: ../pm4wp.php:536
+#: ../pm4wp.php:737
+#: ../pm4wp.php:755
+msgid "Message"
+msgstr "信息"
+
+#: ../pm4wp.php:516
+#: ../pm4wp.php:537
+#: ../pm4wp.php:738
+#: ../pm4wp.php:756
+msgid "Action"
+msgstr "动作"
+
+#: ../pm4wp.php:521
+#, php-format
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>发件人</b>: %s<br /><b>日期</b>: %s"
+
+#: ../pm4wp.php:522
+#: ../pm4wp.php:744
+#, php-format
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr "<p><b>主题</b>: %s</p><p>%s</p>"
+
+#: ../pm4wp.php:525
+#: ../pm4wp.php:636
+#: ../pm4wp.php:681
+#: ../pm4wp.php:747
+#: ../pm4wp.php:852
+msgid "Delete"
+msgstr "删除"
+
+#: ../pm4wp.php:528
+#: ../pm4wp.php:684
+msgid "Reply"
+msgstr "回复"
+
+#: ../pm4wp.php:564
+msgid "Message marked as read."
+msgid_plural "Messages marked as read"
+msgstr[0] "条信息已标记为已读。"
+msgstr[1] "条信息已标记为已读。"
+
+#: ../pm4wp.php:566
+#: ../pm4wp.php:602
+#: ../pm4wp.php:796
+msgid "Error. Please try again."
+msgstr "错误。请重试。"
+
+#: ../pm4wp.php:604
+#: ../pm4wp.php:798
+msgid "Message deleted."
+msgid_plural "Messages deleted."
+msgstr[0] "条信息已删除。"
+msgstr[1] "条信息已删除。"
+
+#: ../pm4wp.php:618
+msgid "You have no items in inbox."
+msgstr "收件箱中没有信息。"
+
+#: ../pm4wp.php:627
+#, php-format
+msgid "You have %d private message (%d unread)."
+msgid_plural "You have %d private messages (%d unread)."
+msgstr[0] "您有 %d 条站内信 （%d 条未读）."
+msgstr[1] "您有 %d 条站内信 （%d 条未读）."
+
+#: ../pm4wp.php:635
+msgid "Bulk Action"
+msgstr "批量操作"
+
+#: ../pm4wp.php:637
+#: ../pm4wp.php:675
+msgid "Mark As Read"
+msgstr "标记为已读"
+
+#: ../pm4wp.php:639
+msgid "Apply"
+msgstr "确定"
+
+#: ../pm4wp.php:646
+#: ../pm4wp.php:697
+msgid "Sender"
+msgstr "发件人"
+
+#: ../pm4wp.php:648
+#: ../pm4wp.php:699
+#: ../pm4wp.php:832
+#: ../pm4wp.php:867
+msgid "Date"
+msgstr "日期"
+
+#: ../pm4wp.php:669
+#: ../pm4wp.php:849
+msgid "View"
+msgstr "查看"
+
+#: ../pm4wp.php:731
+msgid "Outbox \\ View Message"
+msgstr "已发信息 \\ 浏览信息"
+
+#: ../pm4wp.php:732
+msgid "Back to outbox"
+msgstr "返回已发信息"
+
+#: ../pm4wp.php:743
+#, php-format
+msgid "<b>Recipient</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>收件人</b>: %s<br /><b>日期</b>: %s"
+
+#: ../pm4wp.php:812
+msgid "You have no items in outbox."
+msgstr "没有已发信息。"
+
+#: ../pm4wp.php:815
+#, php-format
+msgid "You wrote %d private message."
+msgid_plural "You wrote %d private messages."
+msgstr[0] "您发送了 %d 条站内信."
+msgstr[1] "您发送了 %d 条站内信."
+
+#: ../pm4wp.php:823
+msgid "Delete Selected"
+msgstr "删除选中的项"
+
+#: ../pm4wp.php:895
+#, php-format
+msgid "You have %d new message!"
+msgid_plural "You have %d new messages!"
+msgstr[0] "您有 %d 条新信息！"
+msgstr[1] "您有 %d 条新信息！"
+
+#: ../pm4wp.php:895
+#: ../pm4wp.php:972
+msgid "Click here to go to inbox"
+msgstr "点击这里进入收件箱"
+
+#: ../pm4wp.php:913
+msgid "Show notifications and new private messages on sidebar"
+msgstr "在侧边栏（sidebar）上显示新信息提示"
+
+#: ../pm4wp.php:915
+msgid "Private Messages Widget"
+msgstr "站内信Widget"
+
+#: ../pm4wp.php:949
+#, php-format
+msgid "You have %d private message. %d unread."
+msgid_plural "You have %d private messages. %d unread."
+msgstr[0] "您有 %d 条站内信。其中 %d 条未读."
+msgstr[1] "您有 %d 条站内信。其中 %d 条未读."
+
+#: ../pm4wp.php:965
+#, php-format
+msgid "<br />by <b>%s</b><br />at %s"
+msgstr "<br />由 <b>%s</b><br />在 %s 发送"
+
+#: ../pm4wp.php:996
+msgid "Title:"
+msgstr "标题："
+
+#: ../pm4wp.php:1001
+msgid "Number of PM:"
+msgstr "站内信数量："
+

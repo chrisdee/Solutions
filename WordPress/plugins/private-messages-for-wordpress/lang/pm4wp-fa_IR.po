@@ -1,0 +1,455 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Private Messages For WordPress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-17 15:25+0300\n"
+"PO-Revision-Date: 2010-07-22 12:31+0330\n"
+"Last-Translator: Mostafa <pooras@gmail.com>\n"
+"Language-Team: FatCow <zhr@tut.by>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Belarusian\n"
+"X-Poedit-Country: BELARUS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#@ pm4wp
+#: pm4wp.php:78
+#, php-format
+msgid "New PM at %BLOG_NAME%"
+msgstr "پیغام جدید در %BLOG_NAME%"
+
+#@ pm4wp
+#: pm4wp.php:79
+#, php-format
+msgid "You have new private message from <b>%SENDER%</b> at <b>%BLOG_NAME%</b>.<br /><br /><a href=\"%INBOX_URL%\">Click here</a> to go to your inbox.<br /><br /><hr />This email is sent automatically. Please don't reply."
+msgstr "شما یک پیغام خصوصی جدید از <b>%SENDER%</b> در <b>%BLOG_NAME%</b> دارید. برای رفتن به صندوق پیغام خود <b>%BLOG_NAME%</b> اینجا </a> را کلیک کنید.<br /><br /><hr /> این ایمیل بصورت اتوماتیک فرستاده شده است. لطفا به آن پاسخ ندهید!"
+
+#@ pm4wp
+#: pm4wp.php:113
+#: pm4wp.php:146
+msgid "Private Messages Options"
+msgstr "تنظیمات پیغام های خصوصی"
+
+#@ pm4wp
+#: pm4wp.php:113
+#: pm4wp.php:117
+#: pm4wp.php:938
+msgid "Private Messages"
+msgstr "پیغام های خصوصی"
+
+#@ pm4wp
+#: pm4wp.php:117
+msgid "Messages"
+msgstr "پیغام خصوصی"
+
+#@ pm4wp
+#: pm4wp.php:120
+#: pm4wp.php:559
+msgid "Inbox"
+msgstr "صندوق دریافت"
+
+#@ pm4wp
+#: pm4wp.php:122
+#: pm4wp.php:752
+msgid "Outbox"
+msgstr "صندوق ارسال"
+
+#@ pm4wp
+#: pm4wp.php:125
+#: pm4wp.php:251
+msgid "Send Private Message"
+msgstr "ارسال پیغام خصوصی"
+
+#@ pm4wp
+#: pm4wp.php:125
+#: pm4wp.php:426
+msgid "Send"
+msgstr "فرستادن"
+
+#@ pm4wp
+#: pm4wp.php:151
+msgid "Please set numbers of private messages for each user role:"
+msgstr "لطفا تعداد پیغام های خصوصی را برای هر نوع کاربر تایین کنید:"
+
+#@ pm4wp
+#: pm4wp.php:152
+msgid "<b><i>0</i></b> means <b><i>unlimited</i></b>"
+msgstr "<b><i>0</i></b> یعنی <b><i>نامحدود</i></b>"
+
+#@ pm4wp
+#: pm4wp.php:153
+msgid "<b><i>-1</i></b> means <b><i>not allowed</i></b> to send PM"
+msgstr "<b><i>0</i></b> یعنی <b><i>اجازه ارسال</i></b> پیغام ندارد."
+
+#@ pm4wp
+#: pm4wp.php:159
+msgid "Administrator"
+msgstr "مدیر"
+
+#@ pm4wp
+#: pm4wp.php:163
+msgid "Editor"
+msgstr "ویرایشگر"
+
+#@ pm4wp
+#: pm4wp.php:167
+msgid "Author"
+msgstr "نویسنده"
+
+#@ pm4wp
+#: pm4wp.php:171
+msgid "Contributor"
+msgstr "مشارکت کننده"
+
+#@ pm4wp
+#: pm4wp.php:175
+msgid "Subscriber"
+msgstr "مشترک"
+
+#@ pm4wp
+#: pm4wp.php:179
+msgid "How do you want to choose recipient?"
+msgstr "می خواهید چگونه نام گیرندگان را انتخاب کنید؟"
+
+#@ pm4wp
+#: pm4wp.php:181
+msgid "Dropdown list"
+msgstr "لیست لغزان پایید رونده"
+
+#@ pm4wp
+#: pm4wp.php:182
+msgid "Auto suggest from user input"
+msgstr "با پیشنهاد اتوماتیک در حین تایپ"
+
+#@ pm4wp
+#: pm4wp.php:187
+msgid "Email template:"
+msgstr "قالب ایمیل:"
+
+#@ pm4wp
+#: pm4wp.php:191
+msgid "Enable sending email when user receive new PM?"
+msgstr "فرستادن ایمیل وقتی کاربر پیغام جدیدی دریافت می کند فعال شود؟"
+
+#@ pm4wp
+#: pm4wp.php:193
+msgid "Yes"
+msgstr "بلی"
+
+#@ pm4wp
+#: pm4wp.php:194
+msgid "No"
+msgstr "خیر"
+
+#@ pm4wp
+#: pm4wp.php:198
+msgid "From name (optional)"
+msgstr "نام فرستنده(اختیاری)"
+
+#@ pm4wp
+#: pm4wp.php:202
+msgid "From email (optional)"
+msgstr "ایمیل فرستنده (اختیاری)"
+
+#@ pm4wp
+#: pm4wp.php:206
+#: pm4wp.php:417
+#: pm4wp.php:594
+#: pm4wp.php:645
+#: pm4wp.php:777
+#: pm4wp.php:812
+msgid "Subject"
+msgstr "موضوع"
+
+#@ pm4wp
+#: pm4wp.php:210
+msgid "Body"
+msgstr "متن"
+
+#@ pm4wp
+#: pm4wp.php:214
+msgid "Available tags"
+msgstr "برچسب های موجود"
+
+#@ pm4wp
+#: pm4wp.php:219
+msgid "Blog name"
+msgstr "نام وبلاگ"
+
+#@ pm4wp
+#: pm4wp.php:223
+msgid "Email address of blog"
+msgstr "آدرس ایمیل وبلاگ"
+
+#@ pm4wp
+#: pm4wp.php:227
+msgid "Sender name"
+msgstr "نام فرستنده"
+
+#@ pm4wp
+#: pm4wp.php:231
+msgid "URL of inbox"
+msgstr "آدرس URL صندوق دریافت"
+
+#@ pm4wp
+#: pm4wp.php:236
+msgid "Save Changes"
+msgstr "ذخیره تغییرات"
+
+#@ pm4wp
+#: pm4wp.php:264
+msgid "You have exceeded the limit of mailbox. Please delete some messages before sending another."
+msgstr "شما به بیشینه تعداد پیغام های صندوق خود رسیده اید. لطفا قبل از فرستادن پیغام جدید،چند پیغام قدیمی را پاک کنید."
+
+#@ pm4wp
+#: pm4wp.php:283
+msgid "Please enter username of recipient."
+msgstr "لطفا نام کاربری دریافت کننده را وارد کنید."
+
+#@ pm4wp
+#: pm4wp.php:287
+msgid "Please enter subject of message."
+msgstr "لطفا موضوع پیغام را وارد کنید."
+
+#@ pm4wp
+#: pm4wp.php:291
+msgid "Please enter content of message."
+msgstr "لطفا متنی را وارد کنید"
+
+#@ pm4wp
+#: pm4wp.php:297
+msgid "Please enter correct username of recipient."
+msgstr "لطفا نام درست کاربری دریافت کننده را وارد کنید"
+
+#@ pm4wp
+#: pm4wp.php:321
+msgid "Message sent."
+msgstr "پیغام فرستاده شد."
+
+#@ pm4wp
+#: pm4wp.php:363
+msgid "Error sending message. Please try again."
+msgstr "خطا در فرستادن پیغام. لطفا دوباره تلاش کنید."
+
+#@ pm4wp
+#: pm4wp.php:373
+#: pm4wp.php:776
+#: pm4wp.php:811
+msgid "Recipient"
+msgstr "دریافت کننده(نام فارسی را وارد کنید)"
+
+#@ pm4wp
+#: pm4wp.php:421
+msgid "Content"
+msgstr "محتوا"
+
+#@ pm4wp
+#: pm4wp.php:457
+msgid "Inbox \\ View Message"
+msgstr "صندوق دریافت // مشاهده پیغام"
+
+#@ pm4wp
+#: pm4wp.php:461
+#: pm4wp.php:482
+#: pm4wp.php:682
+#: pm4wp.php:700
+msgid "Info"
+msgstr "اطلاعات"
+
+#@ pm4wp
+#: pm4wp.php:462
+#: pm4wp.php:483
+#: pm4wp.php:683
+#: pm4wp.php:701
+msgid "Message"
+msgstr "پیغام"
+
+#@ pm4wp
+#: pm4wp.php:463
+#: pm4wp.php:484
+#: pm4wp.php:684
+#: pm4wp.php:702
+msgid "Action"
+msgstr "عملکرد"
+
+#@ pm4wp
+#: pm4wp.php:468
+#, php-format
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b> فرستنده </b>: %s<br /><b>تاریخ</b>: %s"
+
+#@ pm4wp
+#: pm4wp.php:469
+#: pm4wp.php:690
+#, php-format
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr "<p><b>موضوع</b>: %s</p><p>%s</p>"
+
+#@ pm4wp
+#: pm4wp.php:472
+#: pm4wp.php:583
+#: pm4wp.php:628
+#: pm4wp.php:693
+#: pm4wp.php:798
+msgid "Delete"
+msgstr "پاک کن"
+
+#@ pm4wp
+#: pm4wp.php:475
+#: pm4wp.php:631
+msgid "Reply"
+msgstr "پاسخ"
+
+#@ pm4wp
+#: pm4wp.php:511
+msgid "Message marked as read."
+msgid_plural "Messages marked as read"
+msgstr[0] "پیغام بصورت خوانده شده در آمد."
+msgstr[1] "پیغام ها بصورت خوانده شده در آمدند."
+
+#@ pm4wp
+#: pm4wp.php:513
+#: pm4wp.php:549
+#: pm4wp.php:742
+msgid "Error. Please try again."
+msgstr "خطا . لطفا دوباره تلاش کنید."
+
+#@ pm4wp
+#: pm4wp.php:551
+#: pm4wp.php:744
+msgid "Message deleted."
+msgid_plural "Messages deleted."
+msgstr[0] "پیغام پاک شد."
+msgstr[1] "پیغام ها پاک شدند."
+
+#@ pm4wp
+#: pm4wp.php:565
+msgid "You have no items in inbox."
+msgstr "شما موردی را در صندوق دریافت ندارید."
+
+#@ pm4wp
+#: pm4wp.php:574
+#, php-format
+msgid "You have %d private message (%d unread)."
+msgid_plural "You have %d private messages (%d unread)."
+msgstr[0] "شما %d پیغام خصوصی دارید (%d خوانده نشده)."
+msgstr[1] "شما %d پیغام خصوصی دارید (%dخوانده نشده)."
+
+#@ pm4wp
+#: pm4wp.php:582
+msgid "Bulk Action"
+msgstr "بی اثر"
+
+#@ pm4wp
+#: pm4wp.php:584
+#: pm4wp.php:622
+msgid "Mark As Read"
+msgstr "علامتگذاری به عنوان خوانده شده"
+
+#@ pm4wp
+#: pm4wp.php:586
+msgid "Apply"
+msgstr "تایید"
+
+#@ pm4wp
+#: pm4wp.php:593
+#: pm4wp.php:644
+msgid "Sender"
+msgstr "فرستنده"
+
+#@ pm4wp
+#: pm4wp.php:595
+#: pm4wp.php:646
+#: pm4wp.php:778
+#: pm4wp.php:813
+msgid "Date"
+msgstr "تاریخ"
+
+#@ pm4wp
+#: pm4wp.php:616
+#: pm4wp.php:795
+msgid "View"
+msgstr "مشاهده"
+
+#@ pm4wp
+#: pm4wp.php:678
+msgid "Outbox \\ View Message"
+msgstr "صندوق ارسال // مشاهده پیغام"
+
+#@ pm4wp
+#: pm4wp.php:689
+#, php-format
+msgid "<b>Recipient</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>دریافت کننده</b>: %s<br /><b>تاریخ</b>: %s"
+
+#@ pm4wp
+#: pm4wp.php:758
+msgid "You have no items in outbox."
+msgstr "شما موردی را در صندوق ارسال ندارید"
+
+#@ pm4wp
+#: pm4wp.php:761
+#, php-format
+msgid "You wrote %d private message."
+msgid_plural "You wrote %d private messages."
+msgstr[0] "شما %d پیغام خصوصی فرستاده اید."
+msgstr[1] "شما %d پیغام خصوصی فرستاده اید."
+
+#@ pm4wp
+#: pm4wp.php:769
+msgid "Delete Selected"
+msgstr "انتخاب شده ها را پاک کن"
+
+#@ pm4wp
+#: pm4wp.php:841
+#, php-format
+msgid "You have %d new message!"
+msgid_plural "You have %d new messages!"
+msgstr[0] "شما %d پیغام جدید دارید!"
+msgstr[1] "شما %d پیغام جدید دارید!"
+
+#@ pm4wp
+#: pm4wp.php:841
+#: pm4wp.php:918
+msgid "Click here to go to inbox"
+msgstr "برای رفتن به صندوق دریافت اینجا را کلیک کنید"
+
+#@ pm4wp
+#: pm4wp.php:859
+msgid "Show notifications and new private messages on sidebar"
+msgstr "آگاه سازیها و پیغام های جدید را در نوار کناری نمایش بده"
+
+#@ pm4wp
+#: pm4wp.php:861
+msgid "Private Messages Widget"
+msgstr "ابزارک پیغام خصوصی"
+
+#@ pm4wp
+#: pm4wp.php:895
+#, php-format, php-format
+msgid "You have %d private message. %d unread."
+msgid_plural "You have %d private messages. %d unread."
+msgstr[0] "شما %d پیغام خصوصی دارید (%d خوانده نشده)."
+msgstr[1] "شما %d پیغام خصوصی دارید (%d خوانده نشده)."
+
+#@ pm4wp
+#: pm4wp.php:911
+#, php-format
+msgid "<br />by <b>%s</b><br />at %s"
+msgstr "<br />توسط<b>%s</b><br />در %s"
+
+#: pm4wp.php:942
+msgid "Title:"
+msgstr "عنوان:"
+
+#@ pm4wp
+#: pm4wp.php:947
+msgid "Number of PM:"
+msgstr "تعداد پیغام ها:"
+

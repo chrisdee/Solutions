@@ -1,0 +1,525 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Private Messages For WordPress v2.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2010-04-28 12:18+0600\n"
+"Last-Translator: admin <admin@proautosport.kz>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: pm4wp.php:78
+#, php-format
+#@ pm4wp
+msgid "New PM at %BLOG_NAME%"
+msgstr "Новое ЛС на %BLOG_NAME%"
+
+#: pm4wp.php:79
+#, php-format
+#@ pm4wp
+msgid ""
+"You have new private message from <b>%SENDER%</b> at <b>%BLOG_NAME%</b>.\n"
+"\n"
+"<a href=\"%INBOX_URL%\">Click here</a> to go to your inbox.\n"
+"\n"
+"This email is sent automatically. Please don't reply."
+msgstr ""
+"У Вас новое сообщение от <b>%SENDER%</b> на <b>%BLOG_NAME%</b>.\n"
+"\n"
+"<a href=\"%INBOX_URL%\">Нажмите здесь</a>, чтобы перейти в личную почту.\n"
+"\n"
+"Это сообщение отправлено автоматически. Пожалуйста, не отвечайте на него."
+
+#: pm4wp.php:113
+#: pm4wp.php:146
+#@ pm4wp
+msgid "Private Messages Options"
+msgstr "Настройки Личных Сообщений"
+
+#: pm4wp.php:113
+#: pm4wp.php:117
+#: pm4wp.php:992
+#@ pm4wp
+msgid "Private Messages"
+msgstr "Личные Сообщения"
+
+#: pm4wp.php:117
+#@ pm4wp
+msgid "Messages"
+msgstr "Сообщения"
+
+#: pm4wp.php:120
+#: pm4wp.php:612
+#@ pm4wp
+msgid "Inbox"
+msgstr "Входящие"
+
+#: pm4wp.php:122
+#: pm4wp.php:806
+#@ pm4wp
+msgid "Outbox"
+msgstr "Исходящие"
+
+#: pm4wp.php:125
+#: pm4wp.php:282
+#@ pm4wp
+msgid "Send Private Message"
+msgstr "Отправить ЛС"
+
+#: pm4wp.php:125
+#: pm4wp.php:478
+#@ pm4wp
+msgid "Send"
+msgstr "Отправить"
+
+#: pm4wp.php:156
+#@ pm4wp
+msgid "1. The plugin goes with a page template for front-end usage."
+msgstr "1. В плагин включен шаблон страницы для использования на его сайте."
+
+#: pm4wp.php:157
+#@ pm4wp
+msgid "Copy file <code>pm4wp-template.php</code> to your theme folder and create a page with template <code>Private Messages</code>"
+msgstr "Скопируйте файл <code>pm4wp-template.php</code> в папку с вашей темой и создайте страницу с шаблоном <code>Private Messages</code>"
+
+#: pm4wp.php:158
+#@ pm4wp
+msgid "The template is just the backbone. You should modify it to fit your theme."
+msgstr "Шаблон пустой и не содержит оформления. Вы должны его изменить самостоятельно согласно вашей теме."
+
+#: pm4wp.php:159
+#@ pm4wp
+msgid "2. You can send to multiple recipients now."
+msgstr "2. Теперь вы можете отправлять ЛС сразу нескольким пользователям."
+
+#: pm4wp.php:161
+#@ pm4wp
+msgid "Don't show this message next time"
+msgstr "Больше не показывать данное сообщение"
+
+#: pm4wp.php:164
+#@ pm4wp
+msgid "Please set numbers of private messages for each user role:"
+msgstr "Пожалуйста, укажите максимальное количество сообщений для каждой роли:"
+
+#: pm4wp.php:165
+#@ pm4wp
+msgid "<b><i>0</i></b> means <b><i>unlimited</i></b>"
+msgstr "<b><i>0</i></b> означает <b><i>неограничено</i></b>"
+
+#: pm4wp.php:166
+#@ pm4wp
+msgid "<b><i>-1</i></b> means <b><i>not allowed</i></b> to send PM"
+msgstr "<b><i>-1</i></b> означает <b><i>запрещено</i></b> пользоваться ЛС"
+
+#: pm4wp.php:172
+#@ pm4wp
+msgid "Administrator"
+msgstr "Администратор"
+
+#: pm4wp.php:176
+#@ pm4wp
+msgid "Editor"
+msgstr "Редактор"
+
+#: pm4wp.php:180
+#@ pm4wp
+msgid "Author"
+msgstr "Автор"
+
+#: pm4wp.php:184
+#@ pm4wp
+msgid "Contributor"
+msgstr "Участник"
+
+#: pm4wp.php:188
+#@ pm4wp
+msgid "Subscriber"
+msgstr "Подписчик"
+
+#: pm4wp.php:192
+#@ pm4wp
+msgid "How do you want to choose recipient?"
+msgstr "Каким образом выбирать получателя?"
+
+#: pm4wp.php:194
+#@ pm4wp
+msgid "Dropdown list"
+msgstr "Выпадающий список"
+
+#: pm4wp.php:195
+#@ pm4wp
+msgid "Auto suggest from user input"
+msgstr "Автоматическое подставление по мере ввода"
+
+#: pm4wp.php:200
+#@ pm4wp
+msgid "Email template:"
+msgstr "Шаблон е-мэйл сообщения"
+
+#: pm4wp.php:204
+#@ pm4wp
+msgid "Enable sending email when user receive new PM?"
+msgstr "Отправлять е-мэйл сообщение, когда пользователь получает ЛС"
+
+#: pm4wp.php:206
+#@ pm4wp
+msgid "Yes"
+msgstr "Да"
+
+#: pm4wp.php:207
+#@ pm4wp
+msgid "No"
+msgstr "Нет"
+
+#: pm4wp.php:211
+#@ pm4wp
+msgid "From name (optional)"
+msgstr "От кого (необязательно)"
+
+#: pm4wp.php:215
+#@ pm4wp
+msgid "From email (optional)"
+msgstr "С какого адреса (необязательно)"
+
+#: pm4wp.php:219
+#: pm4wp.php:468
+#: pm4wp.php:647
+#: pm4wp.php:698
+#: pm4wp.php:831
+#: pm4wp.php:866
+#@ pm4wp
+msgid "Subject"
+msgstr "Тема"
+
+#: pm4wp.php:223
+#@ pm4wp
+msgid "Body"
+msgstr "Текст"
+
+#: pm4wp.php:226
+#@ pm4wp
+msgid "Allowed HTML tags: "
+msgstr "Разрешенные HTML теги"
+
+#: pm4wp.php:230
+#@ pm4wp
+msgid "Available tags"
+msgstr "Доступные теги"
+
+#: pm4wp.php:235
+#@ pm4wp
+msgid "Blog name"
+msgstr "Название сайта"
+
+#: pm4wp.php:239
+#@ pm4wp
+msgid "Email address of blog"
+msgstr "Email адрес сайта"
+
+#: pm4wp.php:243
+#@ pm4wp
+msgid "Sender name"
+msgstr "Имя отправителя"
+
+#: pm4wp.php:247
+#@ pm4wp
+msgid "URL of inbox"
+msgstr "URL входящих писем"
+
+#: pm4wp.php:252
+#@ pm4wp
+msgid "Save Changes"
+msgstr "Сохранить настройки"
+
+#: pm4wp.php:259
+#@ pm4wp
+msgid "Donation"
+msgstr "Пожертвование"
+
+#: pm4wp.php:260
+#@ pm4wp
+msgid "If you like this plugin, please buy me a beer!"
+msgstr "Если вам нравится плагин, купите мне пива!"
+
+#: pm4wp.php:295
+#@ pm4wp
+msgid "You have exceeded the limit of mailbox. Please delete some messages before sending another."
+msgstr "Вы превысили лимит вашего ящика ЛС. Пожалуйста, удалите ненужные сообщения и попробуйте еще раз"
+
+#: pm4wp.php:319
+#@ pm4wp
+msgid "Please enter username of recipient."
+msgstr "Пожалуйста, введите username получателя"
+
+#: pm4wp.php:323
+#@ pm4wp
+msgid "Please enter subject of message."
+msgstr "Пожалуйста, введите тему сообщения"
+
+#: pm4wp.php:327
+#@ pm4wp
+msgid "Please enter content of message."
+msgstr "Пожалуйста, введите текст сообщения"
+
+#: pm4wp.php:412
+#, php-format
+#@ pm4wp
+msgid "%d message sent."
+msgid_plural "%d messages sent."
+msgstr[0] "%d сообщений отправлено."
+msgstr[1] "%d сообщение отправлено."
+msgstr[2] "%d сообщения отправлено."
+
+#: pm4wp.php:412
+#, php-format
+#@ pm4wp
+msgid "%d error."
+msgid_plural "%d errors."
+msgstr[0] "%d ошибок."
+msgstr[1] "%d ошибка."
+msgstr[2] "%d ошибок."
+
+#: pm4wp.php:421
+#: pm4wp.php:830
+#: pm4wp.php:865
+#@ pm4wp
+msgid "Recipient"
+msgstr "Получатель"
+
+#: pm4wp.php:472
+#@ pm4wp
+msgid "Content"
+msgstr "Содержание"
+
+#: pm4wp.php:509
+#@ pm4wp
+msgid "Inbox \\ View Message"
+msgstr "Входящие \\ Просмотр сообщения"
+
+#: pm4wp.php:510
+#@ pm4wp
+msgid "Back to inbox"
+msgstr "Назад во входящие"
+
+#: pm4wp.php:514
+#: pm4wp.php:535
+#: pm4wp.php:736
+#: pm4wp.php:754
+#@ pm4wp
+msgid "Info"
+msgstr "Инфо"
+
+#: pm4wp.php:515
+#: pm4wp.php:536
+#: pm4wp.php:737
+#: pm4wp.php:755
+#@ pm4wp
+msgid "Message"
+msgstr "Сообщение"
+
+#: pm4wp.php:516
+#: pm4wp.php:537
+#: pm4wp.php:738
+#: pm4wp.php:756
+#@ pm4wp
+msgid "Action"
+msgstr "Действие"
+
+#: pm4wp.php:521
+#, php-format
+#@ pm4wp
+msgid "<b>Sender</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Отправитель</b>: %s<br /><b>Дата</b>: %s"
+
+#: pm4wp.php:522
+#: pm4wp.php:744
+#, php-format
+#@ pm4wp
+msgid "<p><b>Subject</b>: %s</p><p>%s</p>"
+msgstr "<p><b>Тема</b>: %s</p><p>%s</p>"
+
+#: pm4wp.php:525
+#: pm4wp.php:636
+#: pm4wp.php:681
+#: pm4wp.php:747
+#: pm4wp.php:852
+#@ pm4wp
+msgid "Delete"
+msgstr "Удалить"
+
+#: pm4wp.php:528
+#: pm4wp.php:684
+#@ pm4wp
+msgid "Reply"
+msgstr "Ответить"
+
+#: pm4wp.php:564
+#@ pm4wp
+msgid "Message marked as read."
+msgid_plural "Messages marked as read"
+msgstr[0] "Сообщений отмечено прочтенными."
+msgstr[1] "Сообщение отмечено прочтенным."
+msgstr[2] "Сообщения отмечено прочтенными."
+
+#: pm4wp.php:566
+#: pm4wp.php:602
+#: pm4wp.php:796
+#@ pm4wp
+msgid "Error. Please try again."
+msgstr "Ошибка. Попробуйте еще раз."
+
+#: pm4wp.php:604
+#: pm4wp.php:798
+#@ pm4wp
+msgid "Message deleted."
+msgid_plural "Messages deleted."
+msgstr[0] "Сообщений удалено"
+msgstr[1] "Сообщение удалено"
+msgstr[2] "Сообщения удалено"
+
+#: pm4wp.php:618
+#@ pm4wp
+msgid "You have no items in inbox."
+msgstr "Папка входящих пуста"
+
+#: pm4wp.php:627
+#, php-format
+#@ pm4wp
+msgid "You have %d private message (%d unread)."
+msgid_plural "You have %d private messages (%d unread)."
+msgstr[0] "У Вас %d линых сообщений (%d непрочтено)."
+msgstr[1] "У Вас %d линое сообщение (%d непрочтено)."
+msgstr[2] "У Вас %d линых сообщений (%d непрочтено)."
+
+#: pm4wp.php:635
+#@ pm4wp
+msgid "Bulk Action"
+msgstr "Последовательность"
+
+#: pm4wp.php:637
+#: pm4wp.php:675
+#@ pm4wp
+msgid "Mark As Read"
+msgstr "Отметить прочтенным"
+
+#: pm4wp.php:639
+#@ pm4wp
+msgid "Apply"
+msgstr "Применить"
+
+#: pm4wp.php:646
+#: pm4wp.php:697
+#@ pm4wp
+msgid "Sender"
+msgstr "Отправитель"
+
+#: pm4wp.php:648
+#: pm4wp.php:699
+#: pm4wp.php:832
+#: pm4wp.php:867
+#@ pm4wp
+msgid "Date"
+msgstr "Дата"
+
+#: pm4wp.php:669
+#: pm4wp.php:849
+#@ pm4wp
+msgid "View"
+msgstr "Просмотр"
+
+#: pm4wp.php:731
+#@ pm4wp
+msgid "Outbox \\ View Message"
+msgstr "Исходящие \\ Просмотреть сообщение"
+
+#: pm4wp.php:732
+#@ pm4wp
+msgid "Back to outbox"
+msgstr "Назад в Исходящие"
+
+#: pm4wp.php:743
+#, php-format
+#@ pm4wp
+msgid "<b>Recipient</b>: %s<br /><b>Date</b>: %s"
+msgstr "<b>Получатель</b>: %s<br /><b>Дата</b>: %s"
+
+#: pm4wp.php:812
+#@ pm4wp
+msgid "You have no items in outbox."
+msgstr "В Исходящих ничего нет"
+
+#: pm4wp.php:815
+#, php-format
+#@ pm4wp
+msgid "You wrote %d private message."
+msgid_plural "You wrote %d private messages."
+msgstr[0] "Вы написали %d личных сообщений."
+msgstr[1] "Вы написали %d личное сообщение."
+msgstr[2] "Вы написали %d личных сообщения."
+
+#: pm4wp.php:823
+#@ pm4wp
+msgid "Delete Selected"
+msgstr "Удалить выбранные"
+
+#: pm4wp.php:895
+#, php-format
+#@ pm4wp
+msgid "You have %d new message!"
+msgid_plural "You have %d new messages!"
+msgstr[0] "У Вас %d новых сообщений!"
+msgstr[1] "У Вас %d новое сообщение!"
+msgstr[2] "У Вас %d новых сообщения!"
+
+#: pm4wp.php:895
+#: pm4wp.php:972
+#@ pm4wp
+msgid "Click here to go to inbox"
+msgstr "Нажмите чтобы перейти во Входящие"
+
+#: pm4wp.php:913
+#@ pm4wp
+msgid "Show notifications and new private messages on sidebar"
+msgstr "Показывать уведомления и новые сообщения в сайдбаре"
+
+#: pm4wp.php:915
+#@ pm4wp
+msgid "Private Messages Widget"
+msgstr "Widget Личных Сообщений"
+
+#: pm4wp.php:949
+#, php-format
+#@ pm4wp
+msgid "You have %d private message. %d unread."
+msgid_plural "You have %d private messages. %d unread."
+msgstr[0] "У Вас %d личных сообщений. %d непрочтено."
+msgstr[1] "У Вас %d личное сообщение. %d непрочтено."
+msgstr[2] "У Вас %d личных сообщения. %d непрочтено."
+
+#: pm4wp.php:965
+#, php-format
+#@ pm4wp
+msgid "<br />by <b>%s</b><br />at %s"
+msgstr "<br />от <b>%s</b><br />на %s"
+
+#: pm4wp.php:996
+msgid "Title:"
+msgstr ""
+
+#: pm4wp.php:1001
+#@ pm4wp
+msgid "Number of PM:"
+msgstr "Количество ЛС"
+
