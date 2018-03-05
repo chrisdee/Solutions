@@ -1,0 +1,13 @@
+== Azure SDK PowerShell Module ==
+
+URLs:
+
+https://azure.microsoft.com/en-us/downloads
+
+https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids
+
+https://docs.microsoft.com/api/Redirect/en-us/documentation/articles/powershell-install-configure
+
+Version: 5.3.0
+
+Default Installation Location: "C:\Program Files (x86)\Microsoft SDKs\Azure\PowerShell"

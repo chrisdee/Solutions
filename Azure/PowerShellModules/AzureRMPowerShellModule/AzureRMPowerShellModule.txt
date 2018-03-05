@@ -1,0 +1,17 @@
+== AzureRM PowerShell Module ==
+
+URLs:
+
+https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-5.3.0
+
+Version: 5.3.0
+
+Common Install Path: "C:\Program Files\WindowsPowerShell\Modules"
+
+Useful Commands:
+
+Install-Module -Name AzureRM -AllowClobber
+
+Get-Module AzureRM -ListAvailable | Select-Object -Property Name,Version,Path
+
+Import-Module -Name AzureRM
