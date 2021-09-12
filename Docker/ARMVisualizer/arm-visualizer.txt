@@ -1,0 +1,23 @@
+== arm-visualizer ==
+
+URLs:
+
+https://github.com/shenglol/arm-visualizer
+
+http://armviz.io
+
+http://old.armviz.io
+
+Note: This worked best when tested in Chrome and FireFox Browsers
+
+Running Locally
+
+If you want to run ArmViz locally, the easiest way is through our pre-built Docker image:
+
+Install Docker
+
+Run docker run -i -d -P ytechie/armviz:v2
+
+Run docker ps to see what port ArmViz is being served on
+
+Launch the browser on the local host with the port obtained from running the "docker ps" command - example: http://localhost:32768

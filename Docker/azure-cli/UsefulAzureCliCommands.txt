@@ -1,0 +1,26 @@
+## Useful Azure CLI Commands ##
+
+# Login to Azure Instance
+az login
+
+# Show Azure Resource Groups
+az group list --query '[].name'
+
+# Table output option
+az group list --query '[].name' --output table
+
+# Show Application Gateways (AAG)
+az network application-gateway list --resource-group "YourResourceGroupName" --query '[].name'
+
+# Table output option
+az network application-gateway list --resource-group "YourResourceGroupName" --query '[].name' --output table
+
+# Show Application Gateway (AAG) HTTP Settings
+az network application-gateway show --resource-group "YourResourceGroupName" --name "YourApplicationGatewayName" --query 'backendHttpSettingsCollection[].{name: name, port: port, requestTimeout: requestTimeout}'
+
+# Table output option
+az network application-gateway show --resource-group "YourResourceGroupName" --name "YourApplicationGatewayName" --query 'backendHttpSettingsCollection[].{name: name, port: port, requestTimeout: requestTimeout}' --output table
+
+# Show Azure VM Status
+az vm get-instance-view --name "YourVMName" --resource-group "YourResourceGroupName" --query instanceView.statuses[1] --output table
+
