@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties">
+  <dc:creator>Przemyslaw Klys</dc:creator>
+  <dc:description>Simple project to create easy to use Status Pages.</dc:description>
+  <dc:identifier>Statusimo</dc:identifier>
+  <version>0.3</version>
+  <keywords>Windows MacOS Linux Status HTML Page PSModule PSIncludes_Function PSFunction_New-StatusimoEvent PSFunction_New-StatusimoMaintenance PSFunction_New-StatusimoPage PSFunction_Remove-StatusimoMaintenance PSCommand_New-StatusimoEvent PSCommand_New-StatusimoMaintenance PSCommand_New-StatusimoPage PSCommand_Remove-StatusimoMaintenance PSCommand_New-StatusimoIncident</keywords>
+  <lastModifiedBy>NuGet, Version=4.9.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35;Microsoft Windows NT 6.2.9200.0;.NET Framework 4.6</lastModifiedBy>
+</coreProperties>

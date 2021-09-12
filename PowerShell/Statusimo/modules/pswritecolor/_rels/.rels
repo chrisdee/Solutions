@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Type="http://schemas.microsoft.com/packaging/2010/07/manifest" Target="/PSWriteColor.nuspec" Id="Re80664ed60b9486c" />
+  <Relationship Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="/package/services/metadata/core-properties/ad9351804bfa4424b8fe5246a4af02f6.psmdcp" Id="R17b72b1734264439" />
+</Relationships>

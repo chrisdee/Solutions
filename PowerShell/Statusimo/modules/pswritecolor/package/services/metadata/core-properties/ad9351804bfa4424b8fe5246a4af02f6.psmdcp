@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties">
+  <dc:creator>Przemyslaw Klys</dc:creator>
+  <dc:description>Write-Color is a wrapper around Write-Host allowing you to create nice looking scripts, with colorized output. It provides easy manipulation of colors, logging output to file (log) and nice formatting options out of the box.
+
+    For support: https://github.com/EvotecIT/PSWriteColor
+    For project info: https://evotec.xyz/hub/scripts/pswritecolor/</dc:description>
+  <dc:identifier>PSWriteColor</dc:identifier>
+  <version>0.85</version>
+  <keywords>Write-Host Color Colour Terminal Console Logging Prompt Write-Color Windows MacOS Linux PSModule PSIncludes_Function PSFunction_Write-Color PSFunction_Write-ColorDev PSCommand_Write-Color PSCommand_Write-ColorDev PSCommand_Write-Colour</keywords>
+  <lastModifiedBy>NuGet.Build.Tasks.Pack, Version=4.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35;</lastModifiedBy>
+</coreProperties>

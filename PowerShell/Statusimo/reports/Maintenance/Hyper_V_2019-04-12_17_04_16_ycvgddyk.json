@@ -1,0 +1,8 @@
+{
+    "DateStart":  "\/Date(1555083436439)\/",
+    "DateEnd":  "\/Date(1555177036439)\/",
+    "Service":  "Hyper-V",
+    "Status":  "",
+    "Title":  "Hyper-V scheduled maintenance",
+    "Overview":  "Updating core infrastructure for Hyper-V. Servers may be affected."
+}

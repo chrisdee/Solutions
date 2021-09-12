@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>PSWriteColor</id>
+    <version>0.85.0</version>
+    <authors>Przemyslaw Klys</authors>
+    <owners>Evotec</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://evotec.xyz/hub/scripts/pswritecolor/</projectUrl>
+    <iconUrl>https://evotec.xyz/wp-content/uploads/2018/10/PSWriteColor.png</iconUrl>
+    <description>Write-Color is a wrapper around Write-Host allowing you to create nice looking scripts, with colorized output. It provides easy manipulation of colors, logging output to file (log) and nice formatting options out of the box.
+
+    For support: https://github.com/EvotecIT/PSWriteColor
+    For project info: https://evotec.xyz/hub/scripts/pswritecolor/</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Evotec (c) 2011-2019. All rights reserved.</copyright>
+    <tags>Write-Host Color Colour Terminal Console Logging Prompt Write-Color Windows MacOS Linux PSModule PSIncludes_Function PSFunction_Write-Color PSFunction_Write-ColorDev PSCommand_Write-Color PSCommand_Write-ColorDev PSCommand_Write-Colour</tags>
+  </metadata>
+</package>
