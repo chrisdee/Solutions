@@ -1,0 +1,19 @@
+## Installation ##
+
+## Source: https://github.com/nocodb/nocodb (Binaries)
+
+## Windows (x64)
+
+iwr http://get.nocodb.com/win-x64.exe -OutFile "C:\temp\nocodb-windows\Noco-win-x64.exe"
+
+cd "C:\temp\nocodb-windows"
+
+.\Noco-win-x64.exe
+
+Start-Process http://localhost:8080/dashboard
+
+## Admin Credentials
+
+UserName: nocodb@nocodb.com
+
+Password: nocodb12345

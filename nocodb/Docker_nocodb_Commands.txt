@@ -1,0 +1,14 @@
+## Docker Useful "nocodb" commands ##
+## Resources: https://github.com/nocodb/nocodb; https://docs.nocodb.com; https://www.baeldung.com/ops/docker-copying-files
+
+## Run default "nocodb" container on Docker
+docker run -d --name nocodb -p 8080:8080 nocodb/nocodb
+
+## Run default "nocodb" container on Docker with a persistent data volume
+docker run -d -p 8080:8080 --name foo -v /local/path:/usr/app/data/ nocodb/nocodb
+
+## Docker copy "nocodb" SQLite Database to local disk (ensure to copy over any '.db-wal' and '.db-shm' files too if they exist)
+docker cp nocodb:/usr/app/data/noco.db C:\temp
+
+## Docker copy local SQLite Database to "nocodb" container (ensure to copy over any '.db-wal' and '.db-shm' files too if they exist)
+docker cp C:\temp\chinook\chinook.db nocodb:/usr/app/data
